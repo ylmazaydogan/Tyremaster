@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from './components/Header';
 import Hero from "./components/Hero";
 import FeaturesSection from './components/FeaturesSection';
+import Footer from "./components/Footer";
+import Newsletter from "./components/Newsletter";
+import InfoBlock from "./components/InfoBlock";
 
 
 
@@ -23,8 +26,9 @@ export default function RootLayout({
       <body>
         <Header/>
         <Hero/>
-        <FeaturesSection/>
         {children}
+        <InfoBlock/>
+        <Footer/>
       </body>
     </html>
   );
