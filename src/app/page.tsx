@@ -6,15 +6,17 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
+        
     <div className="text-center">
-      <p className="text-[#A5A5A5] text-sm tracking-wide mb-5">ORDER YOUR TYRES EASILY</p>
-      <h1 className="text-[#171A1F] font-bold text-5xl mx-auto">B2B E-COMMERCE PLATFORM</h1>
-      <p className="text-[#A5A5A5] text-lg mt-4 text-xl font-sans">
+      
+      <p className="text-[#A5A5A5] text-sm tracking-wide mb-5 font-lato">ORDER YOUR TYRES EASILY</p>
+      <h1 className="text-black font-bold text-4xl mx-auto">B2B E-COMMERCE PLATFORM</h1>
+      <p className="text-[#A5A5A5] text-base mt-4 font-lato">
         Streamlined tyre procurement for wholesalers: quick, easy, efficient, and competitive.
       </p>
 
       <div className="container mx-auto py-12 flex flex-col md:flex-row items-center justify-between relative">
-        <div className="md:w-1/2 flex justify-center relative ml-[-130px]">
+        <div className="md:w-1/2 flex justify-center response">
           <Image
             src="/images/tyremasterpc.png"
             alt="iMac showing the platform"
@@ -25,22 +27,22 @@ export default function Home() {
         </div>
 
         <div className="md:w-1/2 text-left mt-8 md:mt-0 max-w-[486px] ml-[-20px]">
-          <p className="text-[#171A1F] mt-6 text-lg leading-relaxed mb-6">
+          <p className="text-black mt-6 text-base leading-relaxed mb-6 font-arimo ">
             Experience effortless tyre procurement with our easy-to-use B2B platform. Designed for wholesalers, our site simplifies the ordering process, enabling you to efficiently browse, select, and place orders. Enjoy competitive pricing and a seamless transaction experience. With competitive pricing and a wide selection of tyres, we cater to all your business needs.
           </p>
-          <p className="text-[#171A1F] mt-4 text-lg leading-relaxed mb-6">
+          <p className="text-black mt-4 text-base leading-relaxed mb-6 font-arimo">
             Our streamlined ordering system saves you time, allowing you to focus on what matters most—growing your business. Join us today and experience the convenience of a platform designed specifically for tyre wholesalers. Simplify your procurement process and discover how easy ordering tyres can be!
           </p>
           <div className="flex justify-start space-x-4 mt-8">
             <a
               href="#"
-              className="bg-[#1FCE6D] text-white px-6 py-3 rounded-lg hover:text-white transition"
+              className="bg-green text-white px-6 py-3 rounded-lg hover:text-white transition"
             >
               REGISTER NOW
             </a>
             <a
               href="#"
-              className="border border-[#1FCE6D] text-[#1FCE6D] px-14 py-3 rounded-lg hover:bg-green-500 hover:text-white transition"
+              className="border border-green text-green px-14 py-3 rounded-lg hover:bg-green-500 hover:text-white transition"
             >
               LOGIN
             </a>
@@ -53,7 +55,7 @@ export default function Home() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center">
             <p className="text-[#A5A5A5] text-sm mb-4">WHO WE ARE?</p>
-            <h2 className="text-4xl font-bold text-[#171A1F] mb-4">ABOUT TYREMASTER</h2>
+            <h2 className="text-4xl font-bold text-black mb-4">ABOUT TYREMASTER</h2>
             <p className="text-[#A5A5A5] text-lg">
               There are many variations of tyres that you can find for your specific need.
             </p>
@@ -280,6 +282,7 @@ export default function Home() {
 
       </section>
     </div>
+   
 
   );
 }

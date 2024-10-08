@@ -24,11 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <main className="w-full mx-auto px-4 py-1">
         <Header/>
         <Hero/>
         {children}
         <InfoBlock/>
         <Footer/>
+        </main>
       </body>
     </html>
   );

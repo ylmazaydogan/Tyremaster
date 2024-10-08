@@ -4,7 +4,7 @@ const RegisterPage = () => {
     return (
         <main className='flex-grow'>
             <div className='grid lg:grid-cols-2 mt-10 lg:mt-12 responsive'>
-                {/* Burada divide-x sınıfını kaldırdık */}
+                
                 <div className='flex flex-col gap-2 lg:pl-56'>
                     <div className='flex gap-6 items-center'>
                         <span className='text-black font-semibold uppercase flex text-3xl'>Register</span>

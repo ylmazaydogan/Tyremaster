@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <div className="bg-black w-full py-8">
-            <div className="grid xl:grid-cols-2 gap-12 xl:gap-20 w-full xl:w-[83%] mx-auto mt-8">
-                <div className="grid xl:grid-cols-2 xl:gap-4 w-[64%] mx-auto xl:w-full">
+        <div className="bg-black w-full py-6">
+            <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 w-full  mx-auto mt-8">
+                <div className="grid xl:grid-cols-2 xl:gap-2  mx-auto xl:w-full">
                     <div className="flex flex-col">
                         <a href="#"
                             className="self-center xl:self-start flex items-center">
