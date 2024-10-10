@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const Footer = () => {
-    return (
+    return(
         <div className="bg-black w-full py-6">
-            <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 w-full  mx-auto mt-8">
-                <div className="grid xl:grid-cols-2 xl:gap-2  mx-auto xl:w-full">
-                    <div className="flex flex-col">
+            <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 w-full mx-auto mt-8">
+                <div className="grid xl:grid-cols-2 xl:gap-2 mx-auto xl:w-full">
+                    <div className="flex flex-col ml-14">
                         <a href="#"
                             className="self-center xl:self-start flex items-center">
                             <Image
@@ -16,28 +16,28 @@ const Footer = () => {
                                 className="w-36"
                             />
                         </a>
-                        <p className="text-base text-white mt-10 xl:mt-2 text-start md:text-center xl:text-start">
+                        <p className="text-white mt-10 xl:mt-2 text-sm md:text-center xl:text-start font-arimo">
                             "Your premier tyre wholesaler platform,"
                             <br />
                             "where sourcing your tyre needs for supply "
                             <br />
                             "is made easy."
                         </p>
-                        <div className="flex flex-col gap-2 mt-5 text-base text-white">
-                            <a href="https://www.google.com/maps/place?q=Patersstraat%20100%202300%20Turnhout%2C%20BE" target="_blank" className="flex text-hover gap-2 items-center group">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="text-white text-md group-hover:text-green" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <div className="flex flex-col gap-2 mt-5 text-base text-white font-arimo">
+                            <a href="https://www.google.com/maps/place?q=Patersstraat%20100%202300%20Turnhout%2C%20BE" target="_blank" className="flex gap-2 items-center group">
+                                <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" className="text-white text-md group-hover:text-green" height="1em" width="1em">
                                     <path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path>
                                 </svg>
                                 Patersstraat 100 2300 Turnhout, BE
                             </a>
-                            <a href="tel:+32456661560" className="flex text-hover gap-2 items-center group">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="text-white text-lg group-hover:text-green" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <a href="tel:+32456661560" className="flex gap-2 items-center group">
+                                <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" className="text-white text-lg group-hover:text-green" height="1em" width="1em">
                                     <path d="M160 32c-16 0-32 16-32 32v384c0 16 16 32 32 32h192c16 0 32-16 32-32V64c0-16-16-32-32-32H160zm21.68 23h96v18h-96V55zM304 55h32v18h-32V55zM154 96h204v320H154V96zm70 342h63.984c16 0 16 16 16 16v6H208v-6s0-16 16-16z"></path>
                                 </svg>
                                 Phone: +32 (0) 45 666 15 60
                             </a>
-                            <a target="_blank" href="mailto:hello@tyremaster.app" className="flex text-hover gap-2 items-center group">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="text-white text-md group-hover:text-green" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <a target="_blank" href="mailto:hello@tyremaster.app" className="flex gap-2 items-center group">
+                                <svg stroke="currentColor" fill="currentColor" viewBox="0 0 24 24" className="text-white text-md group-hover:text-green" height="1em" width="1em">
                                     <path d="M1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14a1.75 1.75 0 0 1-1.75 1.75H1.75A1.75 1.75 0 0 1 0 18.75v-14C0 3.784.784 3 1.75 3ZM1.5 7.412V18.75c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V7.412l-9.52 6.433c-.592.4-1.368.4-1.96 0Zm0-2.662v.852l10.36 7a.25.25 0 0 0 .28 0l10.36-7V4.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"></path>
                                 </svg>
                                 Email: hello@tyremaster.app
@@ -45,7 +45,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex flex-col mt-12 xl:mt-0 text-left">
-                        <p className="text-md font-semibold text-white uppercase">Recent Posts</p>
+                        <p className="text-base font-semibold text-white uppercase font-arimo">Recent Posts</p>
                         <a className="flex py-2.5 border-b gap-3 group mt-4">
                             <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12 bg-white">
                                 <Image
@@ -57,8 +57,9 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <p className="font-medium text-white text-base">The B2B tyre procurement platform</p>
-                                <span className="text-white text-sm group-hover:text-green">Click to view</span>
+                                <p className="font-arimo text-white text-sm">The B2B tyre procurement<br></br> platform</p>
+                                <span className="text-white text-sm group-hover:text-green font-arimo">Click to view</span>
+                                <hr className="border-t border-gray w-full"></hr>
                             </div>
                         </a>
                         <a className="flex py-2.5 border-b gap-3">
@@ -72,8 +73,9 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <p className="font-medium text-white text-base">Extensive selection of premium <br /> tires</p>
-                                <span className="text-white text-sm group-hover:text-green-200">Click to view</span>
+                                <p className="font-arimo text-white text-sm">Extensive selection of premium <br /> tires</p>
+                                <span className="text-white text-sm font-arimo">Click to view</span>
+                                <hr className="border-t border-gray w-full"></hr>
                             </div>
                         </a>
                         <a className="flex py-2.5 border-b gap-3 group !border-none">
@@ -86,54 +88,50 @@ const Footer = () => {
                                     className="w-36"
                                 />
                             </div>
-                            <div className="flex flex-col gap-2">
-                                <p className="font-medium text-white text-base">Get in touch with our support <br /> for assistance</p>
+                            <div className="flex flex-col gap-2 font-arimo">
+                                <p className="font-medium text-white text-sm ">Get in touch with our support <br /> for assistance</p>
                                 <span className="text-white text-sm group-hover:text-green">Click to contact</span>
+                                
                             </div>
                         </a>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-5">
-                    <div className=" flex flex-col xl:flex-row w-[64%] mx-auto xl:w-full justify-between">
+                    <div className="flex flex-col xl:flex-row  mx-auto xl:w-full justify-between">
                         <div className="flex flex-col">
-                            <span className="text-md text-white font-semibold uppercase">Company</span>
-                            <div className="flex flex-col gap-6 mt-4">
-                                <a href="#" className="text-white text-base text-hover">About Us</a>
-                                <a href="#" className="text-white text-base text-hover">Terms & Conditions</a>
-                                <a href="#" className="text-white text-base text-hover">Privacy Policy</a>
+                            <span className="text-base text-white font-semibold uppercase font-poppins">Company</span>
+                            <div className="flex flex-col gap-6 mt-4 text-sm font-lato">
+                                <a href="#" className="text-white ">About Us</a>
+                                <a href="#" className="text-white ">Terms & Conditions</a>
+                                <a href="#" className="text-white ">Privacy Policy</a>
                             </div>
                         </div>
                         <div className="flex flex-col mt-12 xl:mt-0">
-                            <span className="text-md text-white font-semibold uppercase">Useful Links</span>
-                            <div className="flex flex-col gap-3 mt-4">
-                                <a href="#" className="text-white text-base text-hover">Tyre Shop</a>
-                                <a href="#" className="text-white text-base text-hover">Contact us</a>
-                                <a href="#" className="text-white text-base text-hover">All brands</a>
+                            <span className="text-base text-white font-semibold uppercase font-poppins">Useful Links</span>
+                            <div className="flex flex-col gap-3 mt-4 text-sm font-lato ">
+                                <a href="#" className="text-white ">Tyre Shop</a>
+                                <a href="#" className="text-white ">Contact us</a>
+                                <a href="#" className="text-white ">All brands</a>
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col w-full items-center">  {/* Ortalamak için items-center eklendi */}
-                        <p className="font-semibold text-md text-white w-[64%] mx-auto xl:w-full text-center xl:text-center uppercase">  {/* text-start yerine text-center */}
+                    <div className="flex flex-col w-full items-center">
+                        <p className="font-semibold  text-white text-base mx-auto xl:w-full text-center uppercase font-arimo">
                             Subscribe to our Newsletter and receive B2B offers
                         </p>
-                        <span className="text-white text-base xl:mt-0.5 w-[64%] mx-auto xl:w-full mt-6 text-center xl:text-center">  {/* text-start yerine text-center */}
+                        <span className="text-white text-sm xl:mt-0.5  mx-auto xl:w-full mt-6 text-center font-arimo">
                             There are many variations of tyres that you can find for your specific need.
                         </span>
-                        <div className="w-[92%] xl:w-full mx-auto">  {/* xl:full yerine xl:w-full */}
-                            <form className="flex items-center justify-center w-full h-14 mt-4">  {/* Form elemanını ortalamak için justify-center eklendi */}
+                        <div className=" xl:w-full mx-auto">
+                            <form className="flex items-center justify-center w-full h-14 mt-4">
                                 <input
-                                    className="
-                    border placeholder:text-gray outline-none rounded-full pl-5 text-base placeholder:text-base
-                    h-full w-full"
+                                    className="border placeholder:text-gray outline-none rounded-full pl-5 text-base placeholder:text-base h-full w-full"
                                     placeholder="Type your email address"
                                 />
-                                <div className="flex flex-shrink-0 w-16 h-16 items-center justify-center rounded-full bg-black ml-[-2rem]">  {/* justify-center eklendi */}
+                                <div className="flex flex-shrink-0 w-16 h-16 items-center justify-center rounded-full bg-black ml-[-2rem]">
                                     <button
-                                        className="
-                                             flex items-center justify-center rounded-full group
-                                              hover:bg-green-600 transition-all duration-300 ease-in-out
-                                              bg-black text-white w-12 h-12">
+                                        className="flex items-center justify-center rounded-full group hover:bg-green transition-all duration-300 ease-in-out bg-black text-white w-12 h-12">
                                         <svg
                                             width="14"
                                             height="14"
@@ -150,15 +148,12 @@ const Footer = () => {
                             </form>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
-            {/*En alt kisim */}
-            <div className="bg-white"> 
-                <div className="py-0.5  mt-4 xl:mt-16 bg-white">
-                    <div className="flex items-center justify-between w-[92%] xl:w-[83%] mx-auto bg-white">
+            <div className="bg-light-gray">
+                <div className="py-0.5 mt-4 xl:mt-16 bg-light-gray">
+                    <div className="flex items-center justify-between w-[92%] xl:w-[83%] mx-auto">
                         <Image
                             src="/images/TrustedSite.jpeg"
                             alt="TyreMaster Logo"
@@ -170,7 +165,6 @@ const Footer = () => {
                             <span className="font-semibold text-black">TYREMASTER</span>
                             "© 2024 ALL RITGH RESERVED"
                         </p>
-
                         <div className="flex items-center gap-4">
                             <Image
                                 src="/images/Banktransfer.png"
@@ -189,11 +183,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
         </div>
     );
 }

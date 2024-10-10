@@ -9,6 +9,16 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+
+
+		container:{
+			screens : {
+				xl:'1920px'
+			}
+		},
+
+
+
 		fontSize: {
 			'xs': '.75rem',
 			'sm': '.875rem',
@@ -26,7 +36,11 @@ const config: Config = {
 		 	'black': '#171A1F',
 		 	'gray':'#777777',
 		 	'green':'#1FCE6D',
-			'light gray':'#F7F7F7',
+			'light-gray':'#F7F7F7',
+			'white ':'#FFFFFF',
+			'cool-gray':'#E6E6E6',
+			'medium-gray': '#A5A5A5',
+			'light-silver': '#E8E8E8',
 
 		   },
 
@@ -39,6 +53,10 @@ const config: Config = {
 
 		fontFamily: {
 			arimo: ['Arimo', 'sans-serif'],
+			lato: ['Lato', 'sans-serif'],
+			poppins: ['Poppins', 'sans-serif'],
+			'arimoHebrew': ['"Arimo Hebrew Subset Italic"', 'sans-serif'],
+			'public-sans': ['"Public Sans"', 'sans-serif'],
 		  },
   		
   		borderRadius: {

@@ -9,9 +9,9 @@ export default function Home() {
         
     <div className="text-center">
       
-      <p className="text-[#A5A5A5] text-sm tracking-wide mb-5 font-lato">ORDER YOUR TYRES EASILY</p>
-      <h1 className="text-black font-bold text-4xl mx-auto">B2B E-COMMERCE PLATFORM</h1>
-      <p className="text-[#A5A5A5] text-base mt-4 font-lato">
+      <p className="text-medium-gray text-sm tracking-wide mb-2 font-lato mt-3">ORDER YOUR TYRES EASILY</p>
+      <h1 className="text-black font-bold text-4xl mx-auto font-poppins">B2B E-COMMERCE PLATFORM</h1>
+      <p className="text-medium-gray text-base mt-4 font-lato">
         Streamlined tyre procurement for wholesalers: quick, easy, efficient, and competitive.
       </p>
 
@@ -54,22 +54,22 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-[#A5A5A5] text-sm mb-4">WHO WE ARE?</p>
-            <h2 className="text-4xl font-bold text-black mb-4">ABOUT TYREMASTER</h2>
-            <p className="text-[#A5A5A5] text-lg">
+            <p className="text-medium-gray text-sm mb-3 font-lato">WHO WE ARE?</p>
+            <h2 className="text-4xl font-bold text-black mb-4 font-poppins">ABOUT TYREMASTER</h2>
+            <p className="text-medium-gray text-base font-lato">
               There are many variations of tyres that you can find for your specific need.
             </p>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between mt-12">
             <div className="md:w-1/2">
-              <h3 className="text-xl font-bold text-[#171A1F] mb-12">
+              <h3 className="text-base font-bold text-black mb-12 font-arimo">
                 WE ARE TYREMASTER, YOUR TIRE SOURCING PLATFORM
               </h3>
-              <p className="text-lg text-[#A5A5A5] mb-4 leading-8">
+              <p className="text-base text-black mb-4 leading-8 font-arimo">
                 Tyre Master, your premier destination for tyres procurement in Europe. Enjoy Welcome to a tire distribution experience you can rely on.
               </p>
-              <p className="text-lg text-[#A5A5A5] mb-6 leading-8">
+              <p className="text-base text-black mb-6 leading-8 font-arimo">
                 Tyremaster is the seasoned European tyre sourcing platform with strong industry expertise. We proudly offer a vast catalog of over 50,000 tyre references, serving businesses across all European regions with bulk sales capabilities. Trust in our experience and comprehensive inventory to meet your wholesale tire needs efficiently and reliably.
               </p>
 
@@ -94,9 +94,9 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-[#A5A5A5] text-sm mb-4">MORE ABOUT US</p>
-            <h2 className="text-4xl font-bold text-[#171A1F] mb-4">WHY CHOOSE US</h2>
-            <p className="text-[#A5A5A5] text-lg">Below you'll find the answers you're looking for</p>
+            <p className="text-medium-gray text-sm mb-4 font-arimo">MORE ABOUT US</p>
+            <h2 className="text-4xl font-bold text-black mb-4 font-arimo">WHY CHOOSE US</h2>
+            <p className="text-medium-gray text-base font-arimo">Below you'll find the answers you're looking for</p>
           </div>
 
 
@@ -117,8 +117,8 @@ export default function Home() {
 
               </div>
               <div className="flex-grow">
-                <h3 className="text-xl font-bold">EXTENSIVE INVENTORY</h3>
-                <p className="text-lg text-[#777777] leading-10 mt-2 ">
+                <h3 className="text-base font-bold font-poppins text-black">EXTENSIVE INVENTORY</h3>
+                <p className="text-base text-gray leading-10 mt-2 font-arimo ">
                   Vast selection of top-quality tyres, covering a wide range of sizes and types.
                 </p>
               </div>
@@ -133,8 +133,8 @@ export default function Home() {
 
               </div>
               <div className="flex-grow">
-                <h3 className="text-xl font-bold">RELIABLE DELIVERY</h3>
-                <p className="text-lg text-[#A5A5A5] leading-8 mt-2">
+                <h3 className="text-base font-bold font-arimo">RELIABLE DELIVERY</h3>
+                <p className="text-base text-medium-gray leading-8 mt-2">
                   Count on us for dependable and timely delivery to keep your operations running smoothly.
                 </p>
               </div>
@@ -152,8 +152,8 @@ export default function Home() {
 
               </div>
               <div className="flex-grow">
-                <h3 className="text-xl font-bold">COMPETITIVE PRICING</h3>
-                <p className="text-lg text-[#A5A5A5] leading-8 mt-2">
+                <h3 className="text-base font-bold font-poppins">COMPETITIVE PRICING</h3>
+                <p className="text-base text-medium-gray leading-8 mt-2 font-arimo mb-5">
                   We offer competitive pricing, ensuring that you get the best value for your investment.
                 </p>
               </div>
@@ -167,9 +167,9 @@ export default function Home() {
                 </svg>
 
               </div>
-              <div className="flex-grow">
-                <h3 className="text-xl font-bold">EXCEPTIONAL SERVICE</h3>
-                <p className="text-lg text-[#A5A5A5] leading-8 mt-2">
+              <div className="flex-grow mr-4">
+                <h3 className="text-base font-bold font-public-sans text-black">EXCEPTIONAL SERVICE</h3>
+                <p className="text-base text-medium-gray leading-8 mt-2 font-arimo">
                   You can trust us to be responsive, knowledgeable, and ready to assist you.
                 </p>
               </div>
@@ -191,8 +191,8 @@ export default function Home() {
 
               </div>
               <div className="flex-grow">
-                <h3 className="text-xl font-bold">EXPERIENCE THE DIFFERENCE</h3>
-                <p className="text-lg text-[#A5A5A5] leading-8 mt-2">
+                <h3 className="text-base font-bold font-poppins text-black">EXPERIENCE THE DIFFERENCE</h3>
+                <p className="text-base text-medium-gray leading-8 mt-2 font-arimo">
                   Explore our extensive catalog, and get your quote. Your success is our priority.
                 </p>
               </div>
@@ -213,8 +213,8 @@ export default function Home() {
 
               </div>
               <div className="flex-grow">
-                <h3 className="text-xl font-bold">TYRE PROCUREMENT</h3>
-                <p className="text-lg text-[#A5A5A5] leading-8 mt-2">
+                <h3 className="text-base font-bold font-arimo ">TYRE PROCUREMENT</h3>
+                <p className="text-base text-medium-gray leading-8 mt-2 font-arimo" >
                   We've streamlined the ordering process, making it easy for you to get the tyres you need.
                 </p>
               </div>
@@ -234,35 +234,35 @@ export default function Home() {
         </div>
         <div className="pb-7 border-b mt-12 xl:mt-20">
   <div className="w-[92%] xl:w-[83%] mx-auto">
-    <div className="flex items-center flex-col gap-2.5 w-[65%] mx-auto">
-      <p className="text-base text-[#A5A5A5] uppercase">SEE OUR COLLECTION</p>
-      <p className="text-black text-5xl font-semibold uppercase text-center">HOW WE WORK</p>
-      <p className="text-center text-[#777777] text-md">There are many variations of passages of lorem ipsum available.</p>
+    <div className="flex items-center flex-col gap-2.5  mx-auto">
+      <p className="text-base text-medium-gray uppercase font-arimo">SEE OUR COLLECTION</p>
+      <p className="text-black text-4xl font-semibold uppercase text-center font-arimo">HOW WE WORK</p>
+      <p className="text-center text-gray text-base font-arimo">There are many variations of passages of lorem ipsum available.</p>
     </div>
 
-    <div className="flex flex-col xl:flex-row xl:divide-x divide-[#818181]/20 mt-10 justify-center items-start">
+    <div className="flex flex-col xl:flex-row xl:divide-x divide-[#818181]/20 mt-10 justify-center xl:space-x-12">
       
-      <div className="flex items-center text-left px-8"> 
-        <span className="text-black text-5xl xl:text-6xl font-bold mr-2">01.</span> 
+      <div className="flex items-center text-left px-12"> 
+        <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">01.</span> 
         <div className="flex flex-col gap-2 max-w-xs">
-          <p className="text-black text-lg font-semibold">SELECT YOUR TYRES</p>
-          <p className="text-[#777777] text-gray">Use the shop page or the product catalog to select your tyres.</p>
+          <p className="text-black text-lg font-semibold font-arimo">SELECT YOUR TYRES</p>
+          <p className="text-gray font-arimo text-base">Use the shop page or the product<br></br> catalog to select your tyres.</p>
         </div>
       </div>
 
-      <div className="flex items-center text-left px-8"> 
-        <span className="text-black text-5xl xl:text-6xl font-bold mr-2">02.</span> 
+      <div className="flex items-center text-left px-12"> 
+        <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">02.</span> 
         <div className="flex flex-col gap-2 max-w-xs">
-          <p className="text-black text-lg font-semibold">PLACE YOUR ORDER</p>
-          <p className="text-[#777777] text-gray">Directly from the checkout or by getting in touch with us.</p>
+          <p className="text-black text-lg font-semibold font-arimo">PLACE YOUR ORDER</p>
+          <p className=" text-gray text-base font-arimo">Directly from the checkout or<br></br> by getting in touch with us.</p>
         </div>
       </div>
 
-      <div className="flex items-center text-left px-8"> 
-        <span className="text-black text-5xl xl:text-6xl font-bold mr-2">03.</span> 
+      <div className="flex items-center text-left px-12"> 
+        <span className="text-black text-7xl xl:text-6xl font-bold mr-2">03.</span> 
         <div className="flex flex-col gap-2 max-w-xs">
-          <p className="text-black text-lg font-semibold">RECEIVE YOUR ORDER</p>
-          <p className="text-[#777777] text-gray">Receive your B2B order once your order is confirmed.</p>
+          <p className="text-black text-lg font-semibold font-arimo">RECEIVE YOUR ORDER</p>
+          <p className=" text-gray font-arimo text-base">Receive your B2B order once<br></br> your order is confirmed.</p>
                 </div>
               </div>
 

@@ -3,11 +3,11 @@ const Newsletter = () => {
         <div className="flex flex-col gap-8 mt-16 items-center relative">
             
             <div className="flex items-center flex-col gap-4 w-[65%] mx-auto">
-                <p className="text-sm text-[#A5A5A5] uppercase">DON'T MISS ANY OFFER!</p>
+                <p className="text-sm text-medium-gray uppercase">DON'T MISS ANY OFFER!</p>
                 <p className="text-black text-4xl font-semibold uppercase text-center leading-tight">
                     SUBSCRIBE TO NEWSLETTER
                 </p>
-                <p className="text-center text-[#777777] text-xl leading-relaxed w-[60%] mx-auto">
+                <p className="text-center text-gray text-xl leading-relaxed w-[60%] mx-auto">
                     Enter your email address below to stay updated on our latest offers and receive our exclusive B2B deals directly to your inbox every day.
                     Find everything you need for your business procurement right here!
                 </p>
@@ -38,7 +38,7 @@ const Newsletter = () => {
                 /> */}
             </div>
 
-            <div className="w-full border-t border-[#E6E6E6] mt-10"></div>
+            <div className="w-full border-t border-cool-gray mt-10"></div>
         </div>
     
     );

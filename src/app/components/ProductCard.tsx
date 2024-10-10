@@ -3,17 +3,17 @@ import Image from "next/image";
 
 export default function ProductCard() {
   return (
-    <div className="border-b py-4 text-left">
+    <div className="border-light-silver my-4 py-3 text-left">
       {/* Headers */}
-      <div className="flex items-start justify-between text-[#171A1F] -mb-10 ">
+      <div className="flex items-start justify-between text-black -mb-10 ">
         <div className="w-1/3"></div>
-        <div className="w-1/6 text-center font-semibold">Unit price</div>
-        <div className="w-1/6 text-center font-semibold">Quantity</div>
-        <div className="w-1/6 text-center font-semibold">Total</div>
-        <div className="w-1/6 text-center font-semibold">VAT Rate</div>
+        <div className="w-1/6 text-center font-semibold font-poppins text-sm">Unit price</div>
+        <div className="w-1/6 text-center font-semibold font-poppins text-sm">Quantity</div>
+        <div className="w-1/6 text-center font-semibold font-poppins text-sm">Total</div>
+        <div className="w-1/6 text-center font-semibold font-poppins text-sm">VAT Rate</div>
       </div>
 
-      {/* Product Details */}
+      
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start w-1/3">
           <div className="flex items-center space-x-4">
@@ -25,38 +25,38 @@ export default function ProductCard() {
               className="mx-auto lg:mx-0"
             />
             <div>
-              <h2 className="font-semibold text-[#171A1F] text-lg">Hankook</h2>
-              <p className="text-lg text-[#171A1F]">Maxxis Mecotra 3</p>
-              <p className="text-sm text-[#A5A5A5] ">Description: 215/55R18 99V</p>
-              <p className="text-sm text-[#A5A5A5]">Season: Summer</p>
+              <h2 className="font-semibold text-black text-base font-poppins">Hankook</h2>
+              <p className="text-sm text-black font-poppins">Maxxis Mecotra 3</p>
+              <p className="text-sm text-medium-gray font-arimo ">Description: 215/55R18 99V</p>
+              <p className="text-sm text-medium-gray font-arimo">Season: Summer</p>
             </div>
           </div>
-          <button className="mt-2 pl-28 flex items-center text-green bg-[#F7F7F7]"> {/* Button moved below image and details */}
+          <button className="mt-2 flex items-center text-black bg-light-gray font-lato text-xs border-light-silver px-4 py-2 ml-9 rounded "> 
             X REMOVE
           </button>
         </div>
 
         <div className="w-1/6 text-center">
-          <p className="font-semibold">€109,94</p>
+          <p className=" text-sm font-poppins">€109,94</p>
         </div>
 
-        <div className="w-1/6 flex items-center justify-center">
-          <button className="px-2 py-1 border border-gray-300 rounded-l">-</button>
+        <div className="w-1/6 flex items-center justify-center ">
+          <button className="px-2 py-1 border-light-gray rounded-lg">-</button>
           <input
             type="text"
             value="1"
-            className="w-12 text-center border-t border-b border-gray-300"
+            className="w-12 text-center border-t border-b border-light-gray"
             readOnly
           />
-          <button className="px-2 py-1 border border-gray-300 rounded-r">+</button>
+          <button className="px-2 py-1 border border-light-gray rounded-r">+</button>
         </div>
 
         <div className="w-1/6 text-center">
-          <p className="font-semibold">€109,94</p>
+          <p className="font-semibold font-poppins text-sm">€109,94</p>
         </div>
 
         <div className="w-1/6 text-center">
-          <p className="font-semibold">21%</p>
+          <p className="font-semibold font-poppins text-sm">21%</p>
         </div>
       </div>
     </div>
