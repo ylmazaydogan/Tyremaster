@@ -18,4 +18,23 @@ body {
   }
 }
 
+/* Arimo */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Arimo Hebrew Subset Italic */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,400&display=swap');
+
+/* Public Sans */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 

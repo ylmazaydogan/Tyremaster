@@ -1,41 +1,110 @@
 export default function AccountPage() {
     return (
-        <div className="container mx-auto p-6">
-            <div className="mb-6">
-                <p className="text-[#A5A5A5] text-sm"> ALL YOUR ACCOUNT DETAILS</p>
-                <h3 className="text-3xl font-bold uppercase mt-4">my account</h3>
-                <p className="text-[#A5A5A5] mt-5">
+        <div className="flex flex-col p-6 space-y-6"> {/* Flex direction column for the main container */}
+            
+            {/* Page Header */}
+            <div className="mb-6 ml-10">
+                <p className="text-medium-gray text-sm uppercase font-lato">ALL YOUR ACCOUNT DETAILS</p>
+                <h3 className="text-4xl font-bold uppercase text-black mt-2 font-poppins">MY ACCOUNT</h3>
+                
+                <p className="text-medium-gray mt-2 text-base font-lato">
                     Access your account to manage personal information, track orders, and more.
                 </p>
             </div>
 
-            {/*Ana Kutu */}
+            <div className="flex space-x-8">
+                {/* Sidebar */}
+                <div className="hidden xl:flex flex-col p-6 w-1/6 bg-white border border-light-silver rounded-lg shadow-sm">
+                    <div className="text-black font-semibold uppercase mb-6 font-montserrat text-base">MY ACCOUNT</div>
+                    <hr className="border border-light-silver"></hr>
+                    <div className="w-full h-2 bg-green rounded mb-6"></div>
+                    <div className="flex flex-col space-y-4">
+                        <a href="#" className="flex items-center justify-between py-2 font-semibold font-lato text-black hover:text-green text-xs-custom transition">
+                            MY INFORMATION
+                        </a>
+                        <hr className="border border-light-silver"></hr>
+                        <a href="#" className="flex items-center justify-between py-2 font-semibold text-black font-lato hover:text-green text-xs-custom transition">
+                            MY ORDERS
+                        </a>
+                        <hr className="border border-light-silver"></hr>
+                        <a href="#" className="flex items-center justify-between py-2 font-semibold text-black font-lato text-xs-custom hover:text-green transition">
+                            CHANGE PASSWORD
+                        </a>
+                        <hr className="border border-light-silver"></hr>
+                    </div>
+                    <button className="flex items-center justify-center w-full mt-8 bg-black text-white py-3 rounded-md font-semibold text-sm">
+                        <span className="mr-2">🔒</span> Logout
+                    </button>
+                </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-                {/*Left */}
-                <div className="hidden xl:flex flex-col pr-4 py-8">
-                    <div className="text-black text-md font-semibold uppercase">my account</div>
-                    <div className="w-full h-2.5 bg-green rounded-10 mt-6"></div>
-                    <div className="flex flex-col mt-8">
-                        <a href="#" className="flex items-center py-4 justify-between group effect-hover border-b border-t">
-                            <div className="text-base uppercase font-semibold group-hover:text-green transition-all transform duration-300 ease-in-out">my information</div>
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="group-hover:text-green transition-all transform duration-300 ease-in-out" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>
-                        </a>
-                        <a className="flex items-center py-4 justify-between group effect-hover border-b">
-                            <div className="text-base uppercase font-semibold group-hover:text-green transition-all transform duration-300 ease-in-out false">my orders</div>
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="group-hover:text-green transition-all transform duration-300 ease-in-out" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>                                                                                   
-                        </a>
-                        <a className="flex items-center py-4 justify-between group effect-hover border-b">
-                            <div className="text-base uppercase font-semibold group-hover:text-green transition-all transform duration-300 ease-in-out false">my addresses</div>
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" className="group-hover:text-green transition-all transform duration-300 ease-in-out" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>                                                                                   
-                            
-                        </a>
+                {/* Main Content */}
+                <div className="flex-1">
+                    {/* Address Form */}
+                    <div className="p-6 bg-white border border-light-silver rounded-lg shadow-sm">
+                        <div className="mb-6">
+                            <h3 className="text-4xl font-bold uppercase text-black font-poppins">MY ADDRESS</h3>
+                            <div className="w-full h-px bg-gray-300 mt-2"></div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label className="block text-dark-gray mb-2 font-lato text-sm">Name*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div>
+                                <label className="block text-dark-gray mb-2 font-lato text-sm">Last name*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div>
+                                <label className="block text-dark-gray font-lato text-sm mb-2">Company name</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div className="md:col-span-2">
+                                <label className="block text-dark-gray font-lato text-sm mb-2">Address line*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div>
+                                <label className="block text-dark-gray font-lato text-sm mb-2">House number*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div>
+                                <label className="block text-dark-gray font-lato text-sm mb-2">Postcode*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div>
+                                <label className="block text-dark-gray font-lato text-sm mb-2">City*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div>
+                                <label className="block text-dark-gray font-lato text-sm mb-2">Country*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div className="md:col-span-2">
+                                <label className="block text-dark-gray font-lato text-sm mb-2">Your Email*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div>
+                                <label className="block text-dark-gray font-lato text-sm mb-2">Your Phone*</label>
+                                <input className="border border-light-silver p-2 rounded-lg w-full" />
+                            </div>
+                            <div className="md:col-span-2 flex items-end gap-4">
+                                <div className="w-full">
+                                <label className="block text-dark-gray font-lato text-sm mb-2">Your VAT country</label>
+                                    <input className="border border-light-silver p-2 rounded-lg w-full" />
+                                </div>
+                                <div className="w-full">
+                                    <label className="block text-dark-gray font-lato text-sm mb-2">Your VAT number</label>
+                                    <input className="border border-light-silver p-2 rounded-lg w-full" />
+                                </div>
+                                <button className="bg-green text-white py-3 px-6 rounded-lg font-semibold w-full max-w-xs text-xs-custom font-lato">
+
+                                    CHECK VAT
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-        </div>
-
-    )
+            </div>
+    );
 }

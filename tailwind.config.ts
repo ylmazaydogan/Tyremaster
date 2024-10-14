@@ -13,7 +13,8 @@ const config: Config = {
 
 		container:{
 			screens : {
-				xl:'1920px'
+				xl:'1920px',
+				
 			}
 		},
 
@@ -30,6 +31,7 @@ const config: Config = {
 			'4xl': '2.25rem',
 			'5xl': '3rem', 
 			'6xl': '4rem', 
+			'xs-custom': '0.8125rem',
 		},
 
 		 colors: {
@@ -42,6 +44,7 @@ const config: Config = {
 			'medium-gray': '#A5A5A5',
 			'light-silver': '#E8E8E8',
 			'dark-silver ': 'F4F4F4',
+			'dark-gray': '#242424',
 
 		   },
 
@@ -58,6 +61,7 @@ const config: Config = {
 			poppins: ['Poppins', 'sans-serif'],
 			'arimoHebrew': ['"Arimo Hebrew Subset Italic"', 'sans-serif'],
 			'public-sans': ['"Public Sans"', 'sans-serif'],
+			montserrat: ['Montserrat', 'sans-serif'],
 		  },
   		
   		borderRadius: {

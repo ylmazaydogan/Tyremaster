@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Address() {
   return (
-    <div className="flex flex-col md:flex-row p-6 gap-8 ">
+    <div className="flex flex-col md:flex-row p-6 gap-5">
       {/* Sol Bölüm - Adres Formu */}
-      <div className="w-full md:w-2/3 bg-white shadow-md  rounded-lg">
+      <div className="w-full md:w-2/3 bg-white shadow-md rounded-lg">
         <div className="flex items-center mb-4">
           <h2 className="text-4xl font-bold font-poppins text-black uppercase">Your Addresses</h2>
           <div className="flex-grow h-px ml-4 bg-light-silver"></div>
@@ -74,12 +75,30 @@ export default function Address() {
             </label>
           </div>
         </form>
+
+        {/* Payment Method Bölümü */}
+        <div className="mt-8">
+          <h2 className="text-4xl font-bold font-arimo uppercase text-black">Payment Method</h2>
+          <p className="text-black font-arimo text-sm mt-2">Selected payment method</p>
+          
+          <div className="flex items-center gap-4 mt-4">
+            <div className="flex items-center justify-center w-32 h-16  rounded-lg p-2 relative">
+              <Image src="/images/Banktransfer.png" alt="Bank Transfer" width={107} height={107} />
+            </div>
+            <div className="flex items-center justify-center w-32 h-16 p-2 relative">
+              <Image src="/images/Securepayment.png" alt="Secure Payment" width={107} height={107} />
+            </div>
+          </div>
+          <p className="text-sm text-gray mt-4">
+            The bank transfer information will be provided once the order is confirmed.
+          </p>
+        </div>
       </div>
 
       {/* Sağ Bölüm - Ürün Listesi ve Sepet Özeti */}
-      <div className="w-full md:w-1/3 bg-white shadow-md p-6 rounded-lg">
+      <div className="w-full md:w-1/2 bg-white shadow-md p-6 rounded-lg">
         <div className="flex items-center mb-4">
-          <h2 className="text-xl font-bold">Your Products</h2>
+          <h2 className="text-4xl font-bold font-poppins uppercase text-black">Your Products</h2>
           <div className="flex-grow h-px ml-4 bg-light-silver"></div>
         </div>
 
@@ -87,14 +106,14 @@ export default function Address() {
         <div className="space-y-4">
           {[1, 2, 3].map((item) => (
             <div key={item} className="flex items-center space-x-4">
-              <img src="/tire-image.png" alt="Product Image" className="h-16 w-16" />
+              <img src="/images/tire-image.png" alt="Product Image" className="h-16 w-16" />
               <div className="flex-1">
-                <h3 className="font-semibold">Hankook</h3>
-                <p className="text-gray-600 text-sm">Maxxis Mecotra 3</p>
-                <p className="text-gray-600 text-sm">Description: 215/55R18 99V</p>
-                <p className="text-gray-600 text-sm">Season: Summer</p>
+                <h3 className="font-semibold font-arimo text-base text-black">Hankook</h3>
+                <p className="text-black font-arimo text-sm font-bold">Maxxis Mecotra 3</p>
+                <p className="font-arimo text-medium-gray text-sm font-bold">Description: 215/55R18 99V</p>
+                <p className="font-arimo text-medium-gray text-sm font-bold">Season: Summer</p>
               </div>
-              <p className="font-semibold">1 x € 109,94</p>
+              <p className="font-arimo text-base text-black font-semibold">1 x € 109,94</p>
             </div>
           ))}
         </div>
@@ -102,41 +121,50 @@ export default function Address() {
         {/* Sepet Özeti */}
         <div className="mt-6">
           <div className="flex items-center mb-4">
-            <h2 className="text-xl font-bold">Cart Total</h2>
+            <h2 className="text-4xl font-bold font-arimo text-black">Cart Total</h2>
             <div className="flex-grow h-px ml-4 bg-light-silver"></div>
           </div>
-          <div className="space-y-2 text-gray-800">
+          <div className="space-y-6 text-gray">
             <div className="flex justify-between">
-              <span>Subtotal</span>
-              <span>€ 178.34</span>
+              <span className=" font-arimo text-black text-base">Subtotal</span>
+              <span className="font-arimo text-black font-semibold text-base">€ 178.34</span>
             </div>
+            <hr className="border border-cool-gray my-4"></hr>
             <div className="flex justify-between">
-              <span>Shipping cost</span>
-              <span>€ 178.34</span>
+              <span className=" font-arimo text-black text-base">Shipping cost</span>
+              <span className="font-arimo text-black font-semibold text-base">€ 178.34</span>
             </div>
+            <hr className="border border-cool-gray my-4"></hr>
             <div className="flex justify-between">
-              <span>VAT (21%)</span>
-              <span>€ 178.34</span>
+              <span className=" font-arimo text-black text-base">VAT (21%)</span>
+              <span className="font-arimo text-black font-semibold text-base">€ 178.34</span>
             </div>
+            <hr className="border border-cool-gray my-4"></hr>
             <div className="flex justify-between font-bold">
-              <span>Total</span>
-              <span>€ 178.34</span>
+              <span className=" font-arimo text-black text-base">Total</span>
+              <span className="font-arimo text-black font-semibold text-base">€ 178.34</span>
             </div>
+            <hr className="border border-cool-gray my-4"></hr>
           </div>
         </div>
 
         {/* Onay Kutusu ve Ödeme Butonu */}
         <div className="mt-4">
-          <label className="flex items-center space-x-2 text-gray-600">
-            <input type="checkbox" />
-            <span>
-              I confirm that I have read and accepted the terms and conditions
-              before proceeding with payment.
+          <label className="flex items-start text-gray-600">
+            <input type="checkbox" className="mt-1" />
+            <span className="font-lato text-gray text-base ml-3">
+              I confirm that I have read and accepted the terms and conditions before
+              <br />
+              proceeding with payment, acknowledging my understanding and agreement
+              <br />
+              with them
             </span>
           </label>
-          <button className="mt-4 w-full bg-green text-sm text-white py-2 rounded-lg font-semibold">
-            Confirm & Pay
-          </button>
+          <div className="flex justify-end">
+            <button className="mt-4 bg-green text-sm text-white py-4 px-10 rounded-lg font-semibold font-lato">
+              Confirm & Pay
+            </button>
+          </div>
         </div>
       </div>
     </div>
