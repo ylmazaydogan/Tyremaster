@@ -4,12 +4,15 @@ import BrandSection from "./components/BrandSection";
 import InfoBlock from "./components/InfoBlock";
 import Footer from "./components/Footer";
 import FeaturesSection from "./components/FeaturesSection";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
         
-    <div className="text-center">
+    <div className="text-center container">
+      <Hero/>
       <FeaturesSection/>
+      
       
       <p className="text-medium-gray text-sm tracking-wide mb-2 font-lato mt-3">ORDER YOUR TYRES EASILY</p>
       <h1 className="text-black font-bold text-4xl mx-auto font-poppins">B2B E-COMMERCE PLATFORM</h1>

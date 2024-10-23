@@ -112,6 +112,7 @@ export default function Address() {
                 <p className="text-black font-arimo text-sm font-bold">Maxxis Mecotra 3</p>
                 <p className="font-arimo text-medium-gray text-sm font-bold">Description: 215/55R18 99V</p>
                 <p className="font-arimo text-medium-gray text-sm font-bold">Season: Summer</p>
+                <hr className="border border-cool-gray"></hr>
               </div>
               <p className="font-arimo text-base text-black font-semibold">1 x € 109,94</p>
             </div>

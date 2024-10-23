@@ -43,7 +43,7 @@ const config: Config = {
 			'cool-gray':'#E6E6E6',
 			'medium-gray': '#A5A5A5',
 			'light-silver': '#E8E8E8',
-			'dark-silver ': 'F4F4F4',
+			'dark-silver ': '#F4F4F4',
 			'dark-gray': '#242424',
 
 		   },

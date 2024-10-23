@@ -18,7 +18,7 @@ const Newsletter = () => {
                 <input
                     type="email"
                     placeholder="Type your email address"
-                    className="w-full px-6 py-4 text-gray-700 bg-transparent outline-none rounded-full"
+                    className="w-full px-6 py-4 text-gray bg-transparent outline-none rounded-full"
                 />
                 <button className="bg-black text-white p-4 rounded-full ml-4 hover:bg-gray-800 transition-colors">
                     <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">

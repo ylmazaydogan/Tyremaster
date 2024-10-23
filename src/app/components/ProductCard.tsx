@@ -31,10 +31,11 @@ export default function ProductCard() {
               <p className="text-sm text-medium-gray font-arimo">Season: Summer</p>
             </div>
           </div>
-          <button className="mt-2 flex items-center text-black bg-light-gray font-lato text-xs border-light-silver px-4 py-2 ml-9 rounded "> 
+          <button className="mt-2 flex items-center text-black bg-light-gray font-lato text-xs border-light-silver px-4 py-2 ml-9 rounded font-bold "> 
             X REMOVE
           </button>
         </div>
+        
 
         <div className="w-1/6 text-center">
           <p className=" text-sm font-poppins">€109,94</p>
