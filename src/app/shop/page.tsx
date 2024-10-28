@@ -1,6 +1,15 @@
 import React from "react";
 // Import ShadCN table components
 import { Table, TableBody, TableCell, TableHead, TableRow, TableHeader, TableFooter } from "@/components/ui/table";
+import {
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "@/components/ui/pagination"
 
 export default function ShopSidebar() {
     const products = [
@@ -38,156 +47,120 @@ export default function ShopSidebar() {
             image: "/images/tire-image.png",
         },
         {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
-            brand: "Bridgestone",
-            description: "2.75/R10 38J BRIDGESTONE M40",
-            barcode: "3286347636615",
-            quantity: 120,
-            price: " 33,81",
-            orderQuantity: 1,
-            image: "/images/tire-image.png",
-        },
-        {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "109,94",
-            orderQuantity: 1,
-            image: "/images/tire-image.png",
-        },
-        {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
-            brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
-            quantity: 120,
-            price: " 109,94",
-            orderQuantity: 1,
-            image: "/images/tire-image.png",
-        },
-        {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
-            brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
-            quantity: 120,
-            price: "109,94",
-            orderQuantity: 1,
-            image: "/images/tire-image.png",
-        },
-        {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
-            brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
-            quantity: 120,
-            price: "35,54",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
         },
         {
             season: "Winter",
             seasonIcon: "/icons/winter.png",
-            brand: "Austone",
-            description: "165/60R14 79H All Season Fixclime SP-401",
+            brand: "Hankook",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
             barcode: "8808563405063",
             quantity: 120,
-            price: "109,94",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
         },
         {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "35,54",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
         },
         {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "35,54",
+            price: "45.01",
+            orderQuantity: 1,
+            image: "/images/tire-image.png",
+        }, {
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
+            brand: "Hankook",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
+            quantity: 120,
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
         },
         {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "35,54",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
         },
         {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "35,54",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
         },
         {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "35,54",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
         },
         {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "35,54",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
-        },
-        {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+        }, {
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "35,54",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
-        },
-        {
-            season: "Summer",
-            seasonIcon: "/icons/summer.png",
+        }, {
+            season: "Winter",
+            seasonIcon: "/icons/winter.png",
             brand: "Hankook",
-            description: "175/70R13 82T YARTU ZuperEco Z-107",
-            barcode: "3286347636615",
+            description: "155/65R14 75T WINTER I*CEPT RS2",
+            barcode: "8808563405063",
             quantity: 120,
-            price: "35,54",
+            price: "45.01",
             orderQuantity: 1,
             image: "/images/tire-image.png",
         },
@@ -212,6 +185,7 @@ export default function ShopSidebar() {
 
                 <hr className="my-6 border-light-silver" />
 
+                {/* Filter by Season */}
                 <div className="mb-10">
                     <h2 className="text-base font-bold text-black font-arimo uppercase mb-4">Filter by Season</h2>
                     <div className="flex flex-col">
@@ -229,7 +203,7 @@ export default function ShopSidebar() {
 
                 <hr className="my-6 border-light-silver" />
 
-               
+                {/* Filter by Width */}
                 <div className="mb-10">
                     <h2 className="text-base font-bold text-black font-arimo uppercase mb-4">Filter by Width</h2>
                     <div className="flex flex-col space-y-2 font-bold">
@@ -244,6 +218,7 @@ export default function ShopSidebar() {
 
                 <hr className="my-6 border-light-silver" />
 
+                {/* Filter by Brand */}
                 <div className="mb-10">
                     <h2 className="text-sm font-bold text-black font-arimo uppercase mb-4">Filter by Brand</h2>
                     <input type="text" placeholder="Find a Brand" className="mb-2 w-full p-2 border border-cool-gray rounded text-sm" />
@@ -258,7 +233,7 @@ export default function ShopSidebar() {
 
                 <hr className="my-6 border-light-silver" />
 
-                
+                {/* Product Status */}
                 <div className="mb-10">
                     <h2 className="font-bold text-black font-arimo uppercase mb-4 text-base">Product Status</h2>
                     <label className="flex items-center">
@@ -269,7 +244,7 @@ export default function ShopSidebar() {
 
                 <hr className="my-6 border-light-silver" />
 
-             
+                {/* Filter by Diameter */}
                 <div className="mb-10">
                     <h2 className="text-base font-bold text-black font-arimo uppercase mb-4">Filter by Diameter</h2>
                     <div className="flex flex-col space-y-2 font-bold text-black">
@@ -281,20 +256,20 @@ export default function ShopSidebar() {
                 </div>
             </aside>
 
-           
+            {/* Main Product Table */}
             <div className="w-5/6 p-8">
                 <Table className="min-w-full">
                     <TableHeader>
                         <TableRow>
-                          
-                            <TableHead className="text-base text-left font-arimo"></TableHead> 
-                            <TableHead className="font-bold text-black text-base text-left">SEASON</TableHead>
-                            <TableHead className="font-bold text-black text-base text-left">BRAND</TableHead>
-                            <TableHead className="font-bold text-black text-base text-left">DESCRIPTION</TableHead>
-                            <TableHead className="font-bold text-black text-base text-left">BARCODE</TableHead>
-                            <TableHead className="font-bold text-black text-base text-left">QUANTITY</TableHead>
-                            <TableHead className="font-bold text-black text-base text-left">PRICE</TableHead>
-                            <TableHead className="font-bold text-black text-base text-right">ORDER</TableHead>
+                            {/* Empty header cell for the image column */}
+                            <TableHead className="text-base text-left"></TableHead> {/* Boş bırakılmış hücre */}
+                            <TableHead className="font-bold text-gray-800 text-base text-left">SEASON</TableHead>
+                            <TableHead className="font-bold text-gray-800 text-base text-left">BRAND</TableHead>
+                            <TableHead className="font-bold text-gray-800 text-base text-left">DESCRIPTION</TableHead>
+                            <TableHead className="font-bold text-gray-800 text-base text-left">BARCODE</TableHead>
+                            <TableHead className="font-bold text-gray-800 text-base text-left">QUANTITY</TableHead>
+                            <TableHead className="font-bold text-gray-800 text-base text-left">PRICE</TableHead>
+                            <TableHead className="font-bold text-gray-800 text-base text-right">ORDER</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -305,7 +280,7 @@ export default function ShopSidebar() {
                                     <img src={product.image} alt="Product" className="w-[37.71px] h-[54px] object-cover" />
                                 </TableCell>
 
-                               
+                                {/* Season and icon */}
                                 <TableCell className="py-4">
                                     <div className="flex items-center">
                                         <img src={product.seasonIcon} alt="season icon" className="w-6 h-6 inline-block mr-2" />
@@ -323,17 +298,17 @@ export default function ShopSidebar() {
                                 </TableCell>
                                 <TableCell className="py-4 text-black font-arimo text-base font-semibold">€ {product.price}</TableCell>
 
-                              
+                                {/* Order buttons and SVG button */}
                                 <TableCell className="py-4 text-right">
                                     <div className="flex items-center justify-end space-x-4">
-                                      
+                                        {/* Minus, order quantity, and plus buttons */}
                                         <div className="flex items-center border border-cool-gray rounded-lg p-2">
                                             <button className="bg-transparent text-black px-2 py-1 rounded-l-lg focus:outline-none">-</button>
                                             <span className="mx-2 font-poppins text-base text-black">{product.orderQuantity}</span>
                                             <button className="bg-transparent text-black px-2 py-1 rounded-r-lg focus:outline-none">+</button>
                                         </div>
 
-                                        
+                                        {/* Add to cart button */}
                                         <button className="flex items-center justify-center bg-green-500 p-3 rounded-full focus:outline-none">
                                             <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect x="0.904297" width="32" height="32" rx="16" fill="#1FCE6D" />
@@ -350,10 +325,47 @@ export default function ShopSidebar() {
                         ))}
                     </TableBody>
                     <TableFooter>
-                        <TableRow></TableRow>
+                        
+
                     </TableFooter>
+                        
+
                 </Table>
+                <TableRow>
+                            <TableCell colSpan={8}> {/* colSpan 8 yaparak pagination'ı tüm satırlara yayabiliriz */}
+                                <div className=" absolute right-0 mr-28 flex justify-end mt-4 ">
+                                    <Pagination>
+                                        <PaginationContent>
+                                            <PaginationItem>
+                                                
+                                            </PaginationItem>
+                                            <PaginationItem>
+                                                <PaginationLink href="#">1</PaginationLink>
+                                            </PaginationItem>
+                                            <PaginationItem>
+                                            <PaginationLink href="#">2</PaginationLink>
+                                            </PaginationItem>
+                                            <PaginationItem>
+                                            <PaginationLink href="#">3</PaginationLink>
+                                            </PaginationItem>
+                                            <PaginationItem>
+                                            <PaginationLink href="#">4</PaginationLink>
+                                            </PaginationItem>
+                                            <PaginationItem>
+                                            <PaginationLink href="#">5</PaginationLink>
+                                            </PaginationItem>
+                                            <PaginationItem>
+                                            <PaginationLink href="#">></PaginationLink>
+                                            </PaginationItem>
+                                            <PaginationItem>
+                                            <PaginationLink href="#">>></PaginationLink>
+                                            </PaginationItem>
+                                        </PaginationContent>
+                                    </Pagination>
+                                </div>
+                            </TableCell>
+                        </TableRow>
             </div>
-        </div>
+        </div >
     );
 }

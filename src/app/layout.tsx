@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from './components/Header';
-import Hero from "./components/Hero";
-import FeaturesSection from './components/FeaturesSection';
-import Footer from "./components/Footer";
-import Newsletter from "./components/Newsletter";
-import InfoBlock from "./components/InfoBlock";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import FeaturesSection from "@/components/FeaturesSection";
+import Footer from "@/components/Footer";
+import Newsletter from "@/components/Newsletter";
+import InfoBlock from "@/components/InfoBlock";
 
 
 

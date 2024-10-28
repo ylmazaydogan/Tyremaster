@@ -1,4 +1,4 @@
-import InputField from '../components/Input';
+import InputField from '@/components/Input';
 
 const RegisterPage = () => {
     return (

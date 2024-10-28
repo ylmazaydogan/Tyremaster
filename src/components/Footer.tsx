@@ -97,11 +97,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-20">
                     <div className="flex flex-col xl:flex-row  mx-auto xl:w-full justify-between">
                         <div className="flex flex-col">
                             <span className="text-base text-white font-semibold uppercase font-poppins">Company</span>
-                            <div className="flex flex-col gap-6 mt-4 text-sm font-lato">
+                            <div className="flex flex-col gap-4 mt-4 text-sm font-lato">
                                 <a href="#" className="text-white ">About Us</a>
                                 <a href="#" className="text-white ">Terms & Conditions</a>
                                 <a href="#" className="text-white ">Privacy Policy</a>
@@ -109,7 +109,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col mt-12 xl:mt-0">
                             <span className="text-base text-white font-semibold uppercase font-poppins">Useful Links</span>
-                            <div className="flex flex-col gap-3 mt-4 text-sm font-lato ">
+                            <div className="flex flex-col gap-3 mt-4 text-sm font-lato mr-64 ">
                                 <a href="#" className="text-white ">Tyre Shop</a>
                                 <a href="#" className="text-white ">Contact us</a>
                                 <a href="#" className="text-white ">All brands</a>

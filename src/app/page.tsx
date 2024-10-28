@@ -1,28 +1,28 @@
 import Image from "next/image";
-import Newsletter from "./components/Newsletter";
-import BrandSection from "./components/BrandSection";
-import InfoBlock from "./components/InfoBlock";
-import Footer from "./components/Footer";
-import FeaturesSection from "./components/FeaturesSection";
-import Hero from "./components/Hero";
+import Newsletter from "@/components/Newsletter";
+
+import BrandsSection from "@/components/BrandSection";
+
+import InfoBlock from "@/components/InfoBlock";
+import Footer from "@/components/Footer";
+import FeaturesSection from "@/components/FeaturesSection";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-        
-    <div className="text-center container">
-      <Hero/>
-      <FeaturesSection/>
-      
-      
+
+    <div className="text-center">
+      <FeaturesSection />
+
       <p className="text-medium-gray text-sm tracking-wide mb-2 font-lato mt-3">ORDER YOUR TYRES EASILY</p>
       <h1 className="text-black font-bold text-4xl mx-auto font-poppins">B2B E-COMMERCE PLATFORM</h1>
       <p className="text-medium-gray text-base mt-4 font-lato">
         Streamlined tyre procurement for wholesalers: quick, easy, efficient, and competitive.
       </p>
-      
+
 
       <div className="container mx-auto py-12 flex flex-col md:flex-row items-center justify-between relative">
-        <div className="md:w-1/2 flex justify-center response">
+        <div className="flex items-center space-x-4 response relative">
           <Image
             src="/images/tyremasterpc.png"
             alt="iMac showing the platform"
@@ -30,7 +30,15 @@ export default function Home() {
             height={488}
             className="object-contain"
           />
+          <Image
+            src="/images/phone.png" 
+            alt="Phone showing the platform"
+            width={250}
+            height={450}
+            className="object-contain absolute left-96 top-80"
+          />
         </div>
+       
 
         <div className="md:w-1/2 text-left mt-8 md:mt-0 max-w-[486px] ml-[-20px]">
           <p className="text-black mt-6 text-base leading-relaxed mb-6 font-arimo ">
@@ -239,36 +247,36 @@ export default function Home() {
           </div> */}
         </div>
         <div className="pb-7 border-b mt-12 xl:mt-20">
-  <div className="w-[92%] xl:w-[83%] mx-auto">
-    <div className="flex items-center flex-col gap-2.5  mx-auto">
-      <p className="text-base text-medium-gray uppercase font-arimo">SEE OUR COLLECTION</p>
-      <p className="text-black text-4xl font-semibold uppercase text-center font-arimo">HOW WE WORK</p>
-      <p className="text-center text-gray text-base font-arimo">There are many variations of passages of lorem ipsum available.</p>
-    </div>
+          <div className="w-[92%] xl:w-[83%] mx-auto">
+            <div className="flex items-center flex-col gap-2.5  mx-auto">
+              <p className="text-base text-medium-gray uppercase font-arimo">SEE OUR COLLECTION</p>
+              <p className="text-black text-4xl font-semibold uppercase text-center font-arimo">HOW WE WORK</p>
+              <p className="text-center text-gray text-base font-arimo">There are many variations of passages of lorem ipsum available.</p>
+            </div>
 
-    <div className="flex flex-col xl:flex-row xl:divide-x divide-[#818181]/20 mt-10 justify-center xl:space-x-12">
-      
-      <div className="flex items-center text-left px-12"> 
-        <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">01.</span> 
-        <div className="flex flex-col gap-2 max-w-xs">
-          <p className="text-black text-lg font-semibold font-arimo">SELECT YOUR TYRES</p>
-          <p className="text-gray font-arimo text-base">Use the shop page or the product<br></br> catalog to select your tyres.</p>
-        </div>
-      </div>
+            <div className="flex flex-col xl:flex-row xl:divide-x divide-[#818181]/20 mt-10 justify-center xl:space-x-12">
 
-      <div className="flex items-center text-left px-12"> 
-        <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">02.</span> 
-        <div className="flex flex-col gap-2 max-w-xs">
-          <p className="text-black text-lg font-semibold font-arimo">PLACE YOUR ORDER</p>
-          <p className=" text-gray text-base font-arimo">Directly from the checkout or<br></br> by getting in touch with us.</p>
-        </div>
-      </div>
+              <div className="flex items-center text-left px-12">
+                <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">01.</span>
+                <div className="flex flex-col gap-2 max-w-xs">
+                  <p className="text-black text-lg font-semibold font-arimo">SELECT YOUR TYRES</p>
+                  <p className="text-gray font-arimo text-base">Use the shop page or the product<br></br> catalog to select your tyres.</p>
+                </div>
+              </div>
 
-      <div className="flex items-center text-left px-12"> 
-        <span className="text-black text-7xl xl:text-6xl font-bold mr-2">03.</span> 
-        <div className="flex flex-col gap-2 max-w-xs">
-          <p className="text-black text-lg font-semibold font-arimo">RECEIVE YOUR ORDER</p>
-          <p className=" text-gray font-arimo text-base">Receive your B2B order once<br></br> your order is confirmed.</p>
+              <div className="flex items-center text-left px-12">
+                <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">02.</span>
+                <div className="flex flex-col gap-2 max-w-xs">
+                  <p className="text-black text-lg font-semibold font-arimo">PLACE YOUR ORDER</p>
+                  <p className=" text-gray text-base font-arimo">Directly from the checkout or<br></br> by getting in touch with us.</p>
+                </div>
+              </div>
+
+              <div className="flex items-center text-left px-12">
+                <span className="text-black text-7xl xl:text-6xl font-bold mr-2">03.</span>
+                <div className="flex flex-col gap-2 max-w-xs">
+                  <p className="text-black text-lg font-semibold font-arimo">RECEIVE YOUR ORDER</p>
+                  <p className=" text-gray font-arimo text-base">Receive your B2B order once<br></br> your order is confirmed.</p>
                 </div>
               </div>
 
@@ -279,16 +287,16 @@ export default function Home() {
 
 
 
-              <Newsletter/>
-              <BrandSection/>
-              
-             
+        <Newsletter />
+        <BrandsSection />
+
+
 
 
 
       </section>
     </div>
-   
+
 
   );
 }
