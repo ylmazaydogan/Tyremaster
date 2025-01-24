@@ -38,16 +38,21 @@ const Header = () => {
                             <span className='text-xs text-black font-arimoHebrew'>We are available on WhatsApp!</span>
                         </a>
                     </div>
-                    <div className="flex items-center space-x-2 border-light-gray">
-                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            className='text-black'>
-                            <path d="M0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H14C14.5304 0 15.0391 0.210714 15.4142 0.585786C15.7893 0.960859 16 1.46957 16 2V10C16 10.5304 15.7893 11.0391 15.4142 11.4142C15.0391 11.7893 14.5304 12 14 12H2C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10V2ZM2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2V2.217L8 6.417L15 2.217V2C15 1.73478 14.8946 1.48043 14.7071 1.29289C14.5196 1.10536 14.2652 1 14 1H2ZM15 3.383L10.292 6.208L15 9.105V3.383ZM14.966 10.259L9.326 6.788L8 7.583L6.674 6.788L1.034 10.258C1.09083 10.4708 1.21632 10.6589 1.39099 10.7931C1.56566 10.9272 1.77975 11 2 11H14C14.2201 11 14.4341 10.9274 14.6088 10.7934C14.7834 10.6595 14.909 10.4716 14.966 10.259ZM1 9.105L5.708 6.208L1 3.383V9.105Z" fill="#171A1F" />
-                        </svg>
-                        <a href="#" className="hover:text-gray text-black text-xs font-arimo">NEWSLETTER</a>
+                    <div className="flex items-center justify-end space-x-2 border-light-gray">
 
-
-                        <div className="border-l border-light-gray h-6"></div>
-                        <a href="#" className="hover:text-gray text-black text-xs font-arimo">FAQS</a>
+                        <div className="flex items-center space-x-4">
+                            <div className="border-r border-white h-6"></div>
+                            <div className="flex items-center space-x-2">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    className='text-black'>
+                                    <path d="M0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H14C14.5304 0 15.0391 0.210714 15.4142 0.585786C15.7893 0.960859 16 1.46957 16 2V10C16 10.5304 15.7893 11.0391 15.4142 11.4142C15.0391 11.7893 14.5304 12 14 12H2C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10V2ZM2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2V2.217L8 6.417L15 2.217V2C15 1.73478 14.8946 1.48043 14.7071 1.29289C14.5196 1.10536 14.2652 1 14 1H2ZM15 3.383L10.292 6.208L15 9.105V3.383ZM14.966 10.259L9.326 6.788L8 7.583L6.674 6.788L1.034 10.258C1.09083 10.4708 1.21632 10.6589 1.39099 10.7931C1.56566 10.9272 1.77975 11 2 11H14C14.2201 11 14.4341 10.9274 14.6088 10.7934C14.7834 10.6595 14.909 10.4716 14.966 10.259ZM1 9.105L5.708 6.208L1 3.383V9.105Z" fill="#171A1F" />
+                                </svg>
+                                <a href="#" className="hover:text-gray text-black text-xs font-arimo">NEWSLETTER</a>
+                            </div>
+                            <div className="border-r border-white h-6"></div>
+                            <a href="#" className="hover:text-gray text-black text-xs font-arimo">FAQS</a>
+                            <div className="border-r border-white h-6"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,30 +65,58 @@ const Header = () => {
                             alt="TyreMaster Logo"
                             width="202"
                             height="94"
-                            className="w-36"
+                            className="w-[202px] h-[94px] object-contain"
                         />
                     </div>
 
-                    <div className="flex-1 max-w-lg">
-
-                        <input
-                            type="text"
-                            placeholder="Search for products"
-                            className="w-full px-4 py-2 border-light-gray bg-light-gray rounded-md shadow-sm focus:ring-2 focus:ring-green focus:outline-none text-sm font-lato"
-                        />
-
-
+                    <div className="flex-1 max-w-lg relative">
+                        <div className="relative">
+                            <svg
+                                width="100%"
+                                height="46"
+                                viewBox="0 0 596 46"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="absolute top-0 left-0"
+                                preserveAspectRatio="none"
+                            >
+                                <rect
+                                    x="0.5"
+                                    y="0.5"
+                                    width="99%"
+                                    height="45"
+                                    rx="8"
+                                    stroke="#171A1F"
+                                    strokeOpacity="0.1"
+                                    shapeRendering="crispEdges"
+                                />
+                            </svg>
+                            <input
+                                type="text"
+                                placeholder="Search for products"
+                                className="w-full h-[46px] px-4 bg-transparent relative z-10 focus:outline-none text-sm font-lato pr-10"
+                                style={{
+                                    WebkitAppearance: 'none',
+                                    borderRadius: '8px'
+                                }}
+                            />
+                            <div className="absolute right-3 top-1/2 -translate-y-1/2 z-10">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 7.93612C0 9.01699 0.201849 10.0327 0.605546 10.9834C1.02227 11.934 1.58223 12.761 2.28545 13.4642C2.98866 14.1674 3.81559 14.7273 4.76623 15.1441C5.71687 15.5478 6.73263 15.7496 7.81349 15.7496C8.75111 15.7496 9.6399 15.5933 10.4798 15.2808C11.3198 14.9683 12.0784 14.5385 12.7555 13.9916L17.5804 18.7969L18.6742 17.703L13.8689 12.8782C14.4159 12.201 14.8456 11.4424 15.1582 10.6025C15.4707 9.76252 15.627 8.87374 15.627 7.93612C15.627 6.85525 15.4251 5.8395 15.0214 4.88886C14.6047 3.93822 14.0448 3.11129 13.3415 2.40808C12.6383 1.70486 11.8114 1.14489 10.8608 0.728174C9.91011 0.324476 8.89436 0.122627 7.81349 0.122627C6.73263 0.122627 5.71687 0.324476 4.76623 0.728174C3.81559 1.14489 2.98866 1.70486 2.28545 2.40808C1.58223 3.11129 1.02227 3.93822 0.605546 4.88886C0.201849 5.8395 0 6.85525 0 7.93612ZM7.81349 14.1869C6.95401 14.1869 6.1401 14.0241 5.37178 13.6986C4.61647 13.373 3.95558 12.927 3.3891 12.3605C2.82262 11.794 2.3766 11.1331 2.05104 10.3778C1.72548 9.60951 1.5627 8.7956 1.5627 7.93612C1.5627 7.07664 1.72548 6.26273 2.05104 5.4944C2.3766 4.7391 2.82262 4.07821 3.3891 3.51173C3.95558 2.94525 4.61647 2.49923 5.37178 2.17367C6.1401 1.84811 6.95401 1.68533 7.81349 1.68533C8.67298 1.68533 9.48688 1.84811 10.2552 2.17367C11.0105 2.49923 11.6714 2.94525 12.2379 3.51173C12.8044 4.07821 13.2504 4.7391 13.5759 5.4944C13.9015 6.26273 14.0643 7.07664 14.0643 7.93612C14.0643 8.7956 13.9015 9.60951 13.5759 10.3778C13.2504 11.1331 12.8044 11.794 12.2379 12.3605C11.6714 12.927 11.0105 13.373 10.2552 13.6986C9.48688 14.0241 8.67298 14.1869 7.81349 14.1869Z" fill="#777777" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="flex items-center justify-end space-x-8">
+                    <div className="flex items-center justify-end space-x-8 mt-7">
                         <a href="#" className="flex items-center space-x-8 text-gray-100">
                             <span className="flex items-center px-4 py-2 border border-light-silver rounded-md space-x-2">
 
-                              
+
                                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="42" height="42" rx="4" fill="#171A1F" />
 
-                                   
+
                                     <svg x="11" y="11" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13.75 7.5C13.75 8.49456 13.3549 9.44839 12.6517 10.1517C11.9484 10.8549 10.9946 11.25 10 11.25C9.00544 11.25 8.05161 10.8549 7.34835 10.1517C6.64509 9.44839 6.25 8.49456 6.25 7.5C6.25 6.50544 6.64509 5.55161 7.34835 4.84835C8.05161 4.14509 9.00544 3.75 10 3.75C10.9946 3.75 11.9484 4.14509 12.6517 4.84835C13.3549 5.55161 13.75 6.50544 13.75 7.5Z" fill="white" />
                                         <path fillRule="evenodd" clipRule="evenodd" d="M0 10C0 7.34783 1.05357 4.8043 2.92893 2.92893C4.8043 1.05357 7.34783 0 10 0C12.6522 0 15.1957 1.05357 17.0711 2.92893C18.9464 4.8043 20 7.34783 20 10C20 12.6522 18.9464 15.1957 17.0711 17.0711C15.1957 18.9464 12.6522 20 10 20C7.34783 20 4.8043 18.9464 2.92893 17.0711C1.05357 15.1957 0 12.6522 0 10ZM10 1.25C8.35222 1.25009 6.73796 1.71545 5.343 2.59253C3.94805 3.46962 2.8291 4.72276 2.11496 6.20774C1.40081 7.69272 1.12048 9.34917 1.30625 10.9864C1.49201 12.6237 2.13632 14.1753 3.165 15.4625C4.0525 14.0325 6.00625 12.5 10 12.5C13.9937 12.5 15.9463 14.0313 16.835 15.4625C17.8637 14.1753 18.508 12.6237 18.6938 10.9864C18.8795 9.34917 18.5992 7.69272 17.885 6.20774C17.1709 4.72276 16.052 3.46962 14.657 2.59253C13.262 1.71545 11.6478 1.25009 10 1.25Z" fill="white" />
@@ -98,10 +131,14 @@ const Header = () => {
 
                 </div>
 
-                <nav className="container mx-auto mt-4 flex justify-between items-center">
-                    <ul className="flex space-x-8 text-black">
+                <div className="w-full border-t border-light-silver-2"></div>
+                <nav className="container mx-auto mt-4 flex justify-between items-center pt-4">
+                    <ul className="flex space-x-8 text-black items-center">
                         <li>
-                            <a href="#" className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray">
+                            <a
+                                href="#"
+                                className="w-[160px] h-[40px] bg-black text-white rounded-md flex items-center justify-center  text-sm font-semibold  mr-3 font-arimo"
+                            >
                                 TYRES CATALOG
                             </a>
                         </li>

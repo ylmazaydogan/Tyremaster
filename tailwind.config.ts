@@ -32,6 +32,7 @@ const config: Config = {
 			'5xl': '3rem', 
 			'6xl': '4rem', 
 			'xs-custom': '0.8125rem',
+			'15px': '0.9375rem',
 		},
 
 		 colors: {
@@ -45,6 +46,7 @@ const config: Config = {
 			'light-silver': '#E8E8E8',
 			'dark-silver ': '#F4F4F4',
 			'dark-gray': '#242424',
+			'light-silver-2':'#C6C6C6',
 
 		   },
 
@@ -68,7 +70,13 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+
+		//Özel boyutlar
+		  spacing: {
+			"552": "552px",
+			"148": "148px",
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

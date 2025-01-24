@@ -9,11 +9,11 @@ const Footer = () => {
                         <a href="#"
                             className="self-center xl:self-start flex items-center">
                             <Image
-                                src="/images/tyremaster1.png"
+                                src="/images/tyremasteryeni.jpg"
                                 alt="TyreMaster Logo"
-                                width={200}
-                                height={94}
-                                className="w-36"
+                                width={208}
+                                height={120}
+                                className="mb-1"
                             />
                         </a>
                         <p className="text-white mt-10 xl:mt-2 text-sm md:text-center xl:text-start font-arimo">

@@ -12,7 +12,9 @@ export default function Home() {
   return (
 
     <div className="text-center">
+      <Hero/>
       <FeaturesSection />
+      
 
       <p className="text-medium-gray text-sm tracking-wide mb-2 font-lato mt-3">ORDER YOUR TYRES EASILY</p>
       <h1 className="text-black font-bold text-4xl mx-auto font-poppins">B2B E-COMMERCE PLATFORM</h1>
@@ -66,33 +68,42 @@ export default function Home() {
 
 
       <section className="py-16 bg-white">
+        <div className="border-b border-light-silver-2 pt-12"></div>
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-medium-gray text-sm mb-3 font-lato">WHO WE ARE?</p>
+            <p className="text-medium-gray text-sm mb-3 font-lato pt-9">WHO WE ARE?</p>
             <h2 className="text-4xl font-bold text-black mb-4 font-poppins">ABOUT TYREMASTER</h2>
-            <p className="text-medium-gray text-base font-lato">
+            <p className="text-gray text-base font-lato">
               There are many variations of tyres that you can find for your specific need.
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-between mt-12">
-            <div className="md:w-1/2">
-              <h3 className="text-base font-bold text-black mb-12 font-arimo">
+          <div className="flex flex-col md:flex-row items-start justify-between mt-12">
+            <div className="md:w-1/2 ml-12 pt-14">
+              <h3 className="text-base font-bold text-black  font-arimo mb-9 text-left ">
                 WE ARE TYREMASTER, YOUR TIRE SOURCING PLATFORM
               </h3>
-              <p className="text-base text-black mb-4 leading-8 font-arimo">
-                Tyre Master, your premier destination for tyres procurement in Europe. Enjoy Welcome to a tire distribution experience you can rely on.
+              <p className="text-base text-black leading-8 font-arimo text-left">
+                Tyre Master, your premier destination for tyres procurement in<br></br> Europe. Enjoy Welcome to a tire distribution experience you can rely<br></br> on.
               </p>
-              <p className="text-base text-black mb-6 leading-8 font-arimo">
-                Tyremaster is the seasoned European tyre sourcing platform with strong industry expertise. We proudly offer a vast catalog of over 50,000 tyre references, serving businesses across all European regions with bulk sales capabilities. Trust in our experience and comprehensive inventory to meet your wholesale tire needs efficiently and reliably.
+              <p className="text-base text-black leading-8 font-arimo text-left">
+              Tyremaster is the seasoned European tyre sourcing platform with<br></br> strong industry expertise. We proudly offer a vast catalog of over<br></br> 50,000 tyre references, serving businesses across all European <br></br>regions with bulk sales capabilities. Trust in our experience and<br></br> comprehensive inventory to meet your wholesale tire needs<br></br> efficiently and reliably.
               </p>
+              
 
-              <a href="#" className="inline-block bg-green-500 text-white px-8 py-3 rounded-md hover:bg-green-600 transition">
-                LEARN MORE
-              </a>
+              <div className="flex justify-start mt-10">
+                <a 
+                  href="#" 
+                  className="inline-flex items-center justify-center w-[210px] h-[52px] bg-green text-white font-arimo text-base transition"
+                >
+                  LEARN MORE
+                </a>
+              </div>
             </div>
 
-            <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center ml-48">
+            
+
+            <div className="md:w-1/2 mt-24 md:mt-0 flex justify-center ml-48">
               <Image
                 src="/images/tyremasterabout.png"
                 alt="Tyremaster Office"
@@ -102,8 +113,12 @@ export default function Home() {
               />
             </div>
           </div>
+          
         </div>
+          <div className="border-b border-light-silver-2 pt-12"></div>
+        
       </section>
+     
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
@@ -158,8 +173,6 @@ export default function Home() {
             <div className="bg-white p-6  flex items-center">
               <div className="bg-white p-4 inline-block rounded-full mr-6">
                 <svg width="55" height="52" viewBox="0 0 55 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.284 4.42799V20.1488L35.2799 44.1447L51.0007 28.424L27.0048 4.42799H11.284ZM7.85599 4.42799C7.85599 3.51883 8.21715 2.64691 8.86003 2.00404C9.5029 1.36116 10.3748 1 11.284 1H27.0048C27.9139 1.00019 28.7856 1.36148 29.4284 2.0044L53.4243 26.0004C54.067 26.6432 54.428 27.515 54.428 28.424C54.428 29.3329 54.067 30.2047 53.4243 30.8476L37.7035 46.5683C37.0607 47.211 36.1889 47.572 35.2799 47.572C34.371 47.572 33.4992 47.211 32.8564 46.5683L8.86039 22.5724C8.21747 21.9296 7.85618 21.0579 7.85599 20.1488V4.42799Z" fill="#1FCE6D" />
-                  <path d="M19.854 14.712C19.3994 14.712 18.9634 14.5314 18.642 14.21C18.3206 13.8885 18.14 13.4526 18.14 12.998C18.14 12.5434 18.3206 12.1074 18.642 11.786C18.9634 11.4646 19.3994 11.284 19.854 11.284C20.3085 11.284 20.7445 11.4646 21.066 11.786C21.3874 12.1074 21.568 12.5434 21.568 12.998C21.568 13.4526 21.3874 13.8885 21.066 14.21C20.7445 14.5314 20.3085 14.712 19.854 14.712ZM19.854 18.14C21.2177 18.14 22.5256 17.5982 23.4899 16.6339C24.4542 15.6696 24.996 14.3617 24.996 12.998C24.996 11.6342 24.4542 10.3264 23.4899 9.36204C22.5256 8.39773 21.2177 7.85599 19.854 7.85599C18.4902 7.85599 17.1823 8.39773 16.218 9.36204C15.2537 10.3264 14.712 11.6342 14.712 12.998C14.712 14.3617 15.2537 15.6696 16.218 16.6339C17.1823 17.5982 18.4902 18.14 19.854 18.14ZM4.42799 21.8628C4.42819 22.7719 4.78948 23.6436 5.4324 24.2864L30.995 49.8489L30.8475 49.9963C30.2047 50.639 29.3329 51 28.424 51C27.515 51 26.6432 50.639 26.0004 49.9963L2.0044 26.0004C1.36148 25.3576 1.00019 24.4859 1 23.5768L1 7.85599C1 6.94683 1.36116 6.0749 2.00404 5.43203C2.64691 4.78916 3.51883 4.42799 4.42799 4.42799V21.8628Z" fill="#1FCE6D" />
                   <path d="M11.284 4.42799V20.1488L35.2799 44.1447L51.0007 28.424L27.0048 4.42799H11.284ZM7.85599 4.42799C7.85599 3.51883 8.21715 2.64691 8.86003 2.00404C9.5029 1.36116 10.3748 1 11.284 1H27.0048C27.9139 1.00019 28.7856 1.36148 29.4284 2.0044L53.4243 26.0004C54.067 26.6432 54.428 27.515 54.428 28.424C54.428 29.3329 54.067 30.2047 53.4243 30.8476L37.7035 46.5683C37.0607 47.211 36.1889 47.572 35.2799 47.572C34.371 47.572 33.4992 47.211 32.8564 46.5683L8.86039 22.5724C8.21747 21.9296 7.85618 21.0579 7.85599 20.1488V4.42799Z" stroke="white" />
                   <path d="M19.854 14.712C19.3994 14.712 18.9634 14.5314 18.642 14.21C18.3206 13.8885 18.14 13.4526 18.14 12.998C18.14 12.5434 18.3206 12.1074 18.642 11.786C18.9634 11.4646 19.3994 11.284 19.854 11.284C20.3085 11.284 20.7445 11.4646 21.066 11.786C21.3874 12.1074 21.568 12.5434 21.568 12.998C21.568 13.4526 21.3874 13.8885 21.066 14.21C20.7445 14.5314 20.3085 14.712 19.854 14.712ZM19.854 18.14C21.2177 18.14 22.5256 17.5982 23.4899 16.6339C24.4542 15.6696 24.996 14.3617 24.996 12.998C24.996 11.6342 24.4542 10.3264 23.4899 9.36204C22.5256 8.39773 21.2177 7.85599 19.854 7.85599C18.4902 7.85599 17.1823 8.39773 16.218 9.36204C15.2537 10.3264 14.712 11.6342 14.712 12.998C14.712 14.3617 15.2537 15.6696 16.218 16.6339C17.1823 17.5982 18.4902 18.14 19.854 18.14ZM4.42799 21.8628C4.42819 22.7719 4.78948 23.6436 5.4324 24.2864L30.995 49.8489L30.8475 49.9963C30.2047 50.639 29.3329 51 28.424 51C27.515 51 26.6432 50.639 26.0004 49.9963L2.0044 26.0004C1.36148 25.3576 1.00019 24.4859 1 23.5768L1 7.85599C1 6.94683 1.36116 6.0749 2.00404 5.43203C2.64691 4.78916 3.51883 4.42799 4.42799 4.42799V21.8628Z" stroke="white" />
                 </svg>
