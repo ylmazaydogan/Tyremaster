@@ -3,7 +3,7 @@ import React from 'react';
 const RegisterPage = () => {
     return (
         <main className='flex-grow'>
-            <div className='grid lg:grid-cols-2 mt-10 lg:mt-12 lg:divide-x lg:divide-cool-gray responsive'>
+            <div className='grid lg:grid-cols-2 mt-10 lg:mt-12 lg:divide-x lg:divide-cool-gray'>
                 <div className='flex flex-col gap-2 lg:pl-56'>
                     <div className='flex gap-6 items-center'>
                         <span className='text-black font-semibold uppercase text-4xl font-poppins'>login</span>

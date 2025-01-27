@@ -99,7 +99,7 @@ const FeaturesSection = () => {
 
     return (
         <div className="border-b border-light-silver-2 w-full">
-            <div className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-2">
+            <div className="mx-14 py-10 px-4 sm:px-6 lg:px-2">
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col items-center text-center ">

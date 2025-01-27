@@ -12,9 +12,9 @@ export default function Home() {
   return (
 
     <div className="text-center">
-      <Hero/>
+      <Hero />
       <FeaturesSection />
-      
+
 
       <p className="text-medium-gray text-sm tracking-wide mb-2 font-lato mt-3">ORDER YOUR TYRES EASILY</p>
       <h1 className="text-black font-bold text-4xl mx-auto font-poppins">B2B E-COMMERCE PLATFORM</h1>
@@ -33,26 +33,26 @@ export default function Home() {
             className="object-contain"
           />
           <Image
-            src="/images/phone.png" 
+            src="/images/phone.png"
             alt="Phone showing the platform"
             width={250}
             height={450}
-            className="object-contain absolute left-96 top-80"
+            className="object-contain absolute left-96 top-80 mix-blend-multiply" // mix blend ekleyip arka planı ayarladım.
           />
         </div>
-       
 
-        <div className="md:w-1/2 text-left mt-8 md:mt-0 max-w-[486px] ml-[-20px]">
+
+        <div className="md:w-1/2 text-left mt-8 md:mt-0">
           <p className="text-black mt-6 text-base leading-relaxed mb-6 font-arimo ">
-            Experience effortless tyre procurement with our easy-to-use B2B platform. Designed for wholesalers, our site simplifies the ordering process, enabling you to efficiently browse, select, and place orders. Enjoy competitive pricing and a seamless transaction experience. With competitive pricing and a wide selection of tyres, we cater to all your business needs.
-          </p>
-          <p className="text-black mt-4 text-base leading-relaxed mb-6 font-arimo">
-            Our streamlined ordering system saves you time, allowing you to focus on what matters most—growing your business. Join us today and experience the convenience of a platform designed specifically for tyre wholesalers. Simplify your procurement process and discover how easy ordering tyres can be!
-          </p>
+            Experience effortless tyre procurement with our easy-to-use B2B platform. Designed for wholesalers, our site simplifies the ordering process, enabling you to efficiently browse, select, and place orders. Enjoy competitive pricing and a seamless transaction experience.
+            With competitive pricing and a wide selection of tyres, we cater to all your business needs.
+
+            Our streamlined ordering system saves you time, allowing you to focus on what matters most—growing your business. Join us today and experience the convenience of a platform designed specifically for tyre wholesalers. Simplify your procurement process and discover how easy ordering tyres can be!          </p>
+
           <div className="flex justify-start space-x-4 mt-8">
             <a
               href="#"
-              className="bg-green text-white px-6 py-3 rounded-lg hover:text-white transition"
+              className="bg-green text-white px-6 py-3  hover:text-white transition"
             >
               REGISTER NOW
             </a>
@@ -67,9 +67,9 @@ export default function Home() {
       </div>
 
 
-      <section className="py-16 bg-white">
-        <div className="border-b border-light-silver-2 pt-12"></div>
-        <div className="container mx-auto px-6 lg:px-8">
+      <section className="py-16 bg-white  border-y border-light-silver-2 mt-40">
+
+        <div className=" mx-auto responsive px-6 lg:px-8">
           <div className="text-center">
             <p className="text-medium-gray text-sm mb-3 font-lato pt-9">WHO WE ARE?</p>
             <h2 className="text-4xl font-bold text-black mb-4 font-poppins">ABOUT TYREMASTER</h2>
@@ -79,7 +79,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col md:flex-row items-start justify-between mt-12">
-            <div className="md:w-1/2 ml-12 pt-14">
+            <div className=" md:w-1/2 ml-12 pt-14">
               <h3 className="text-base font-bold text-black  font-arimo mb-9 text-left ">
                 WE ARE TYREMASTER, YOUR TIRE SOURCING PLATFORM
               </h3>
@@ -87,13 +87,13 @@ export default function Home() {
                 Tyre Master, your premier destination for tyres procurement in<br></br> Europe. Enjoy Welcome to a tire distribution experience you can rely<br></br> on.
               </p>
               <p className="text-base text-black leading-8 font-arimo text-left">
-              Tyremaster is the seasoned European tyre sourcing platform with<br></br> strong industry expertise. We proudly offer a vast catalog of over<br></br> 50,000 tyre references, serving businesses across all European <br></br>regions with bulk sales capabilities. Trust in our experience and<br></br> comprehensive inventory to meet your wholesale tire needs<br></br> efficiently and reliably.
+                Tyremaster is the seasoned European tyre sourcing platform with<br></br> strong industry expertise. We proudly offer a vast catalog of over<br></br> 50,000 tyre references, serving businesses across all European <br></br>regions with bulk sales capabilities. Trust in our experience and<br></br> comprehensive inventory to meet your wholesale tire needs<br></br> efficiently and reliably.
               </p>
-              
+
 
               <div className="flex justify-start mt-10">
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="inline-flex items-center justify-center w-[210px] h-[52px] bg-green text-white font-arimo text-base transition"
                 >
                   LEARN MORE
@@ -101,27 +101,30 @@ export default function Home() {
               </div>
             </div>
 
-            
 
-            <div className="md:w-1/2 mt-24 md:mt-0 flex justify-center ml-48">
+
+            <div className="md:w-1/2 mt-24 md:mt-0 flex justify-center ml-48 ">
+
+
+
               <Image
                 src="/images/tyremasterabout.png"
                 alt="Tyremaster Office"
                 width={606}
                 height={404}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg mt-10"
               />
             </div>
           </div>
-          
-        </div>
-          <div className="border-b border-light-silver-2 pt-12"></div>
-        
-      </section>
-     
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 lg:px-8">
+        </div>
+
+
+      </section>
+
+
+      <section className="py-16 bg-white   ">
+        <div className=" mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-medium-gray text-sm mb-4 font-arimo">MORE ABOUT US</p>
             <h2 className="text-4xl font-bold text-black mb-4 font-arimo">WHY CHOOSE US</h2>
@@ -177,131 +180,128 @@ export default function Home() {
                   <path d="M19.854 14.712C19.3994 14.712 18.9634 14.5314 18.642 14.21C18.3206 13.8885 18.14 13.4526 18.14 12.998C18.14 12.5434 18.3206 12.1074 18.642 11.786C18.9634 11.4646 19.3994 11.284 19.854 11.284C20.3085 11.284 20.7445 11.4646 21.066 11.786C21.3874 12.1074 21.568 12.5434 21.568 12.998C21.568 13.4526 21.3874 13.8885 21.066 14.21C20.7445 14.5314 20.3085 14.712 19.854 14.712ZM19.854 18.14C21.2177 18.14 22.5256 17.5982 23.4899 16.6339C24.4542 15.6696 24.996 14.3617 24.996 12.998C24.996 11.6342 24.4542 10.3264 23.4899 9.36204C22.5256 8.39773 21.2177 7.85599 19.854 7.85599C18.4902 7.85599 17.1823 8.39773 16.218 9.36204C15.2537 10.3264 14.712 11.6342 14.712 12.998C14.712 14.3617 15.2537 15.6696 16.218 16.6339C17.1823 17.5982 18.4902 18.14 19.854 18.14ZM4.42799 21.8628C4.42819 22.7719 4.78948 23.6436 5.4324 24.2864L30.995 49.8489L30.8475 49.9963C30.2047 50.639 29.3329 51 28.424 51C27.515 51 26.6432 50.639 26.0004 49.9963L2.0044 26.0004C1.36148 25.3576 1.00019 24.4859 1 23.5768L1 7.85599C1 6.94683 1.36116 6.0749 2.00404 5.43203C2.64691 4.78916 3.51883 4.42799 4.42799 4.42799V21.8628Z" stroke="white" />
                 </svg>
 
+
+               
+
+                </div>
+                <div className="flex-grow">
+
+                  <h3 className="text-base font-bold font-poppins text-black">COMPETITIVE PRICING</h3>
+
+                  <p className="text-base text-medium-gray leading-8 mt-2 font-arimo">
+                    We offer competitive pricing, ensuring that you get the best value for your investment.
+                  </p>
+                </div>
               </div>
-              <div className="flex-grow">
-                <h3 className="text-base font-bold font-poppins">COMPETITIVE PRICING</h3>
-                <p className="text-base text-medium-gray leading-8 mt-2 font-arimo mb-5">
-                  We offer competitive pricing, ensuring that you get the best value for your investment.
-                </p>
+
+
+
+              <div className="bg-white p-6  flex items-center">
+                <div className="bg-white p-4 inline-block rounded-full mr-6">
+                  <svg width="42" height="52" viewBox="0 0 42 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 4.33333C16.5797 4.33333 12.3405 6.08928 9.21489 9.21489C6.08928 12.3405 4.33333 16.5797 4.33333 21V24.3333H7.66667C8.55072 24.3333 9.39857 24.6845 10.0237 25.3096C10.6488 25.9348 11 26.7826 11 27.6667V37.6667C11 38.5507 10.6488 39.3986 10.0237 40.0237C9.39857 40.6488 8.55072 41 7.66667 41H4.33333C3.44928 41 2.60143 40.6488 1.97631 40.0237C1.35119 39.3986 1 38.5507 1 37.6667V21C1 18.3736 1.51732 15.7728 2.52241 13.3463C3.5275 10.9198 5.00069 8.71504 6.85786 6.85786C8.71504 5.00069 10.9198 3.5275 13.3463 2.52241C15.7728 1.51732 18.3736 1 21 1C23.6264 1 26.2272 1.51732 28.6537 2.52241C31.0802 3.5275 33.285 5.00069 35.1421 6.85786C36.9993 8.71504 38.4725 10.9198 39.4776 13.3463C40.4827 15.7728 41 18.3736 41 21V41C41 43.2101 40.122 45.3298 38.5592 46.8926C36.9964 48.4554 34.8768 49.3333 32.6667 49.3333H25.5533C25.2608 49.8401 24.84 50.2608 24.3333 50.5534C23.8266 50.846 23.2518 51 22.6667 51H19.3333C18.4493 51 17.6014 50.6488 16.9763 50.0237C16.3512 49.3986 16 48.5507 16 47.6667C16 46.7826 16.3512 45.9348 16.9763 45.3096C17.6014 44.6845 18.4493 44.3333 19.3333 44.3333H22.6667C23.2518 44.3334 23.8266 44.4874 24.3333 44.7799C24.84 45.0725 25.2608 45.4933 25.5533 46H32.6667C33.9928 46 35.2645 45.4732 36.2022 44.5355C37.1399 43.5979 37.6667 42.3261 37.6667 41H34.3333C33.4493 41 32.6014 40.6488 31.9763 40.0237C31.3512 39.3986 31 38.5507 31 37.6667V27.6667C31 26.7826 31.3512 25.9348 31.9763 25.3096C32.6014 24.6845 33.4493 24.3333 34.3333 24.3333H37.6667V21C37.6667 18.8113 37.2356 16.644 36.398 14.6219C35.5604 12.5998 34.3328 10.7625 32.7851 9.21489C31.2375 7.66724 29.4002 6.43959 27.3781 5.60201C25.356 4.76443 23.1887 4.33333 21 4.33333Z" fill="#1FCE6D" stroke="white" stroke-width="0.8" />
+                  </svg>
+
+                </div>
+                <div className="flex-grow mr-4">
+                  <h3 className="text-base font-bold font-public-sans text-black">EXCEPTIONAL SERVICE</h3>
+                  <p className="text-base text-medium-gray leading-8 mt-2 font-arimo">
+                    You can trust us to be responsive, knowledgeable, and ready to assist you.
+                  </p>
+                </div>
+              </div>
+
+
+              <div className="bg-white p-6  flex items-center">
+                <div className="bg-white p-4 inline-block rounded-full mr-6">
+                  <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1472_122)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M50.48 47.713H0.47998V22.8414C0.47998 22.5618 0.591014 22.2941 0.788731 22.0964C0.986448 21.8987 1.25462 21.7874 1.53423 21.7874C1.81385 21.7874 2.08202 21.8987 2.27973 22.0964C2.47745 22.2941 2.58857 22.5618 2.58857 22.8414V45.6274H48.3714V22.7556C48.3714 22.476 48.4825 22.2083 48.6802 22.0106C48.8779 21.8129 49.1461 21.7016 49.4257 21.7016C49.7053 21.7016 49.9735 21.8129 50.1712 22.0106C50.3689 22.2083 50.48 22.476 50.48 22.7556V47.713ZM24.4242 22.0845V4.47015C24.4343 4.19706 24.5498 3.93853 24.7466 3.74888C24.9434 3.55924 25.206 3.45312 25.4793 3.45312C25.7526 3.45312 26.0151 3.55924 26.2119 3.74888C26.4086 3.93853 26.5242 4.19706 26.5342 4.47015V22.0845H34.4428C34.6695 22.0542 34.9001 22.0714 35.1199 22.1348C35.3396 22.1981 35.5438 22.3065 35.7196 22.4528C35.8954 22.5992 36.0389 22.7804 36.141 22.9851C36.2431 23.1897 36.3016 23.413 36.3129 23.6415C36.2968 24.1191 36.1104 24.575 35.7872 24.927L27.2457 34.9842C27.0325 35.2474 26.7631 35.46 26.4574 35.6057C26.1517 35.7515 25.8173 35.8269 25.4786 35.8269C25.1399 35.8269 24.8054 35.7515 24.4997 35.6057C24.1939 35.46 23.9247 35.2474 23.7114 34.9842L15.1671 24.927C14.845 24.5746 14.6595 24.1187 14.6442 23.6415C14.6557 23.4132 14.7144 23.1902 14.8164 22.9858C14.9185 22.7813 15.0619 22.5998 15.2374 22.4535C15.413 22.3072 15.6169 22.199 15.8364 22.1355C16.0559 22.0719 16.2863 22.0547 16.5129 22.0845H24.4242ZM17.2814 24.1702L25.3271 33.6561C25.3427 33.6821 25.3648 33.7032 25.3912 33.7182C25.4176 33.7332 25.4474 33.7412 25.4778 33.7412C25.5082 33.7412 25.5381 33.7332 25.5645 33.7182C25.5909 33.7032 25.613 33.6821 25.6286 33.6561L33.6714 24.1702H17.2871H17.2814Z" fill="#1FCE6D" stroke="white" stroke-width="0.8" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1472_109">
+                        <rect width="50" height="50" fill="white" transform="translate(0.47998 0.570312)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </div>
+                <div className="flex-grow">
+                  <h3 className="text-base font-bold font-poppins text-black">EXPERIENCE THE DIFFERENCE</h3>
+                  <p className="text-base text-medium-gray leading-8 mt-2 font-arimo">
+                    Explore our extensive catalog, and get your quote. Your success is our priority.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white p-6  flex items-center">
+                <div className="bg-white p-4 inline-block rounded-full mr-6">
+                  <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1472_126)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M47.231 5.11757H4.70723C3.73117 5.10359 2.78946 5.47721 2.08875 6.15683C1.38804 6.83645 0.98558 7.76647 0.969727 8.7425V35.9814C0.98558 36.9574 1.38804 37.8869 2.08875 38.5665C2.78946 39.2461 3.73117 39.6203 4.70723 39.6063H21.5152C21.5432 40.9745 21.3118 42.3353 20.8333 43.6174H17.9356C17.7774 43.6174 17.6208 43.6484 17.4747 43.709C17.3285 43.7695 17.2397 43.8585 17.1792 43.9703C17.1187 44.0822 17.0876 44.2148 17.0876 44.373C17.0876 44.5312 17.1187 44.688 17.1792 44.8341C17.2397 44.9803 17.3285 45.1129 17.4747 45.1734C17.6208 45.2339 17.7774 45.265 17.9356 45.265H34.0038C34.162 45.265 34.3186 45.2339 34.4648 45.1734C34.6109 45.1129 34.7437 45.0239 34.8555 44.9121C34.9674 44.8003 35.0561 44.6677 35.1167 44.5115C35.1772 44.3553 35.2084 44.1985 35.2084 44.0303C35.2084 43.8721 35.1772 43.7153 35.1167 43.5691C35.0561 43.4229 34.9674 43.2903 34.8555 43.1577C34.7437 43.0251 34.6109 42.9361 34.4648 42.8756C34.3186 42.8151 34.162 42.784 34.0038 42.784H31.1061C30.6277 41.5019 30.3963 40.1411 30.4243 38.7729H47.231C48.2069 38.786 49.1483 38.4119 49.849 37.7325C50.5497 37.0531 50.9527 36.1236 50.9697 35.1476V8.7425C50.9527 7.76666 50.5497 6.83733 49.849 6.15794C49.1483 5.47854 48.2069 5.10449 47.231 5.11757ZM49.0266 35.9814C49.023 36.2135 48.9737 36.4425 48.8815 36.6555C48.7893 36.8686 48.6561 37.0611 48.4893 37.2226C48.3226 37.3841 48.1255 37.5113 47.9096 37.5966C47.6937 37.6819 47.4631 37.7237 47.231 37.7198H4.70723C4.47488 37.724 4.24402 37.6823 4.0278 37.5971C3.81157 37.512 3.61422 37.3852 3.44713 37.2237C3.28004 37.0622 3.14646 36.8693 3.05401 36.6561C2.96156 36.4429 2.91205 36.2137 2.90836 35.9814V33.6177H49.0266V35.9814ZM2.90947 31.7428V8.7425C2.91635 8.27202 3.10966 7.82382 3.44692 7.49572C3.78418 7.16762 4.23785 6.98638 4.70834 6.99245H47.231C47.701 6.98699 48.154 7.1682 48.4906 7.49627C48.8272 7.82434 49.02 8.27252 49.0266 8.7425V31.7428H2.90947Z" fill="#1FCE6D" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1472_126">
+                        <rect width="50" height="50" fill="white" transform="translate(0.969727 0.570312)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </div>
+                <div className="flex-grow">
+                  <h3 className="text-base font-bold font-arimo ">TYRE PROCUREMENT</h3>
+                  <p className="text-base text-medium-gray leading-8 mt-2 font-arimo" >
+                    We've streamlined the ordering process, making it easy for you to get the tyres you need.
+                  </p>
+                </div>
               </div>
             </div>
 
 
-            <div className="bg-white p-6  flex items-center">
-              <div className="bg-white p-4 inline-block rounded-full mr-6">
-                <svg width="42" height="52" viewBox="0 0 42 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 4.33333C16.5797 4.33333 12.3405 6.08928 9.21489 9.21489C6.08928 12.3405 4.33333 16.5797 4.33333 21V24.3333H7.66667C8.55072 24.3333 9.39857 24.6845 10.0237 25.3096C10.6488 25.9348 11 26.7826 11 27.6667V37.6667C11 38.5507 10.6488 39.3986 10.0237 40.0237C9.39857 40.6488 8.55072 41 7.66667 41H4.33333C3.44928 41 2.60143 40.6488 1.97631 40.0237C1.35119 39.3986 1 38.5507 1 37.6667V21C1 18.3736 1.51732 15.7728 2.52241 13.3463C3.5275 10.9198 5.00069 8.71504 6.85786 6.85786C8.71504 5.00069 10.9198 3.5275 13.3463 2.52241C15.7728 1.51732 18.3736 1 21 1C23.6264 1 26.2272 1.51732 28.6537 2.52241C31.0802 3.5275 33.285 5.00069 35.1421 6.85786C36.9993 8.71504 38.4725 10.9198 39.4776 13.3463C40.4827 15.7728 41 18.3736 41 21V41C41 43.2101 40.122 45.3298 38.5592 46.8926C36.9964 48.4554 34.8768 49.3333 32.6667 49.3333H25.5533C25.2608 49.8401 24.84 50.2608 24.3333 50.5534C23.8266 50.846 23.2518 51 22.6667 51H19.3333C18.4493 51 17.6014 50.6488 16.9763 50.0237C16.3512 49.3986 16 48.5507 16 47.6667C16 46.7826 16.3512 45.9348 16.9763 45.3096C17.6014 44.6845 18.4493 44.3333 19.3333 44.3333H22.6667C23.2518 44.3334 23.8266 44.4874 24.3333 44.7799C24.84 45.0725 25.2608 45.4933 25.5533 46H32.6667C33.9928 46 35.2645 45.4732 36.2022 44.5355C37.1399 43.5979 37.6667 42.3261 37.6667 41H34.3333C33.4493 41 32.6014 40.6488 31.9763 40.0237C31.3512 39.3986 31 38.5507 31 37.6667V27.6667C31 26.7826 31.3512 25.9348 31.9763 25.3096C32.6014 24.6845 33.4493 24.3333 34.3333 24.3333H37.6667V21C37.6667 18.8113 37.2356 16.644 36.398 14.6219C35.5604 12.5998 34.3328 10.7625 32.7851 9.21489C31.2375 7.66724 29.4002 6.43959 27.3781 5.60201C25.356 4.76443 23.1887 4.33333 21 4.33333Z" fill="#1FCE6D" stroke="white" />
-                </svg>
-
+          </div>
+          <div className="pb-7 border-b border-light-silver-2 mt-12 xl:mt-20">
+            <div className="w-[92%] xl:w-[83%] mx-auto">
+              <div className="flex items-center flex-col gap-2.5  mx-auto">
+                <p className="text-base text-medium-gray uppercase font-arimo">SEE OUR COLLECTION</p>
+                <p className="text-black text-4xl font-semibold uppercase text-center font-arimo">HOW WE WORK</p>
+                <p className="text-center text-gray text-base font-arimo">There are many variations of passages of lorem ipsum available.</p>
               </div>
-              <div className="flex-grow mr-4">
-                <h3 className="text-base font-bold font-public-sans text-black">EXCEPTIONAL SERVICE</h3>
-                <p className="text-base text-medium-gray leading-8 mt-2 font-arimo">
-                  You can trust us to be responsive, knowledgeable, and ready to assist you.
-                </p>
-              </div>
-            </div>
+
+              <div className="flex flex-col xl:flex-row xl:divide-x divide-[#818181]/20 mt-10 justify-center xl:space-x-12">
+
+                <div className="flex items-center text-left px-12">
+                  <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">01.</span>
+                  <div className="flex flex-col gap-2 max-w-xs">
+                    <p className="text-black text-lg font-semibold font-arimo">SELECT YOUR TYRES</p>
+                    <p className="text-gray font-arimo text-base">Use the shop page or the product<br></br> catalog to select your tyres.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center text-left px-12">
+                  <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">02.</span>
+                  <div className="flex flex-col gap-2 max-w-xs">
+                    <p className="text-black text-lg font-semibold font-arimo">PLACE YOUR ORDER</p>
+                    <p className=" text-gray text-base font-arimo">Directly from the checkout or<br></br> by getting in touch with us.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center text-left px-12">
+                  <span className="text-black text-7xl xl:text-6xl font-bold mr-2">03.</span>
+                  <div className="flex flex-col gap-2 max-w-xs">
+                    <p className="text-black text-lg font-semibold font-arimo">RECEIVE YOUR ORDER</p>
+                    <p className=" text-gray font-arimo text-base">Receive your B2B order once<br></br> your order is confirmed.</p>
+                  </div>
+                </div>
 
 
-            <div className="bg-white p-6  flex items-center">
-              <div className="bg-white p-4 inline-block rounded-full mr-6">
-                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1472_122)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M50.48 47.713H0.47998V22.8414C0.47998 22.5618 0.591014 22.2941 0.788731 22.0964C0.986448 21.8987 1.25462 21.7874 1.53423 21.7874C1.81385 21.7874 2.08202 21.8987 2.27973 22.0964C2.47745 22.2941 2.58857 22.5618 2.58857 22.8414V45.6274H48.3714V22.7556C48.3714 22.476 48.4825 22.2083 48.6802 22.0106C48.8779 21.8129 49.1461 21.7016 49.4257 21.7016C49.7053 21.7016 49.9735 21.8129 50.1712 22.0106C50.3689 22.2083 50.48 22.476 50.48 22.7556V47.713ZM24.4242 22.0845V4.47015C24.4343 4.19706 24.5498 3.93853 24.7466 3.74888C24.9434 3.55924 25.206 3.45312 25.4793 3.45312C25.7526 3.45312 26.0151 3.55924 26.2119 3.74888C26.4086 3.93853 26.5242 4.19706 26.5342 4.47015V22.0845H34.4428C34.6695 22.0542 34.9001 22.0714 35.1199 22.1348C35.3396 22.1981 35.5438 22.3065 35.7196 22.4528C35.8954 22.5992 36.0389 22.7804 36.141 22.9851C36.2431 23.1897 36.3016 23.413 36.3129 23.6415C36.2968 24.1191 36.1104 24.575 35.7872 24.927L27.2457 34.9842C27.0325 35.2474 26.7631 35.46 26.4574 35.6057C26.1517 35.7515 25.8173 35.8269 25.4786 35.8269C25.1399 35.8269 24.8054 35.7515 24.4997 35.6057C24.1939 35.46 23.9247 35.2474 23.7114 34.9842L15.1671 24.927C14.845 24.5746 14.6595 24.1187 14.6442 23.6415C14.6557 23.4132 14.7144 23.1902 14.8164 22.9858C14.9185 22.7813 15.0619 22.5998 15.2374 22.4535C15.413 22.3072 15.6169 22.199 15.8364 22.1355C16.0559 22.0719 16.2863 22.0547 16.5129 22.0845H24.4242ZM17.2814 24.1702L25.3271 33.6561C25.3427 33.6821 25.3648 33.7032 25.3912 33.7182C25.4176 33.7332 25.4474 33.7412 25.4778 33.7412C25.5082 33.7412 25.5381 33.7332 25.5645 33.7182C25.5909 33.7032 25.613 33.6821 25.6286 33.6561L33.6714 24.1702H17.2871H17.2814Z" fill="#1FCE6D" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1472_122">
-                      <rect width="50" height="50" fill="white" transform="translate(0.47998 0.570312)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-              </div>
-              <div className="flex-grow">
-                <h3 className="text-base font-bold font-poppins text-black">EXPERIENCE THE DIFFERENCE</h3>
-                <p className="text-base text-medium-gray leading-8 mt-2 font-arimo">
-                  Explore our extensive catalog, and get your quote. Your success is our priority.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white p-6  flex items-center">
-              <div className="bg-white p-4 inline-block rounded-full mr-6">
-                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1472_126)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M47.231 5.11757H4.70723C3.73117 5.10359 2.78946 5.47721 2.08875 6.15683C1.38804 6.83645 0.98558 7.76647 0.969727 8.7425V35.9814C0.98558 36.9574 1.38804 37.8869 2.08875 38.5665C2.78946 39.2461 3.73117 39.6203 4.70723 39.6063H21.5152C21.5432 40.9745 21.3118 42.3353 20.8333 43.6174H17.9356C17.7774 43.6174 17.6208 43.6484 17.4747 43.709C17.3285 43.7695 17.1958 43.8585 17.0839 43.9703C16.9721 44.0822 16.8833 44.2148 16.8228 44.361C16.7622 44.5071 16.7311 44.6639 16.7311 44.822C16.7311 44.9802 16.7622 45.137 16.8228 45.2831C16.8833 45.4293 16.9721 45.5619 17.0839 45.6738C17.1958 45.7856 17.3285 45.8746 17.4747 45.9351C17.6208 45.9956 17.7774 46.0267 17.9356 46.0267H34.0038C34.162 46.0267 34.3186 45.9956 34.4648 45.9351C34.6109 45.8746 34.7437 45.7856 34.8555 45.6738C34.9674 45.5619 35.0561 45.4293 35.1167 45.2831C35.1772 45.137 35.2084 44.9802 35.2084 44.822C35.2084 44.6639 35.1772 44.5071 35.1167 44.361C35.0561 44.2148 34.9674 44.0822 34.8555 43.9703C34.7437 43.8585 34.6109 43.7695 34.4648 43.709C34.3186 43.6484 34.162 43.6174 34.0038 43.6174H31.1061C30.6277 42.3353 30.3963 40.9745 30.4243 39.6063H47.231C48.2069 39.6194 49.1483 39.2453 49.849 38.5659C50.5497 37.8865 50.9527 36.9572 50.9697 35.9814V8.7425C50.9527 7.76666 50.5497 6.83733 49.849 6.15794C49.1483 5.47854 48.2069 5.10449 47.231 5.11757ZM49.0266 35.9814C49.023 36.2135 48.9737 36.4425 48.8815 36.6555C48.7893 36.8686 48.6561 37.0611 48.4893 37.2226C48.3226 37.3841 48.1255 37.5113 47.9096 37.5966C47.6937 37.6819 47.4631 37.7237 47.231 37.7198H4.70723C4.47488 37.724 4.24402 37.6823 4.0278 37.5971C3.81157 37.512 3.61422 37.3852 3.44713 37.2237C3.28004 37.0622 3.14646 36.8693 3.05401 36.6561C2.96156 36.4429 2.91205 36.2137 2.90836 35.9814V33.6177H49.0266V35.9814ZM2.90947 31.7428V8.7425C2.91635 8.27202 3.10966 7.82382 3.44692 7.49572C3.78418 7.16762 4.23785 6.98638 4.70834 6.99245H47.231C47.701 6.98699 48.154 7.1682 48.4906 7.49627C48.8272 7.82434 49.02 8.27252 49.0266 8.7425V31.7428H2.90947Z" fill="#1FCE6D" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1472_126">
-                      <rect width="50" height="50" fill="white" transform="translate(0.969727 0.570312)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-              </div>
-              <div className="flex-grow">
-                <h3 className="text-base font-bold font-arimo ">TYRE PROCUREMENT</h3>
-                <p className="text-base text-medium-gray leading-8 mt-2 font-arimo" >
-                  We've streamlined the ordering process, making it easy for you to get the tyres you need.
-                </p>
               </div>
             </div>
           </div>
 
-          {/* <div className="xl:pl-3 xl:border-l flex flex-shrink-0 flex-col items-center gap-5 mt-10 xl:mt-0 ">
-            <Image
-              src="/images/tyremasterwheel.jpeg"
-              alt="tyremasterwhell"
-              width={268}
-              height={216}
-              className="object-contain mb-4"
-            />
-         
-          </div> */}
-        </div>
-        <div className="pb-7 border-b mt-12 xl:mt-20">
-          <div className="w-[92%] xl:w-[83%] mx-auto">
-            <div className="flex items-center flex-col gap-2.5  mx-auto">
-              <p className="text-base text-medium-gray uppercase font-arimo">SEE OUR COLLECTION</p>
-              <p className="text-black text-4xl font-semibold uppercase text-center font-arimo">HOW WE WORK</p>
-              <p className="text-center text-gray text-base font-arimo">There are many variations of passages of lorem ipsum available.</p>
-            </div>
-
-            <div className="flex flex-col xl:flex-row xl:divide-x divide-[#818181]/20 mt-10 justify-center xl:space-x-12">
-
-              <div className="flex items-center text-left px-12">
-                <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">01.</span>
-                <div className="flex flex-col gap-2 max-w-xs">
-                  <p className="text-black text-lg font-semibold font-arimo">SELECT YOUR TYRES</p>
-                  <p className="text-gray font-arimo text-base">Use the shop page or the product<br></br> catalog to select your tyres.</p>
-                </div>
-              </div>
-
-              <div className="flex items-center text-left px-12">
-                <span className="text-black text-7xl xl:text-6xl font-bold mr-2 font-lato">02.</span>
-                <div className="flex flex-col gap-2 max-w-xs">
-                  <p className="text-black text-lg font-semibold font-arimo">PLACE YOUR ORDER</p>
-                  <p className=" text-gray text-base font-arimo">Directly from the checkout or<br></br> by getting in touch with us.</p>
-                </div>
-              </div>
-
-              <div className="flex items-center text-left px-12">
-                <span className="text-black text-7xl xl:text-6xl font-bold mr-2">03.</span>
-                <div className="flex flex-col gap-2 max-w-xs">
-                  <p className="text-black text-lg font-semibold font-arimo">RECEIVE YOUR ORDER</p>
-                  <p className=" text-gray font-arimo text-base">Receive your B2B order once<br></br> your order is confirmed.</p>
-                </div>
-              </div>
 
 
-            </div>
-          </div>
-        </div>
-
-
-
-        <Newsletter />
-        <BrandsSection />
+          <Newsletter />
+          <BrandsSection />
 
 
 

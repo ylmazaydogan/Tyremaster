@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 const Header = () => {
     return (
-        <header className="flex flex-col w-full">
+        <header className="flex flex-col w-full mx-auto">
             <div className="bg-light-gray py-2 border-b border-light-gray">
-                <div className="container mx-auto flex justify-between items-center text-sm text-gray">
-                    <div className="flex space-x-6">
+                <div className="flex justify-between items-center text-sm text-gray mx-8">
+                    <div className="flex space-x-6 ">
                         <a href="mailto:hello@tyremaster.app" className="flex items-center">
                             <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"
                                 className="w-4 h-4 mr-2">
@@ -49,17 +49,17 @@ const Header = () => {
                                 </svg>
                                 <a href="#" className="hover:text-gray text-black text-xs font-arimo">NEWSLETTER</a>
                             </div>
-                            <div className="border-r border-white h-6"></div>
+                            <div className="border-r border-light-silver-2 h-6"></div>
                             <a href="#" className="hover:text-gray text-black text-xs font-arimo">FAQS</a>
-                            <div className="border-r border-white h-6"></div>
+                            <div className="border-r border-light-silver-2 h-6"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className="bg-white py-4 shadow-md">
-                <div className="container mx-auto flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
+                <div className=" mx-auto flex items-center justify-between">
+                    <div className="flex items-center space-x-4 mx-7">
                         <img
                             src="/images/tyremaster1.png"
                             alt="TyreMaster Logo"
@@ -108,7 +108,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-end space-x-8 mt-7">
+                    <div className="flex items-center justify-end space-x-8 mt-7 mx-8">
                         <a href="#" className="flex items-center space-x-8 text-gray-100">
                             <span className="flex items-center px-4 py-2 border border-light-silver rounded-md space-x-2">
 
@@ -132,7 +132,7 @@ const Header = () => {
                 </div>
 
                 <div className="w-full border-t border-light-silver-2"></div>
-                <nav className="container mx-auto mt-4 flex justify-between items-center pt-4">
+                <nav className="mx-8 mt-4 flex justify-between items-center pt-4">
                     <ul className="flex space-x-8 text-black items-center">
                         <li>
                             <a
@@ -158,7 +158,7 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contact" className="hover:text-gray-900 border-b-2 border-transparent hover:border-green transition duration-300 font-bold">
+                            <Link href="/contact-us" className="hover:text-gray-900 border-b-2 border-transparent hover:border-green transition duration-300 font-bold">
                                 CONTACT US
                             </Link>
                         </li>

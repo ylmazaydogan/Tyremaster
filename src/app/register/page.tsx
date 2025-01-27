@@ -3,7 +3,7 @@ import InputField from '@/components/Input';
 const RegisterPage = () => {
     return (
         <main className="flex-grow">
-            <div className="grid lg:grid-cols-2 mt-10 lg:mt-12 responsive">
+            <div className="grid lg:grid-cols-2 mt-10 lg:mt-12">
                 <div className="flex flex-col gap-2 lg:pl-56">
                     <div className="flex gap-6 items-center">
                         <span className="text-black font-semibold uppercase text-4xl font-poppins">Register</span>
@@ -57,8 +57,11 @@ const RegisterPage = () => {
 
                             </p>
 
-                            <div className="flex justify-center lg:mt-auto pt-4 lg:pt-8 border-t border-cool-gray mt-4">
-                                <button className="mt-10 w-[553px] h-[52px] bg-green text-white font-semibold rounded-lg hover:bg-green-600 transition-all duration-300 ease-in-out uppercase mb-16">
+                            <div className="flex justify-center lg:mt-auto pt-4 lg:pt-8 mt-4">
+                                <button
+                                    style={{ borderRadius: "2px" }}
+                                    className="mt-10 w-[553px] h-[52px] bg-green text-white font-semibold hover:bg-green-600 transition-all duration-300 ease-in-out uppercase mb-28"
+                                >
                                     register
                                 </button>
                             </div>

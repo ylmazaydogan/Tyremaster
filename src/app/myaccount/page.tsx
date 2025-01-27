@@ -1,6 +1,6 @@
 export default function AccountPage() {
     return (
-        <div className="flex flex-col p-6 space-y-6"> {/* Flex direction column for the main container */}
+        <div className="flex flex-col p-6 space-y-6 "> 
             
             {/* Page Header */}
             <div className="mb-6 ml-10">
@@ -10,9 +10,11 @@ export default function AccountPage() {
                 <p className="text-medium-gray mt-2 text-base font-lato">
                     Access your account to manage personal information, track orders, and more.
                 </p>
+                
             </div>
+            <hr className="border-cool-gray w-full" />
 
-            <div className="flex space-x-8">
+            <div className="flex space-x-9">
                 {/* Sidebar */}
                 <div className="hidden xl:flex flex-col p-6 w-1/6 bg-white border border-light-silver rounded-lg shadow-sm">
                     <div className="text-black font-semibold uppercase mb-6 font-montserrat text-base">MY ACCOUNT</div>

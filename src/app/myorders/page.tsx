@@ -3,9 +3,9 @@ import React from "react";
 export default function MyAccountPage() {
   return (
     <div className=" min-h-screen">
-      {/* My Account Başlık Bölümü */}
-      <div className=" py-9 px-4 shadow-md mb-6 ml-10">
-        <div className="container mx-auto">
+      
+      <div className=" py-9 px-5 shadow-md mb-6 ml-12">
+        <div className="mx-auto">
           <p className="font-lato text-sm text-medium-gray mt-2">ALL YOUR ACCOUNT DETAILS</p>
           <h1 className="text-4xl font-bold uppercase text-black mt-2 font-poppins">My Account</h1>
           <p className="text-gray text-base font-lato">
@@ -25,27 +25,111 @@ export default function MyAccountPage() {
             <div className="w-full h-2 bg-green rounded mb-6"></div>
 
             <div className="flex flex-col space-y-4">
-              <a href="#" className="flex items-center justify-between py-2 font-semibold font-lato text-black hover:text-green text-xs-custom transition">
-                MY INFORMATION
-                <span className="ml-2">&#x25B6;</span> 
-              </a>
-              <hr className="border border-light-silver" />
+              <div className="mb-6 text-left">
+                <h3 className="font-semibold mb-4">FILTER BY BRAND</h3>
+                <div className="relative mb-4">
+                  <input type="text" placeholder="Search for brand" className="w-full p-2 border border-light-silver rounded" />
+                  <button className="absolute right-2 top-2">🔍</button>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center">
+                    <input type="radio" id="all-brands" name="brand" className="mr-2" />
+                    <label htmlFor="all-brands" className="text-left">All</label>
+                  </div>
+                  {['Brand', 'Brand', 'Brand', 'Brand'].map((brand, index) => (
+                    <div key={index} className="flex items-center">
+                      <input type="radio" id={`brand-${index}`} name="brand" className="mr-2" />
+                      <label htmlFor={`brand-${index}`} className="text-left">{brand}</label>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-              <a href="#" className="flex items-center justify-between py-2 font-semibold font-lato text-black hover:text-green text-xs-custom transition relative">
-                MY ORDERS
-                <span className="ml-2">&#x25B6;</span>
-                <div className="absolute left-0 bottom-0 w-full h-1 bg-green"></div> 
-              </a>
-              <hr className="border border-light-silver" />
+              <div className="mb-6 text-left">
+                <h3 className="font-semibold mb-4">FILTER BY WIDTH</h3>
+                <div className="relative mb-4">
+                  <input type="text" placeholder="Search for brand" className="w-full p-2 border border-light-silver rounded" />
+                  <button className="absolute right-2 top-2">🔍</button>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center">
+                    <input type="radio" id="all-width" name="width" className="mr-2" />
+                    <label htmlFor="all-width" className="text-left">All</label>
+                  </div>
+                  {['255', '265', '275', '295'].map((width, index) => (
+                    <div key={index} className="flex items-center">
+                      <input type="radio" id={`width-${index}`} name="width" className="mr-2" />
+                      <label htmlFor={`width-${index}`} className="text-left">{width}</label>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-              <a href="#" className="flex items-center justify-between py-2 font-semibold font-lato text-black hover:text-green text-xs-custom transition">
-                CHANGE PASSWORD
-                <span className="ml-2">&#x25B6;</span> 
-              </a>
+              <div className="mb-6 text-left">
+                <h3 className="font-semibold mb-4">FILTER BY DIAMETER</h3>
+                <div className="relative mb-4">
+                  <input type="text" placeholder="Search for brand" className="w-full p-2 border border-light-silver rounded" />
+                  <button className="absolute right-2 top-2">🔍</button>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center">
+                    <input type="radio" id="all-diameter" name="diameter" className="mr-2" />
+                    <label htmlFor="all-diameter" className="text-left">All</label>
+                  </div>
+                  {['16', '17', '18', '19'].map((diameter, index) => (
+                    <div key={index} className="flex items-center">
+                      <input type="radio" id={`diameter-${index}`} name="diameter" className="mr-2" />
+                      <label htmlFor={`diameter-${index}`} className="text-left">{diameter}</label>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="font-semibold mb-4">FILTER BY SEASON</h3>
+                <div className="space-y-2">
+                  <div className="flex items-center">
+                    <span className="mr-2">☀️</span>
+                    <label>Summer</label>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="mr-2">❄️</span>
+                    <label>Winter</label>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="mr-2">❄️</span>
+                    <label>All Season</label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="font-semibold mb-4">PRODUCT STATUS</h3>
+                <div className="flex items-center">
+                  <input type="checkbox" id="in-stock" className="mr-2" />
+                  <label htmlFor="in-stock">Only in stock</label>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="font-semibold mb-4">FILTER BY PRICE</h3>
+                <div className="flex items-center space-x-2">
+                  <span>€ 0</span>
+                  <input type="range" className="flex-grow" />
+                  <span>€ 200</span>
+                </div>
+                <button className="w-full bg-black text-white py-2 rounded mt-2">FILTER</button>
+              </div>
             </div>
 
             <button className="flex items-center justify-center w-full mt-8 bg-black text-white py-3 rounded-md font-semibold text-sm">
               <span className="mr-2">🔒</span> Logout
+              <svg className="ml-auto" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="2" fill="#171A1F"/>
+                <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="14">
+                  &#x25B6;
+                </text>
+              </svg>
             </button>
           </div>
 
@@ -59,11 +143,11 @@ export default function MyAccountPage() {
 
           
               <div className="space-y-4 ml-7">
-                {[1, 2, 3, 4].map((order, index) => (
-                  <div key={index} className="border-b border-cool-gray pb-4">
+                {orders.map((order) => (
+                  <div key={order.id} className="border-b border-cool-gray pb-4">
                     <div className="flex justify-between items-center mb-4">
                       <button
-                        className={`h-10 w-10 flex items-center justify-center rounded-full ${index === 3 ? "bg-green-500" : "bg-gray-200"
+                        className={`h-10 w-10 flex items-center justify-center rounded-full ${order.id === 3 ? "bg-green-500" : "bg-gray-200"
                           }`}
                       >
                         <span className="text-white text-xl">&#x25BC;</span>
@@ -82,12 +166,12 @@ export default function MyAccountPage() {
                       </thead>
                       <tbody>
                         <tr className="font-poppins text-sm text-black">
-                          <td className="p-2">301934</td>
-                          <td className="p-2">03.10.2023</td>
-                          <td className="p-2">€ 1280,90</td>
-                          <td className="p-2">3</td>
-                          <td className="p-2">On hold</td>
-                          <td className="p-2">Pending</td>
+                          <td className="p-2">{order.id}</td>
+                          <td className="p-2">{order.date}</td>
+                          <td className="p-2">{order.amount}</td>
+                          <td className="p-2">{order.quantity}</td>
+                          <td className="p-2">{order.status}</td>
+                          <td className="p-2">{order.shipmentStatus}</td>
                         </tr>
                       </tbody>
                     </table>

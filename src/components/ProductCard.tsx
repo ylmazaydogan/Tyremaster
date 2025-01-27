@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function ProductCard() {
   return (
-    <div className="border-light-silver my-4 py-3 text-left">
+    <div className="border-light-silver my-3 py-3 text-left -ml-10 dynamic-height">
       {/* Headers */}
       <div className="flex items-start justify-between text-black -mb-10 ">
-        <div className="w-1/3"></div>
+        <div className="w-1/3 "></div>
         <div className="w-1/6 text-center font-semibold font-poppins text-sm">Unit price</div>
         <div className="w-1/6 text-center font-semibold font-poppins text-sm">Quantity</div>
         <div className="w-1/6 text-center font-semibold font-poppins text-sm">Total</div>

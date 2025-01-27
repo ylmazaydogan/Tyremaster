@@ -8,7 +8,7 @@ return(
       className="bg-cover bg-center bg-no-repeat w-full h-[346px]"
       style={{ backgroundImage: "url('/images/tyremaster.jpeg')" }} 
     >
-      <div className="container mx-auto h-full flex flex-col justify-center items-center text-center text-white">
+      <div className="w-full mx-auto h-full flex flex-col justify-center items-center text-center text-white">
         <h1 className="text-5xl font-bold mb-4 font arimo">
           SIMPLIFYING TYRE PROCUREMENT
         </h1>

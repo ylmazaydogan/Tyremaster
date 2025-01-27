@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 const Footer = () => {
-    return(
-        <div className="bg-black w-full py-6">
-            <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 w-full mx-auto mt-8">
+    return (
+        <div className="bg-black w-full ">
+            <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 w-full mx-auto mt-">
                 <div className="grid xl:grid-cols-2 xl:gap-2 mx-auto xl:w-full">
-                    <div className="flex flex-col ml-14">
+                    <div className="flex flex-col ml-14 mt-9">
                         <a href="#"
-                            className="self-center xl:self-start flex items-center">
+                            className="self-center xl:self-start flex items-center mt-5">
                             <Image
                                 src="/images/tyremasteryeni.jpg"
                                 alt="TyreMaster Logo"
@@ -44,9 +44,9 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex flex-col mt-12 xl:mt-0 text-left">
-                        <p className="text-base font-semibold text-white uppercase font-arimo">Recent Posts</p>
-                        <a className="flex py-2.5 border-b gap-3 group mt-4">
+                    <div className="flex flex-col ml-20 mt-12 xl:mt-0 text-left">
+                        <p className="text-base font-semibold text-white uppercase font-arimo mt-10">Recent Posts</p>
+                        <a className="flex py-2.5 border-b gap-4 group mt-5">
                             <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12 bg-white">
                                 <Image
                                     src="/images/tyremasterwheel.jpeg"
@@ -57,12 +57,12 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <p className="font-arimo text-white text-sm">The B2B tyre procurement<br></br> platform</p>
+                                <p className="font-arimo text-white text-sm -mt-1">The B2B tyre procurement<br></br> platform</p>
                                 <span className="text-white text-sm group-hover:text-green font-arimo">Click to view</span>
                                 <hr className="border-t border-gray w-full"></hr>
                             </div>
                         </a>
-                        <a className="flex py-2.5 border-b gap-3">
+                        <a className="flex py-2.5 border-b gap-4">
                             <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12">
                                 <Image
                                     src="/images/tyremasterwheel2.jpg"
@@ -73,12 +73,12 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <p className="font-arimo text-white text-sm">Extensive selection of premium <br /> tires</p>
+                                <p className="font-arimo text-white text-sm -mt-1">Extensive selection of premium <br /> tires</p>
                                 <span className="text-white text-sm font-arimo">Click to view</span>
                                 <hr className="border-t border-gray w-full"></hr>
                             </div>
                         </a>
-                        <a className="flex py-2.5 border-b gap-3 group !border-none">
+                        <a className="flex py-2.5 border-b gap-4 group !border-none">
                             <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12 ">
                                 <Image
                                     src="/images/tyremasterwheel3.jpg"
@@ -89,15 +89,15 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2 font-arimo">
-                                <p className="font-medium text-white text-sm ">Get in touch with our support <br /> for assistance</p>
+                                <p className="font-medium text-white text-sm -mt-1 ">Get in touch with our support <br /> for assistance</p>
                                 <span className="text-white text-sm group-hover:text-green">Click to contact</span>
-                                
+
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-20">
+                <div className="flex flex-col gap-20 mt-10">
                     <div className="flex flex-col xl:flex-row  mx-auto xl:w-full justify-between">
                         <div className="flex flex-col">
                             <span className="text-base text-white font-semibold uppercase font-poppins">Company</span>
@@ -124,11 +124,11 @@ const Footer = () => {
                             There are many variations of tyres that you can find for your specific need.
                         </span>
                         <div className=" xl:w-full mx-auto">
-                            <form className="flex items-center justify-center w-full h-14 mt-4">
-                                <input
-                                    className="border placeholder:text-gray outline-none rounded-full pl-5 text-base placeholder:text-base h-full w-full"
-                                    placeholder="Type your email address"
-                                />
+                            <form className="flex items-center justify-center w-full h-7 mt-4">
+                                <svg  width="461" height="50" viewBox="0 0 461 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="460" height="49" rx="1.5" fill="white" stroke="#E8E8E8" />
+                                </svg>
+
                                 <div className="flex flex-shrink-0 w-16 h-16 items-center justify-center rounded-full bg-black ml-[-2rem]">
                                     <button
                                         className="flex items-center justify-center rounded-full group hover:bg-green transition-all duration-300 ease-in-out bg-black text-white w-12 h-12">

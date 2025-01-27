@@ -1,7 +1,7 @@
 const AccountPage = () => {
     return (
         <div className="w-full bg-white p-6">
-            {/* My Account Header Border'ın Dışında ve Sola Hizalandı */}
+            
             <div className="mb-4 ml-10 ">
                 <p className="mb-2 font-lato text-medium-gray text-sm">ALL YOUR ACCOUNT DETAILS</p>
                 <h2 className="text-black text-4xl font-semibold uppercase font-poppins text-left">MY ACCOUNT</h2>
@@ -43,7 +43,7 @@ const AccountPage = () => {
 
                     <form className="w-full">
                         <div className="mb-4">
-                            <label className="block text-sm font-semibold text-dark-gray font-lato" htmlFor="currentPassword">
+                            <label className="block text-sm  text-dark-gray font-lato" htmlFor="currentPassword">
                                 Current password*
                             </label>
                             <input
@@ -55,7 +55,7 @@ const AccountPage = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <div>
-                                <label className="block text-sm font-semibold text-dark-gray font-lato" htmlFor="newPassword">
+                                <label className="block text-sm  text-dark-gray font-lato" htmlFor="newPassword">
                                     New password*
                                 </label>
                                 <input
@@ -67,7 +67,7 @@ const AccountPage = () => {
 
                             <div className="flex items-end">
                                 <div className="flex-grow">
-                                    <label className="block text-sm font-semibold text-black" htmlFor="confirmPassword">
+                                    <label className="block text-sm  text-black" htmlFor="confirmPassword">
                                         Confirm new password*
                                     </label>
                                     <input
@@ -77,7 +77,7 @@ const AccountPage = () => {
                                     />
                                 </div>
 
-                                <button type="submit" className="bg-green text-white font-semibold font-lato py-3 px-4 rounded-lg ml-4 w-1/2">
+                                <button type="submit" className="bg-green text-white font-semibold font-lato py-3 px-5 rounded-xl w-1/3">
                                     Save
                                 </button>
                             </div>

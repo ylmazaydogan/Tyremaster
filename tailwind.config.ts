@@ -11,12 +11,7 @@ const config: Config = {
   	extend: {
 
 
-		container:{
-			screens : {
-				xl:'1920px',
-				
-			}
-		},
+		
 
 
 

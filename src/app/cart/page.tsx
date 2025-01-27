@@ -1,5 +1,5 @@
-import ProductCard from '../components/ProductCard';
-import CartTotal from '../components/CartTotal';
+import ProductCard from '@/components/ProductCard';
+import CartTotal from '@/components/CartTotal';
 
 export default function Cart() {
   return (
