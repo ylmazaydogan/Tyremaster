@@ -6,24 +6,24 @@ const RegisterPage = () => {
             <div className="grid lg:grid-cols-2 mt-10 lg:mt-12">
                 <div className="flex flex-col gap-2 lg:pl-56">
                     <div className="flex gap-6 items-center">
-                        <span className="text-black font-semibold uppercase text-4xl font-poppins">Register</span>
+                        <span className="text-black font-semibold uppercase text-4xl ">Register</span>
                         <hr className="border-cool-gray w-full h-[1px]" />
                     </div>
                     <div className="flex flex-col">
                         <form className="flex flex-col lg:min-h-[594px]">
                             <InputField
                                 label="Username"
-                                className="font-lato text-sm"
+                                className="text-sm"
                                 required
                             />
                             <InputField
                                 label="Email address"
                                 type="email"
                                 required
-                                className="mt-6 font-lato text-sm"
+                                className="mt-6 text-sm"
                             />
                             <div className="relative mt-6">
-                                <label className="font-lato text-sm">
+                                <label className="text-sm">
                                     Password
                                     <span className="text-red">*</span>
                                 </label>
@@ -71,10 +71,10 @@ const RegisterPage = () => {
 
                 <div className="flex flex-col gap-4 lg:pl-12">
                     <div className="flex gap-6 items-center">
-                        <span className="text-black font-semibold uppercase text-4xl font-poppins">login</span>
+                        <span className="text-black font-semibold uppercase text-4xl ">login</span>
                         <hr className="border-cool-gray w-full h-[1px]" />
                     </div>
-                    <p className="text-gray font-lato text-sm">
+                    <p className="text-gray text-sm">
                         Login here by filling your username and password or use your favorite social network<br /> account to enter the site. Site login will simplify the purchase process and allows you<br /> to manage your personal account.
                     </p>
                     <div className="flex justify-start pl-44 mt-10">

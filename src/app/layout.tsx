@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import InfoBlock from "@/components/InfoBlock";
@@ -26,13 +25,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main >
-        <Header/>
-       
-        
-        
-        {children}
-        <InfoBlock/>
-        <Footer/>
+          <Header />
+
+
+
+          {children}
+          <InfoBlock />
+          <Footer />
         </main>
       </body>
     </html>

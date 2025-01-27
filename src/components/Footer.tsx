@@ -16,14 +16,14 @@ const Footer = () => {
                                 className="mb-1"
                             />
                         </a>
-                        <p className="text-white mt-10 xl:mt-2 text-sm md:text-center xl:text-start font-arimo">
+                        <p className="text-white mt-10 xl:mt-2 text-sm md:text-center xl:text-start ">
                             "Your premier tyre wholesaler platform,"
                             <br />
                             "where sourcing your tyre needs for supply "
                             <br />
                             "is made easy."
                         </p>
-                        <div className="flex flex-col gap-2 mt-5 text-base text-white font-arimo">
+                        <div className="flex flex-col gap-2 mt-5 text-base text-white ">
                             <a href="https://www.google.com/maps/place?q=Patersstraat%20100%202300%20Turnhout%2C%20BE" target="_blank" className="flex gap-2 items-center group">
                                 <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" className="text-white text-md group-hover:text-green" height="1em" width="1em">
                                     <path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path>
@@ -45,7 +45,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex flex-col ml-20 mt-12 xl:mt-0 text-left">
-                        <p className="text-base font-semibold text-white uppercase font-arimo mt-10">Recent Posts</p>
+                        <p className="text-base font-semibold text-white uppercase mt-10">Recent Posts</p>
                         <a className="flex py-2.5 border-b gap-4 group mt-5">
                             <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12 bg-white">
                                 <Image
@@ -57,8 +57,8 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <p className="font-arimo text-white text-sm -mt-1">The B2B tyre procurement<br></br> platform</p>
-                                <span className="text-white text-sm group-hover:text-green font-arimo">Click to view</span>
+                                <p className="text-white text-sm -mt-1">The B2B tyre procurement<br></br> platform</p>
+                                <span className="text-white text-sm group-hover:text-green ">Click to view</span>
                                 <hr className="border-t border-gray w-full"></hr>
                             </div>
                         </a>
@@ -73,8 +73,8 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-2">
-                                <p className="font-arimo text-white text-sm -mt-1">Extensive selection of premium <br /> tires</p>
-                                <span className="text-white text-sm font-arimo">Click to view</span>
+                                <p className="text-white text-sm -mt-1">Extensive selection of premium <br /> tires</p>
+                                <span className="text-white text-sm ">Click to view</span>
                                 <hr className="border-t border-gray w-full"></hr>
                             </div>
                         </a>
@@ -88,7 +88,7 @@ const Footer = () => {
                                     className="w-36"
                                 />
                             </div>
-                            <div className="flex flex-col gap-2 font-arimo">
+                            <div className="flex flex-col gap-2 ">
                                 <p className="font-medium text-white text-sm -mt-1 ">Get in touch with our support <br /> for assistance</p>
                                 <span className="text-white text-sm group-hover:text-green">Click to contact</span>
 
@@ -100,16 +100,16 @@ const Footer = () => {
                 <div className="flex flex-col gap-20 mt-10">
                     <div className="flex flex-col xl:flex-row  mx-auto xl:w-full justify-between">
                         <div className="flex flex-col">
-                            <span className="text-base text-white font-semibold uppercase font-poppins">Company</span>
-                            <div className="flex flex-col gap-4 mt-4 text-sm font-lato">
+                            <span className="text-base text-white font-semibold uppercase ">Company</span>
+                            <div className="flex flex-col gap-4 mt-4 text-sm ">
                                 <a href="#" className="text-white ">About Us</a>
                                 <a href="#" className="text-white ">Terms & Conditions</a>
                                 <a href="#" className="text-white ">Privacy Policy</a>
                             </div>
                         </div>
                         <div className="flex flex-col mt-12 xl:mt-0">
-                            <span className="text-base text-white font-semibold uppercase font-poppins">Useful Links</span>
-                            <div className="flex flex-col gap-3 mt-4 text-sm font-lato mr-64 ">
+                            <span className="text-base text-white font-semibold uppercase ">Useful Links</span>
+                            <div className="flex flex-col gap-3 mt-4 text-sm mr-64 ">
                                 <a href="#" className="text-white ">Tyre Shop</a>
                                 <a href="#" className="text-white ">Contact us</a>
                                 <a href="#" className="text-white ">All brands</a>
@@ -117,15 +117,15 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex flex-col w-full items-center">
-                        <p className="font-semibold  text-white text-base mx-auto xl:w-full text-center uppercase font-arimo">
+                        <p className="font-semibold  text-white text-base mx-auto xl:w-full text-center uppercase ">
                             Subscribe to our Newsletter and receive B2B offers
                         </p>
-                        <span className="text-white text-sm xl:mt-0.5  mx-auto xl:w-full mt-6 text-center font-arimo">
+                        <span className="text-white text-sm xl:mt-0.5  mx-auto xl:w-full mt-6 text-center ">
                             There are many variations of tyres that you can find for your specific need.
                         </span>
                         <div className=" xl:w-full mx-auto">
                             <form className="flex items-center justify-center w-full h-7 mt-4">
-                                <svg  width="461" height="50" viewBox="0 0 461 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="461" height="50" viewBox="0 0 461 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.5" y="0.5" width="460" height="49" rx="1.5" fill="white" stroke="#E8E8E8" />
                                 </svg>
 

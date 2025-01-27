@@ -9,28 +9,28 @@ const Contact = () => {
                 <div className="grid lg:grid-cols-2 lg:divide-x border-cool-gray mt-10 lg:mt-20">
                     <form className="grid lg:grid-cols-2 gap-4 lg:gap-5 lg:pr-10">
                         <div className="flex gap-6 items-center col-span-full pl-9">
-                            <span className="text-black font-semibold uppercase flex flex-shrink-0 text-lg lg:text-4xl font-arimo">
+                            <span className="text-black font-semibold uppercase flex flex-shrink-0 text-lg lg:text-4xl ">
                                 SEND US AN EMAIL
                             </span>
                             <hr className="border-cool-gray bg-light-silver w-full h-[1px]" />
                         </div>
 
                         <div className="gap-1 flex flex-col pl-9">
-                            <label className="text-base font-arimo text-black">Your Name</label>
+                            <label className="text-base text-black">Your Name</label>
                             <input
                                 className="border border-cool-gray placeholder:text-gray outline-none  pl-5 text-base placeholder:text-base h-11"
                             />
                         </div>
 
                         <div className="gap-1 flex flex-col pl-9">
-                            <label className="text-base font-arimo text-black">Your Email</label>
+                            <label className="text-base text-black">Your Email</label>
                             <input
                                 className="border border-cool-gray placeholder:text-gray outline-none  pl-5 text-base placeholder:text-base h-11"
                             />
                         </div>
 
                         <div className="gap-1 flex flex-col pl-9">
-                            <label className="text-base font-arimo text-black">Phone Number</label>
+                            <label className="text-base text-black">Phone Number</label>
                             <input
                                 className="border border-cool-gray placeholder:text-gray outline-none  pl-5 text-base placeholder:text-base h-11"
                             />
@@ -44,13 +44,13 @@ const Contact = () => {
                         </div>
 
                         <div className="flex flex-col gap-1 col-span-full pl-9">
-                            <label className="text-base text-black font-arimo">Your Message</label>
+                            <label className="text-base text-black ">Your Message</label>
                             <Textarea
                                 className="border border-cool-gray placeholder:text-gray rounded-none pl-5 pt-3 text-base placeholder:text-base resize-none h-56 outline-none"
                             />
                         </div>
 
-                        <div className="justify-self-center font-lato text-white col-span-full lg:justify-self-start pl-9 ">
+                        <div className="justify-self-center text-white col-span-full lg:justify-self-start pl-9 ">
                             <Button className="bg-green text-white w-40 xl:w-52 h-12 uppercase rounded-none">
                                 ask a question
                             </Button>
@@ -59,18 +59,18 @@ const Contact = () => {
 
                     <div className="flex flex-col lg:pl-16 mt-10 lg:mt-0 border-cool-gray">
                         <div className="flex gap-6 items-center">
-                            <span className="text-black font-semibold font-arimo uppercase flex flex-shrink-0 text-4xl lg:text-4xl">
+                            <span className="text-black font-semibold uppercase flex flex-shrink-0 text-4xl lg:text-4xl">
                                 WELCOME
                             </span>
                             <hr className="border border-cool-gray w-full h-[1px]" />
                         </div>
 
-                        <p className="text-base text-black font-arimo mt-6 leading-8 ">
+                        <p className="text-base text-black mt-6 leading-8 ">
                             As a B2B procurement platform specializing in tyres, we&apos;re here to provide <br></br> swift and efficient support for all your inquiries and needs. Whether you&apos;re a<br></br> tire retailer, distributor, or manufacturer, your satisfaction and success are our<br></br> top priorities. Whether you have inquiries about our products, need<br></br> assistance with your orders, or simply want to explore potential<br></br> collaborations, we&apos;re here to assist you every step of the way.
                         </p>
 
                         <div className="flex gap-6 items-center mt-6">
-                            <span className="text-black font-semibold font-arimo uppercase flex flex-shrink-0 text-lg lg:text-4xl">
+                            <span className="text-black font-semibold uppercase flex flex-shrink-0 text-lg lg:text-4xl">
                                 CONTACT US
                             </span>
                             <hr className="border border-cool-gray w-full h-[1px]" />
@@ -78,21 +78,21 @@ const Contact = () => {
 
                         <div className="grid grid-cols-2 gap-8 mt-6">
                             <div>
-                                <h3 className="text-base text-black font-arimo font-bold mb-2 uppercase">Postal Address</h3>
+                                <h3 className="text-base text-black font-bold mb-2 uppercase">Postal Address</h3>
                                 <div className="flex items-start gap-4">
                                     <svg width="28" height="40" viewBox="0 0 28 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9915 -0.0144941C10.5083 -0.0597735 7.1492 1.27691 4.65002 3.7036C2.15085 6.1303 0.71542 9.4491 0.658203 12.9321C0.658203 19.3321 5.21953 27.7055 9.04486 33.5988C9.16828 33.7812 9.35709 33.9091 9.57225 33.9562C9.7874 34.0034 10.0125 33.9661 10.2009 33.852C10.2934 33.7974 10.3739 33.7243 10.4377 33.6379C10.5014 33.5514 10.5471 33.4533 10.572 33.3488C10.5969 33.2443 10.6005 33.1357 10.5825 33.0298C10.5646 32.9238 10.5255 32.8221 10.4675 32.7316C3.7502 22.3716 2.33421 16.2521 2.33421 12.9321C2.42008 9.89768 3.68585 7.01617 5.86253 4.90022C8.03921 2.78426 10.9552 1.60009 13.9909 1.60009C17.0265 1.60009 19.9425 2.78426 22.1192 4.90022C24.2959 7.01617 25.5617 9.89768 25.6475 12.9321C25.6475 23.0788 13.4515 38.5452 13.3275 38.6919C13.2598 38.7761 13.2098 38.873 13.1807 38.977C13.1515 39.0811 13.1437 39.1902 13.1578 39.2974C13.1719 39.4045 13.2075 39.5077 13.2626 39.6007C13.3177 39.6937 13.391 39.7745 13.4782 39.8384C13.6278 39.9467 13.8068 40.007 13.9915 40.0116C14.1193 40.0103 14.2453 39.9816 14.3605 39.9263C14.4757 39.871 14.5773 39.7908 14.6582 39.6919C15.1755 39.0386 27.3249 23.6388 27.3249 12.9321C27.268 9.44898 25.8327 6.13038 23.3334 3.7036C20.8342 1.27683 17.4748 -0.0601265 13.9915 -0.0144941ZM13.9915 8.81168C14.2099 8.81313 14.4201 8.72882 14.5768 8.57665C14.7334 8.42449 14.824 8.21686 14.8289 7.99853C14.8276 7.89004 14.805 7.78312 14.7622 7.68342C14.7194 7.58373 14.6573 7.49339 14.5794 7.4178C14.5016 7.3422 14.4096 7.28256 14.3087 7.24267C14.2078 7.20278 14.1 7.18343 13.9915 7.18538C12.8606 7.21918 11.7648 7.58502 10.8409 8.23811C9.91708 8.8912 9.20616 9.80242 8.79704 10.8573C8.38792 11.9121 8.29873 13.0639 8.54063 14.1691C8.78253 15.2743 9.34478 16.2839 10.1571 17.0714C10.9695 17.8589 11.9959 18.3894 13.1081 18.5968C14.2203 18.8043 15.369 18.6798 16.4106 18.2381C17.4522 17.7964 18.3406 17.0575 18.9647 16.1138C19.5887 15.1701 19.9209 14.0635 19.9195 12.9321C19.9239 11.674 19.5008 10.4515 18.7195 9.46532C18.5836 9.2902 18.3845 9.17493 18.1649 9.14501C17.9452 9.1151 17.7226 9.17276 17.5449 9.30517C17.4576 9.36723 17.3839 9.44613 17.3282 9.53759C17.2725 9.62905 17.2359 9.73105 17.2208 9.83707C17.2058 9.94309 17.2124 10.0514 17.2404 10.1548C17.2683 10.2582 17.317 10.3547 17.3835 10.4386C17.9422 11.1497 18.246 12.0279 18.2462 12.9321C18.2727 13.7785 18.0461 14.6132 17.5952 15.3299C17.1443 16.0466 16.4898 16.6124 15.7154 16.9549C14.9409 17.2974 14.0819 17.4011 13.2483 17.2524C12.4147 17.1038 11.6444 16.71 11.0361 16.1209C10.4278 15.5319 10.0092 14.7742 9.83384 13.9458C9.65848 13.1174 9.73435 12.2555 10.0518 11.4705C10.3692 10.6855 10.9137 10.0132 11.6156 9.53954C12.3175 9.06586 13.1448 8.81236 13.9915 8.81168Z" fill="#1FCE6D" />
                                     </svg>
 
-                                    
-                                    <p className="text-base font-arimo text-black ml-2">
+
+                                    <p className="text-base text-black ml-2">
                                         Paterstraat 101 <br />
                                         2300 Turnhout, Belgium
                                     </p>
                                 </div>
                             </div>
                             <div>
-                                <h3 className="text-base font-bold mb-2 uppercase font-arimo text-black">More Information</h3>
+                                <h3 className="text-base font-bold mb-2 uppercase text-black">More Information</h3>
                                 <div className="flex items-start gap-4">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_750_5131)">
@@ -105,20 +105,20 @@ const Contact = () => {
                                         </defs>
                                     </svg>
 
-                                  
-                                    <p className="text-base text-black font-arimo ml-2">
+
+                                    <p className="text-base text-black ml-2">
                                         +31 6 12 34 56 78 <br />
                                         WhatsApp available
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <div>
-                                <h3 className="text-base uppercase font-arimo font-bold mb-1">Work Hours</h3>
+                                <h3 className="text-base uppercase font-bold mb-1">Work Hours</h3>
                                 <div className="flex items-start gap-4">
                                     <svg className="mt-2" width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_750_5127)">
-                                            
+
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2607 23.9152C26.2607 24.4185 25.8581 24.8211 25.3548 24.8211H21.0166C20.5133 24.8211 20.1107 24.4185 20.1107 23.9152C20.1107 23.4119 20.5133 23.0093 21.0166 23.0093H25.3548C25.8581 23.0093 26.2607 23.422 26.2607 23.9152ZM23.1807 6.5624C23.6839 6.5624 24.0866 6.15978 24.0866 5.65651V3.73401C24.0866 3.23074 23.6839 2.82812 23.1807 2.82812C22.6774 2.82812 22.2748 3.23074 22.2748 3.73401V5.65651C22.2748 6.15978 22.6875 6.5624 23.1807 6.5624ZM20.1107 11.1824C20.1107 11.6857 20.5133 12.0883 21.0166 12.0883H25.3548C25.8581 12.0883 26.2607 11.6857 26.2607 11.1824C26.2607 10.6792 25.8581 10.2765 25.3548 10.2765H21.0166C20.5133 10.2765 20.1107 10.6892 20.1107 11.1824ZM25.3548 16.648H21.0166C20.5133 16.648 20.1107 17.0506 20.1107 17.5538C20.1107 18.0571 20.5133 18.4597 21.0166 18.4597H25.3548C25.8581 18.4597 26.2607 18.0571 26.2607 17.5538C26.2607 17.0506 25.8581 16.648 25.3548 16.648ZM30.3171 6.5624C30.8203 6.5624 31.2229 6.15978 31.2229 5.65651V3.73401C31.2229 3.23074 30.8203 2.82812 30.3171 2.82812C29.8138 2.82812 29.4112 3.23074 29.4112 3.73401V5.65651C29.4112 6.15978 29.8138 6.5624 30.3171 6.5624ZM29.542 12.0883H33.8802C34.3835 12.0883 34.7861 11.6857 34.7861 11.1824C34.7861 10.6792 34.3835 10.2765 33.8802 10.2765H29.542C29.0388 10.2765 28.6361 10.6792 28.6361 11.1824C28.6361 11.6857 29.0488 12.0883 29.542 12.0883ZM29.542 18.4597H33.8802C34.3835 18.4597 34.7861 18.0571 34.7861 17.5538C34.7861 17.0506 34.3835 16.648 33.8802 16.648H29.542C29.0388 16.648 28.6361 17.0506 28.6361 17.5538C28.6361 18.0571 29.0488 18.4597 29.542 18.4597ZM26.7539 6.5624C27.2572 6.5624 27.6598 6.15978 27.6598 5.65651V3.73401C27.6598 3.23074 27.2572 2.82812 26.7539 2.82812C26.2506 2.82812 25.848 3.23074 25.848 3.73401V5.65651C25.848 6.15978 26.2506 6.5624 26.7539 6.5624ZM29.542 24.8211H33.8802C34.3835 24.8211 34.7861 24.4185 34.7861 23.9152C34.7861 23.4119 34.3835 23.0093 33.8802 23.0093H29.542C29.0388 23.0093 28.6361 23.4119 28.6361 23.9152C28.6361 24.4185 29.0488 24.8211 29.542 24.8211ZM16.8193 16.648H12.4811C11.9779 16.648 11.5752 17.0506 11.5752 17.5538C11.5752 18.0571 11.9779 18.4597 12.4811 18.4597H16.8193C17.3226 18.4597 17.7252 18.0571 17.7252 17.5538C17.7252 17.0506 17.3226 16.648 16.8193 16.648ZM20.5234 5.65651V3.73401C20.5234 3.23074 20.1208 2.82812 19.6175 2.82812C19.1142 2.82812 18.7116 3.23074 18.7116 3.73401V5.65651C18.7116 6.15978 19.1142 6.5624 19.6175 6.5624C20.1208 6.5624 20.5234 6.15978 20.5234 5.65651ZM16.8193 10.2765H12.4811C11.9779 10.2765 11.5752 10.6792 11.5752 11.1824C11.5752 11.6857 11.9779 12.0883 12.4811 12.0883H16.8193C17.3226 12.0883 17.7252 11.6857 17.7252 11.1824C17.7252 10.6792 17.3226 10.2765 16.8193 10.2765ZM39.0941 3.91519H34.7861V3.73401C34.7861 3.23074 34.3835 2.82812 33.8802 2.82812C33.3769 2.82812 32.9743 3.23074 32.9743 3.73401V5.65651C32.9743 6.15978 33.3769 6.5624 33.8802 6.5624C34.3533 6.5624 34.7458 6.18998 34.7861 5.72697H38.1882V29.3807H20.9461C20.4429 29.3807 20.0403 29.7833 20.0403 30.2866C20.0403 30.7899 20.4429 31.1925 20.9461 31.1925H39.0941C39.5974 31.1925 40 30.7899 40 30.2866V4.82108C40 4.31781 39.5974 3.91519 39.0941 3.91519ZM16.5979 23.1905C16.9502 23.5428 16.9502 24.1165 16.5979 24.4688C16.2456 24.8211 15.6719 24.8211 15.3196 24.4688L15.2793 24.4285L14.5848 25.123C15.8027 26.5624 16.5476 28.4346 16.5476 30.4678C16.5476 35.0274 12.8334 38.7416 8.27378 38.7416C3.71414 38.7416 0 35.0274 0 30.4678C0 26.5423 2.74786 23.2509 6.42174 22.4054C6.41168 22.3551 6.41168 22.3148 6.41168 22.2645C6.41168 21.7612 6.81429 21.3586 7.31756 21.3586H9.24006C9.74333 21.3586 10.1459 21.7612 10.1459 22.2645C10.1459 22.3148 10.1459 22.3551 10.1359 22.4054C11.2934 22.6771 12.3603 23.1804 13.2864 23.885L14.0111 23.1603L13.9708 23.12C13.6185 22.7677 13.6185 22.194 13.9708 21.8417C14.3231 21.4894 14.8968 21.4894 15.2491 21.8417L15.9235 22.5161L15.9336 22.5262L15.9436 22.5362L16.5979 23.1905ZM8.27378 24.0058C4.71062 24.0058 1.81178 26.9046 1.81178 30.4678C1.81178 34.0309 4.71062 36.9298 8.27378 36.9298C11.8369 36.9298 14.7358 34.0309 14.7358 30.4678C14.7358 26.9046 11.8369 24.0058 8.27378 24.0058ZM7.26724 18.4597C7.77051 18.4597 8.17313 18.0571 8.17313 17.5538V5.72697H11.5752C11.6155 6.18998 11.998 6.5624 12.4811 6.5624C12.9844 6.5624 13.387 6.15978 13.387 5.65651V3.73401C13.387 3.23074 12.9844 2.82812 12.4811 2.82812C11.9779 2.82812 11.5752 3.23074 11.5752 3.73401V3.91519H7.26724C6.76397 3.91519 6.36135 4.31781 6.36135 4.82108V17.5538C6.36135 18.0571 6.77403 18.4597 7.26724 18.4597ZM10.1963 29.5619H9.17967V26.9851C9.17967 26.4819 8.77705 26.0793 8.27378 26.0793C7.77051 26.0793 7.36789 26.4819 7.36789 26.9851V30.4678C7.36789 30.9711 7.77051 31.3737 8.27378 31.3737H10.1963C10.6995 31.3737 11.1022 30.9711 11.1022 30.4678C11.1022 29.9645 10.6995 29.5619 10.1963 29.5619ZM16.0544 6.5624C16.5576 6.5624 16.9602 6.15978 16.9602 5.65651V3.73401C16.9602 3.23074 16.5576 2.82812 16.0544 2.82812C15.5511 2.82812 15.1485 3.23074 15.1485 3.73401V5.65651C15.1485 6.15978 15.5511 6.5624 16.0544 6.5624Z" fill="#1FCE6D" />
                                         </g>
                                         <defs>
@@ -128,7 +128,7 @@ const Contact = () => {
                                         </defs>
                                     </svg>
 
-                                    <p className="text-base text-black font-arimo ml-1">
+                                    <p className="text-base text-black ml-1">
                                         Monday-Friday 9:00-19:00 <br />
                                         Saturday 10:00-14:00
                                     </p>
@@ -148,8 +148,8 @@ const Contact = () => {
                                         </defs>
                                     </svg>
 
-                                   
-                                    <p className="text-base text-black font-arimo ml-2">
+
+                                    <p className="text-base text-black ml-2">
                                         info@tyremaster.app <br />
                                         sales@tyremaster.app
                                     </p>
@@ -159,8 +159,8 @@ const Contact = () => {
 
                         <hr className="border-t border-light-silver-2 mt-10" />
                         <div className="mt-9 mb-6">
-                        <p className="text-base font-semibold font-arimo text-black">Do you have questions about how we can help your company?</p>
-                        <p className="text-green font-arimo text-base">Send us an email and we’ll get in touch shortly.</p>
+                            <p className="text-base font-semibold text-black">Do you have questions about how we can help your company?</p>
+                            <p className="text-green text-base">Send us an email and we’ll get in touch shortly.</p>
                         </div>
                     </div>
                 </div>

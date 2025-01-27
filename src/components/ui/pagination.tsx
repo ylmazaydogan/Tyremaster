@@ -52,7 +52,7 @@ const PaginationLink = ({
         variant: isActive ? "outline" : "ghost",
         size,
       }),
-      "text-black font-arimo text-base font-semibold", //burada pagination içini ayarladim
+      "text-black text-base font-semibold", //burada pagination içini ayarladim
       className
     )}
     {...props}

@@ -1,6 +1,6 @@
 const InfoBlock = () => {
     return (
-            
+
         <div className="flex  items-center justify-between py-10  border-t border-cool-gray">
             <Item title="SAFE SHIPPING" description="Fast and reliable delivery" svg={<svg width="66" height="70" viewBox="0 0 66 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.0112 7.20059C25.6603 7.20059 35.0333 0 41.6102 0C48.1871 0 62 3.85048 62 34.6644C62 65.4783 43.4178 70 36.1837 70C2.30865 70.002 -12.1613 7.20059 12.0112 7.20059Z" fill="#EFEFEF" />
@@ -23,7 +23,7 @@ const InfoBlock = () => {
             </svg>
             } />
         </div>
-        
+
 
     )
 }
@@ -40,14 +40,14 @@ const Item = ({
     svg: React.ReactNode
 }) => {
     return (
-        
-            <div className="flex items-center gap-2 ">
-                {svg}
-                <div className="flex flex-col gap-2">
-                <div className="text-base font-semibold text-black uppercase font-montserrat">{title}</div>
-                <div className="text-gray text-sm font-lato">{description}</div>
+
+        <div className="flex items-center gap-2 ">
+            {svg}
+            <div className="flex flex-col gap-2">
+                <div className="text-base font-semibold text-black uppercase ">{title}</div>
+                <div className="text-gray text-sm ">{description}</div>
             </div>
         </div>
-    
+
     )
 }

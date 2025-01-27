@@ -1,10 +1,10 @@
 // components/FeaturesSection.js
-const FeaturesSection = () => {
+const Features = () => {
     const features = [
         {
             icon: (
                 <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                
+
                     <path d="M21.3432 10.4185C38.3475 10.4185 50.0246 1.46094 58.2182 1.46094C66.4118 1.46094 83.6202 6.25094 83.6202 44.5835C83.6202 82.916 60.4701 88.541 51.4578 88.541C9.25555 88.5435 -8.77141 10.4185 21.3432 10.4185Z" fill="#F4F4F4" />
                     <path d="M51.7607 16.875H62.8232C64.0032 16.875 65.0111 17.725 65.2324 18.875L72.6074 55.125C72.6319 55.3 72.6565 55.45 72.6565 55.625C72.6565 57 71.5503 58.125 70.1982 58.125H59.1357L51.7607 16.875Z" fill="#1FCE6D" />
                     <path d="M62.8228 55.625C62.8228 57 61.7167 58.125 60.3646 58.125H19.802C18.4499 58.125 17.3438 57 17.3438 55.625C17.3438 55.45 17.3683 55.3 17.3929 55.125L24.7679 18.875C24.9892 17.725 25.997 16.875 27.177 16.875H52.9896C54.1696 16.875 55.1775 17.725 55.3988 18.875L62.7738 55.125C62.7983 55.3 62.8228 55.45 62.8228 55.625Z" fill="#F4F4F4" />
@@ -104,8 +104,8 @@ const FeaturesSection = () => {
                     {features.map((feature, index) => (
                         <div key={index} className="flex flex-col items-center text-center ">
                             {feature.icon}
-                            <h3 className="text-xl text-green font-lato">{feature.title}</h3>
-                            <p className="mt-2 text-base text-black font-poppins font-semibold">{feature.description}</p>
+                            <h3 className="text-xl text-green ">{feature.title}</h3>
+                            <p className="mt-2 text-base text-black font-semibold">{feature.description}</p>
                         </div>
                     ))}
                 </div>
@@ -114,4 +114,4 @@ const FeaturesSection = () => {
     );
 };
 
-export default FeaturesSection;
+export default Features;
