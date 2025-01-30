@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-import Newsletter from "@/components/Newsletter";
+import Newsletter from "@/components/home/Newsletter";
 import InfoBlock from "@/components/InfoBlock";
 
 

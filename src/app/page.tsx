@@ -1,4 +1,4 @@
-import Newsletter from "@/components/Newsletter";
+import Newsletter from "@/components/home/Newsletter";
 import Features from "@/components/home/Features";
 import Hero from "@/components/Hero";
 import AboutTyremaster from "@/components/home/AboutTyremaster";
