@@ -8,6 +8,16 @@ body {
   font-family: 'Arimo', sans-serif;
 }
 
+/*New Container Class*/
+/* Yeni container sınıfı */
+.container {
+  width: 100%;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @layer components {
   .responsive {
     @apply w-[92%] md:w-[75%] xl:w-[83%] mx-auto;
@@ -17,10 +27,6 @@ body {
     @apply w-[62.5%] h-[10px] mx-auto;
   }
 
-  .dynamic-height {
-    height: 18%;
-    /* Sayfa yüksekliğinin %18'i */
-  }
-
+  
 
 }

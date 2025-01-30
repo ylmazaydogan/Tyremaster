@@ -4,8 +4,8 @@ import LoginSection from '@/components/login/LoginSection';
 
 const RegisterPage = () => {
     return (
-        <main className='flex-grow'>
-            <div className='grid lg:grid-cols-2 mt-10 lg:mt-12 lg:divide-x lg:divide-cool-gray mb-32'>
+        <main className='flex-grow mx-7'>
+            <div className='grid lg:grid-cols-2 mt-4 lg:divide-x lg:divide-cool-gray mb-8'>
                 <LoginSection />
                 <RegisterSection />
             </div>

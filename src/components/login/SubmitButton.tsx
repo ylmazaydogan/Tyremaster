@@ -1,7 +1,7 @@
 const SubmitButton = () => {
     return (
-        <div className='flex justify-between'>
-                                <button className="mt-10 w-[553px] h-[52px] bg-green text-white font-semibold  hover:bg-green-600 transition-all duration-300 ease-in-out text-xs-custom">
+        <div className='flex justify-center '>
+                                <button className="mt-10 w-2/3 h-3/4 rounded-st bg-green text-white font-semibold  hover:bg-green  text-xs-custom">
                                     LOG IN
                                 </button>
                             </div>

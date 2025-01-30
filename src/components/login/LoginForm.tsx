@@ -1,24 +1,27 @@
 import InputField from "../Input";
+import SubmitButton from "./SubmitButton";
 
 const LoginForm = () => {
     return (
         <div className='flex flex-col'>
             <form className='flex flex-col lg:min-h-[594px]'>
-                <div className='gap-1 flex flex-col pr-10'>
+                <div className='gap-1 flex flex-col pr-10 mt-1'>
                     <InputField
                         label="Username or email address"
                         className="text-sm text-dark-gray"
                         required
                     />
                 </div>
-                <div className='mt-6 gap-1 flex flex-col pr-10'>
+                <div className='mt-6 gap-1 flex flex-col pr-10 mt-1'>
                     <InputField
                         label="Password"
                         className="text-sm text-dark-gray"
                         required
                     />
                 </div>
+               
                 <div className="flex items-center justify-between mt-7 pr-10">
+                    
                     <label className="flex items-center text-base text-gray cursor-pointer group transition-all transform duration-300 ease-in-out">
                         <input
                             type="checkbox"
@@ -32,9 +35,11 @@ const LoginForm = () => {
                         Lost your password?
                     </a>
                 </div>
+                <div className=" border-t border-cool-gray mt-5"></div>
+                <SubmitButton/>
             </form>
         </div>
     );
 };
 
-export default LoginForm;
+export default  LoginForm;
