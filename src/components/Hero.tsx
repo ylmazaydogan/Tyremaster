@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section
-      className="bg-cover bg-center bg-no-repeat w-full h-[346px]"
+      className="bg-cover bg-center bg-no-repeat w-full h-[346px] mt-0.5"
       style={{ backgroundImage: "url('/images/tyremaster.jpeg')" }}
     >
       <div className="w-full mx-auto h-full flex flex-col justify-center items-center text-center text-white">

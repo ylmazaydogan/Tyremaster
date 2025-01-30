@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function B2BEPlatform() {
     return (<>
 
-        <p className="text-medium-gray text-sm tracking-wide mb-2 mt-3">ORDER YOUR TYRES EASILY</p>
-        <h1 className="text-black font-bold text-4xl mx-auto ">B2B E-COMMERCE PLATFORM</h1>
-        <p className="text-medium-gray text-base mt-4 ">
+        <p className="text-medium-gray text-sm tracking-wide  mt-7">ORDER YOUR TYRES EASILY</p>
+        <h1 className="text-black font-bold text-4xl mx-auto mt-2.5 ">B2B E-COMMERCE PLATFORM</h1>
+        <p className="text-medium-gray text-base mt-2.5 ">
             Streamlined tyre procurement for wholesalers: quick, easy, efficient, and competitive.
         </p>
 

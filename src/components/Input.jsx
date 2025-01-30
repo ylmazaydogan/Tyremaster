@@ -9,7 +9,7 @@ const InputField = ({ label, type = "text", required = false, placeholder = "", 
             </label>
             <input
                 type={type}
-                className='border border-cool-gray placeholder:text-gray outline-none rounded-full pl-5 text-base placeholder:text-base h-11'
+                className='border border-cool-gray placeholder:text-gray outline-none rounded-sm pl-5 text-base placeholder:text-base h-11'
                 placeholder={placeholder}
                 {...props}
             />

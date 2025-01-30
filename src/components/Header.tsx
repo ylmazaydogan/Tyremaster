@@ -3,16 +3,18 @@ import Link from 'next/link';
 
 const Header = () => {
     return (
-        <header className="flex flex-col w-full mx-auto">
-            <div className="bg-light-gray py-2 border-b border-light-gray">
+        <header className="flex flex-col w-full mx-auto ">
+            <div className="bg-light-gray py-2">
                 <div className="flex justify-between items-center text-sm text-gray mx-8">
                     <div className="flex space-x-6 ">
-                        <a href="mailto:hello@tyremaster.app" className="flex items-center">
+                        <a href="mailto:hello@tyremaster.app" className="flex items-center border-l border-light-silver-2 h-6 ml-1.5 ">
+                             
                             <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"
                                 className="w-4 h-4 mr-2">
                                 <path d="M0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H14C14.5304 0 15.0391 0.210714 15.4142 0.585786C15.7893 0.960859 16 1.46957 16 2V10C16 10.5304 15.7893 11.0391 15.4142 11.4142C15.0391 11.7893 14.5304 12 14 12H2C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10V2ZM2 1C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2V2.217L8 6.417L15 2.217V2C15 1.73478 14.8946 1.48043 14.7071 1.29289C14.5196 1.10536 14.2652 1 14 1H2ZM15 3.383L10.292 6.208L15 9.105V3.383ZM14.966 10.259L9.326 6.788L8 7.583L6.674 6.788L1.034 10.258C1.09083 10.4708 1.21632 10.6589 1.39099 10.7931C1.56566 10.9272 1.77975 11 2 11H14C14.2201 11 14.4341 10.9274 14.6088 10.7934C14.7834 10.6595 14.909 10.4716 14.966 10.259ZM1 9.105L5.708 6.208L1 3.383V9.105Z" fill="#171A1F" />
                             </svg>
-                            <span className='text-xs text-black '>E-mail: hello@tyremaster.app</span>
+                            <span className='text-xs text-black border-r border-light-silver-2 pr-1.5'>E-mail: hello@tyremaster.app</span>
+                            
                         </a>
 
                         <div className="border-l border-light-gray h-6"></div>
@@ -23,7 +25,8 @@ const Header = () => {
                                 <path d="M2.74079 0.996197C2.69651 0.939244 2.64063 0.892363 2.57684 0.858669C2.51306 0.824974 2.44283 0.805237 2.37083 0.800768C2.29884 0.796299 2.22671 0.807201 2.15925 0.832749C2.09179 0.858297 2.03053 0.897907 1.97955 0.948948L1.20407 1.72518C0.841833 2.08817 0.708336 2.60191 0.866582 3.05265C1.52411 4.91793 2.59241 6.61162 3.99251 8.00853C5.38942 9.40863 7.0831 10.4769 8.94838 11.1344C9.39912 11.2927 9.91286 11.1592 10.2759 10.797L11.0513 10.0215C11.1024 9.9705 11.142 9.90925 11.1675 9.84178C11.1931 9.77432 11.204 9.7022 11.1995 9.6302C11.195 9.5582 11.1753 9.48797 11.1416 9.42419C11.1079 9.3604 11.061 9.30452 11.0041 9.26025L9.27388 7.91478C9.21298 7.86768 9.14221 7.83499 9.06688 7.81914C8.99154 7.8033 8.9136 7.80471 8.83889 7.82328L7.19643 8.23352C6.97717 8.28794 6.74758 8.28485 6.52988 8.22454C6.31217 8.16424 6.11371 8.04876 5.95371 7.88928L4.11175 6.04657C3.95214 5.88665 3.83652 5.68823 3.77608 5.47051C3.71564 5.2528 3.71243 5.02317 3.76676 4.80385L4.17775 3.16139C4.19632 3.08668 4.19773 3.00874 4.18189 2.93341C4.16604 2.85807 4.13335 2.7873 4.08625 2.7264L2.74079 0.996197ZM1.41332 0.383462C1.54456 0.252177 1.70223 0.150315 1.87586 0.0846401C2.04949 0.0189648 2.23511 -0.00902097 2.42038 0.00254096C2.60565 0.0141029 2.78635 0.064948 2.95047 0.1517C3.11458 0.238452 3.25837 0.359126 3.37227 0.505709L4.71774 2.23517C4.96448 2.55241 5.05148 2.96565 4.95398 3.35564L4.54374 4.9981C4.52268 5.08318 4.5239 5.17225 4.54728 5.25672C4.57067 5.34119 4.61542 5.4182 4.67724 5.48034L6.51994 7.32304C6.58215 7.38498 6.6593 7.42981 6.74391 7.4532C6.82853 7.47659 6.91774 7.47774 7.00293 7.45654L8.64464 7.0463C8.83712 6.99846 9.03794 6.99486 9.232 7.03578C9.42607 7.0767 9.60834 7.16106 9.76511 7.28254L11.4946 8.62801C12.1163 9.11175 12.1733 10.0305 11.6168 10.5862L10.8413 11.3617C10.2864 11.9167 9.45687 12.1604 8.68364 11.8882C6.70419 11.1926 4.90714 10.0595 3.42627 8.57326C1.94009 7.09261 0.806997 5.29582 0.11135 3.31664C-0.160143 2.54416 0.0836012 1.71393 0.638588 1.15894L1.41332 0.383462Z" fill="#171A1F" />
                             </svg>
 
-                            <span className='text-xs text-black '>Tel: +31 6 12 34 56 78</span>
+                            <span className='text-xs text-black pr-1.5 '>Tel: +31 6 12 34 56 78</span>
+                            <div className="border-r border-light-silver-2 h-6 ml-1.5"></div>
                         </a>
 
                         <div className="border-l border-light-gray h-6"></div>
@@ -59,7 +62,7 @@ const Header = () => {
 
             <div className="bg-white py-4 shadow-md">
                 <div className=" mx-auto flex items-center justify-between">
-                    <div className="flex items-center space-x-4 mx-7">
+                    <div className="flex items-center space-x-4 mx-8">
                         <img
                             src="/images/tyremaster1.png"
                             alt="TyreMaster Logo"
@@ -108,7 +111,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-end space-x-8 mt-7 mx-8">
+                    <div className="flex items-center justify-end mt-5 mx-8 mb-1.5">
                         <a href="#" className="flex items-center space-x-8 text-gray-100">
                             <span className="flex items-center px-4 py-2 border border-light-silver rounded-md space-x-2">
 
@@ -132,7 +135,7 @@ const Header = () => {
                 </div>
 
                 <div className="w-full border-t border-light-silver-2"></div>
-                <nav className="mx-8 mt-4 flex justify-between items-center pt-4">
+                <nav className="mx-8 mt-0.5  flex justify-between items-center -mb-0.5">
                     <ul className="flex space-x-8 text-black items-center">
                         <li>
                             <a
@@ -164,8 +167,8 @@ const Header = () => {
                         </li>
                     </ul>
 
-                    <Link href="/ecommerce" className="w-[200px] h-[40px] bg-green text-white rounded-md shadow-sm hover:bg-green transition flex justify-center items-center">
-                        E-COMMERCE
+                    <Link href="/ecommerce" className="mt-1.5 w-[200px] h-[40px] bg-green text-white rounded-md shadow-sm hover:bg-green transition flex justify-center items-center">
+                       VIEW CART         
                     </Link>
                 </nav>
             </div>

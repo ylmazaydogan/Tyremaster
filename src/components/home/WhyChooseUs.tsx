@@ -1,28 +1,33 @@
 import Image from "next/image"
 
 export default function WhyChooseUs() {
-    return (<div className=" mx-auto px-6 lg:px-24 w-fit">
-        <Header />
+    return (
+        <div className="w-full">
+            <div className="mx-auto px-6 lg:px-24">
+                <Header />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center">
-            <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pr-10 border-r border-[#E6E6E6]">
-                <Element icon={<ExtensiveInventoryIcon />} title="EXTENSIVE INVENTORY" description="Vast selection of top-quality tyres, covering a wide range of sizes and types." />
-                <Element icon={<ReliableDeliveryIcon />} title="RELIABLE DELIVERY" description="Count on us for dependable and timely delivery to keep your operations running smoothly." />
-                <Element icon={<ExtensiveInventoryIcon />} title="COMPETITIVE PRICING" description="We offer competitive pricing, ensuring that you get the best value for your investment." />
-                <Element icon={<ExceptionalServiceIcon />} title="EXCEPTIONAL SERVICE" description="You can trust us to be responsive, knowledgeable, and ready to assist you." />
-                <Element icon={<ExperienceTheDifferenceIcon />} title="EXPERIENCE THE DIFFERENCE" description="Explore our extensive catalog, and get your quote. Your success is our priority." />
-                <Element icon={<TyreProcurementIcon />} title="TYRE PROCUREMENT" description="We've streamlined the ordering process, making it easy for you to get the tyres you need." />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center">
+                    <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pr-10 border-r border-[#E6E6E6]">
+                        <Element icon={<ExtensiveInventoryIcon />} title="EXTENSIVE INVENTORY" description="Vast selection of top-quality tyres, covering a wide range of sizes and types." />
+                        <Element icon={<ReliableDeliveryIcon />} title="RELIABLE DELIVERY" description="Count on us for dependable and timely delivery to keep your operations running smoothly." />
+                        <Element icon={<ExtensiveInventoryIcon />} title="COMPETITIVE PRICING" description="We offer competitive pricing, ensuring that you get the best value for your investment." />
+                        <Element icon={<ExceptionalServiceIcon />} title="EXCEPTIONAL SERVICE" description="You can trust us to be responsive, knowledgeable, and ready to assist you." />
+                        <Element icon={<ExperienceTheDifferenceIcon />} title="EXPERIENCE THE DIFFERENCE" description="Explore our extensive catalog, and get your quote. Your success is our priority." />
+                        <Element icon={<TyreProcurementIcon />} title="TYRE PROCUREMENT" description="We've streamlined the ordering process, making it easy for you to get the tyres you need." />
+                    </div>
+                    <div className="col-span-1 flex flex-col justify-center items-center w-fit ml-0 mr-auto">
+                        <Image src="/images/why-choose-us-tyres.png" alt="Why Choose Us" width={268} height={216} className="object-contain" />
+                        <button className="bg-[#171A1F] text-sm font-semibold text-white rounded-[2px] px-6 py-2 mt-5">
+                            REQUEST CATALOG
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div className="col-span-1 flex flex-col justify-center items-center w-fit ml-0 mr-auto">
-                <Image src="/images/why-choose-us-tyres.png" alt="Why Choose Us" width={268} height={216} className="object-contain" />
-                <button className="bg-[#171A1F] text-sm font-semibold text-white rounded-[2px] px-6 py-2 mt-5">
-                    REQUEST CATALOG
-                </button>
+
+            <div className="w-full border-b border-light-silver-2 mt-20">
             </div>
         </div>
-
-
-    </div>)
+    )
 }
 
 
@@ -42,9 +47,9 @@ const Element = ({ icon, title, description }: { icon: React.ReactNode, title: s
 const Header = () => {
     return (<>
         <div className="text-center mb-12">
-            <p className="text-medium-gray text-sm mb-4 ">MORE ABOUT US</p>
+            <p className="text-medium-gray text-sm ">MORE ABOUT US</p>
             <h2 className="text-4xl font-bold text-black mb-4 ">WHY CHOOSE US</h2>
-            <p className="text-medium-gray text-base ">Below you'll find the answers you're looking for</p>
+            <p className="text-medium-gray text-base mt-2 ">Below you'll find the answers you're looking for</p>
         </div>
     </>)
 }
