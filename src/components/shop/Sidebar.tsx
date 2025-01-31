@@ -1,11 +1,12 @@
 export default function Sidebar() {
     return (
-        <aside className="w-1/7 bg-white h-full min-h-screen ml-10 mt-4">
+        <aside className="w-1/7 bg-white h-full min-h-screen ml-10 mt-4 mb-6">
             <FilterByBrand />
             <FilterByWidth />
             <FilterByDiameter />
             <FilterBySeason />
             <ProductStatus />
+            <FilterByPrice />
 
         </aside>
     )
@@ -135,12 +136,20 @@ const FilterBySeason = () => {
 
 const ProductStatus = () => {
     return (
-        <div className="border-x border-t border-light-silver-2 p-4">
+        <div className="border-x border-t  border-light-silver-2 p-4 mb-2.5">
             <h2 className="text-base font-bold text-black uppercase mb-4">Product Status</h2>
             <label className="flex items-center">
                 <input type="checkbox" className="mr-2" />
                 <span className="text-sm text-gray">Only in stock</span>
             </label>
+        </div>
+    )
+}
+
+const FilterByPrice = () => {
+    return (
+        <div className="border-x border-t border-light-silver-2 p-4 -mt-2.5">
+            <h2 className="text-base font-bold text-black uppercase mb-4">Filter by Price</h2>
         </div>
     )
 }
