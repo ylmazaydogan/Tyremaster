@@ -5,7 +5,7 @@ const AboutTyremaster = () => {
         <section className="py-16 bg-white  border-y border-light-silver-2 mt-40">
             <div className=" mx-auto responsive px-6 lg:px-8">
                 <div className="text-center">
-                    <p className="text-medium-gray text-sm mb-3 pt-9">WHO WE ARE?</p>
+                    <p className="text-medium-gray text-sm mt-2 ">WHO WE ARE?</p>
                     <h2 className="text-4xl font-bold text-black mt-2.5 ">ABOUT TYREMASTER</h2>
                     <p className="text-gray text-base mt-2.5 ">
                         There are many variations of tyres that you can find for your specific need.
@@ -31,8 +31,12 @@ const AboutTyremaster = () => {
                             >
                                 LEARN MORE
                             </a>
+                          
                         </div>
+                        
                     </div>
+                    
+                   
 
                     <div className="md:w-1/2 mt-24 md:mt-0 flex justify-center ml-48 ">
                         <Image
@@ -40,12 +44,17 @@ const AboutTyremaster = () => {
                             alt="Tyremaster Office"
                             width={606}
                             height={404}
-                            className="rounded-lg shadow-lg mt-10"
+                            className="rounded-st shadow-lg mt-10 mb-4"
                         />
+                        
                     </div>
+                   
                 </div>
+                
             </div>
+            
         </section>
+        
     );
 };
 

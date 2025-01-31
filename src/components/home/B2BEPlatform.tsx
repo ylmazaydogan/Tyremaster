@@ -26,7 +26,24 @@ export default function B2BEPlatform() {
                     height={450}
                     className="object-contain absolute left-96 top-80 mix-blend-multiply" // mix blend ekleyip arka planı ayarladım.
                 />
+                  <Image
+                    src="/images/imac.png"
+                    alt="Phone showing the platform"
+                    width={466}
+                    height={313}
+                    className="absolute left-2 top-5" // mix blend ekleyip arka planı ayarladım.
+                />
+
+                <Image
+                    src="/images/phonereverse.png"
+                    alt="Phone showing the platform"
+                    width={254}
+                    height={260}
+                    className="absolute -right-36 -bottom-24 " // mix blend ekleyip arka planı ayarladım.
+                />
+              
             </div>
+            
 
 
             <div className="md:w-1/2 text-left mt-8 md:mt-0">

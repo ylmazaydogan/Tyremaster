@@ -47,7 +47,7 @@ const Element = ({ icon, title, description }: { icon: React.ReactNode, title: s
 const Header = () => {
     return (<>
         <div className="text-center mb-12">
-            <p className="text-medium-gray text-sm ">MORE ABOUT US</p>
+            <p className="text-medium-gray text-sm mb-3 ">MORE ABOUT US</p>
             <h2 className="text-4xl font-bold text-black mb-4 ">WHY CHOOSE US</h2>
             <p className="text-medium-gray text-base mt-2 ">Below you'll find the answers you're looking for</p>
         </div>
