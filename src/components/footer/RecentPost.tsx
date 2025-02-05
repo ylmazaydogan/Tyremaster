@@ -23,49 +23,63 @@ const RecenPostHeader = () => {
 
 const RecentPostItem = () => {
     return (
-        <a className="flex py-2.5 border-b gap-3.5 group mt-5">
-            <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12 ">
-                <Image
-                    src="/images/tyremasterwheel.jpeg"
-                    alt="TyreMaster Logo"
-                    width={222}
-                    height={222}
-                    className="w-36"
-                />
+        <a className="flex flex-col py-2.5 gap-3.5 group mt-5">
+            <div className="flex flex-row gap-3.5 items-center">
+                <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12">
+                    <Image
+                        src="/images/tyremasterwheel.jpeg"
+                        alt="TyreMaster Logo"
+                        width={222}
+                        height={222}
+                        className="w-36"
+                    />
+                </div>
+                <div className="flex flex-col gap-2">
+                    <p className="text-white text-sm">
+                        The B2B tyre procurement platform
+                    </p>
+                    <span className="text-white text-sm group-hover:text-green mt-2.5">
+                        Click to view
+                    </span>
+                </div>
             </div>
-            <div className="flex flex-col gap-2">
-                <p className="text-white text-sm ">The B2B tyre procurement platform</p>
-                <span className="text-white text-sm group-hover:text-green  mt-2.5">Click to view</span>
-                <div className="border-t border-light-silver-2 w-full"></div>
-            </div>
+            <div className="border-b border-light-silver-2 w-full mt-1 "></div>
         </a>
-    )
-}
+    );
+};
+
 
 const RecentPostItem2 = () => {
     return (
-        <a className="flex py-2.5 border-b gap-4">
-            <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12">
-                <Image
-                    src="/images/tyremasterwheel2.jpg"
-                    alt="TyreMaster Logo"
-                    width={222}
-                    height={222}
-                    className="w-36"
-                />
+        <a className="flex flex-col py-2.5 gap-4 group">
+            <div className="flex flex-row gap-4 items-center">
+                <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12">
+                    <Image
+                        src="/images/tyremasterwheel2.jpg"
+                        alt="TyreMaster Logo"
+                        width={222}
+                        height={222}
+                        className="w-36"
+                    />
+                </div>
+                <div className="flex flex-col gap-2">
+                    <p className="text-white text-sm">
+                        Extensive selection of premium tires
+                    </p>
+                    <span className="text-white text-sm mt-2.5">
+                        Click to view
+                    </span>
+                </div>
             </div>
-            <div className="flex flex-col gap-2">
-                <p className="text-white text-sm">Extensive selection of premium  tires</p>
-                <span className="text-white text-sm mt-2.5 ">Click to view</span>
-                <div className="border-t border-light-silver-2 w-full"></div>
-            </div>
+            <div className="border-b border-light-silver-2 w-full mt-1"></div>
         </a>
-    )
-}
+    );
+};
+
 
 const RecentPostItem3 = () => {
     return (
-        <a className="flex py-2.5 border-b gap-4 group !border-none">
+        <a className="flex py-2.5 border-b gap-4 group !border-none mt-0.5">
             <div className="flex flex-shrink-0 w-[75px] h-[67px] items-center rounded-12 ">
                 <Image
                     src="/images/tyremasterwheel3.jpg"

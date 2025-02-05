@@ -65,7 +65,7 @@ const Tyremaster = () => {
             <a href="#"
                 className="self-center xl:self-start flex items-center mt-5">
                 <Image
-                    src="/images/tyremasteryeni.jpg"
+                    src="/images/tyremasteryeni.png"
                     alt="TyreMaster Logo"
                     width={208}
                     height={120}

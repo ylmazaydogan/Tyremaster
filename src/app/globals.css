@@ -9,7 +9,7 @@ body {
 }
 
 /*New Container Class*/
-/* Yeni container sınıfı */
+
 .container {
   width: 100%;
   padding-left: 17px;
@@ -27,6 +27,12 @@ body {
     @apply w-[62.5%] h-[10px] mx-auto;
   }
 
-  
+  .login-register {
+    @apply w-[90%] md:w-[60%] xl:w-[42%] mx-auto;
+}
 
+.address-css {
+  @apply w-[87.7%] md:w-[100%] mx-auto;
+}
+   
 }

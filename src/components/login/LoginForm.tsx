@@ -12,7 +12,7 @@ const LoginForm = () => {
                         required
                     />
                 </div>
-                <div className='mt-6 gap-1 flex flex-col pr-10 mt-1'>
+                <div className='mt-6 gap-1 flex flex-col pr-10 '>
                     <InputField
                         label="Password"
                         className="text-sm text-dark-gray"

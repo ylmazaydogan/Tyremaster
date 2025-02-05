@@ -42,6 +42,8 @@ const config: Config = {
 				'dark-silver ': '#F4F4F4',
 				'dark-gray': '#242424',
 				'light-silver-2': '#C6C6C6',
+				'input-gray':'#EFEFEF',
+
 
 			},
 

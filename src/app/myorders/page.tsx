@@ -1,13 +1,31 @@
 import React from "react";
 
 export default function MyAccountPage() {
+  const orders = [
+    {
+      id: 1,
+      date: "2024-01-15",
+      amount: "€150.00",
+      quantity: 2,
+      status: "Shipped",
+      shipmentStatus: "In Transit",
+    },
+    {
+      id: 2,
+      date: "2024-02-01",
+      amount: "€200.00",
+      quantity: 3,
+      status: "Processing",
+      shipmentStatus: "Pending",
+    },
+  ];
   return (
-    <div className=" min-h-screen">
+    <div className="min-h-screen">
 
-      <div className=" py-9 px-5 shadow-md mb-6 ml-12">
+      <div className="border-b border-cool-gray">
         <div className="mx-auto">
           <p className="text-sm text-medium-gray mt-2">ALL YOUR ACCOUNT DETAILS</p>
-          <h1 className="text-4xl font-bold uppercase text-black mt-2 ">My Account</h1>
+          <h1 className="text-4xl font-bold uppercase text-black ">My Account</h1>
           <p className="text-gray text-base ">
             Access your account to manage personal information, track orders, and more.
           </p>

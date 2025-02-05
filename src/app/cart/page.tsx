@@ -1,5 +1,5 @@
-import ProductCard from '@/components/ProductCard';
-import CartTotal from '@/components/CartTotal';
+import ProductCard from '@/components/cart/ProductCard';
+import CartTotal from '@/components/cart/CartTotal';
 import ShopBanner from '@/components/shop/ShopBanner';
 
 export default function Cart() {
@@ -12,7 +12,7 @@ export default function Cart() {
       />
       
 
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 mb-7 mt-4">
+      <div className=" mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 mb-7 mt-4">
      
         <div className="lg:col-span-2 border border-light-silver-2 rounded-st p-6">
           <h1 className="text-black font-bold uppercase text-4xl mb-4 ">YOUR PRODUCTS</h1>
@@ -24,10 +24,12 @@ export default function Cart() {
         </div>
 
        
-        <div className="border border-light-silver-2 bg-white p-6 rounded-st shadow-md ">
+        <div className=" border-light-silver-2 bg-white p-6 rounded-st ">
           <CartTotal />
         </div>
+        
       </div>
+      
     </div>
   );
 }

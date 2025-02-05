@@ -1,7 +1,7 @@
 import InputField from "../Input";
 const RegisterForm = () => {
     return (
-        <form className="flex flex-col">
+        <form className="flex flex-col mb-5">
                             <InputField
                                 label="Username"
                                 className="text-sm"
@@ -45,11 +45,11 @@ const RegisterForm = () => {
 
                             </p>
 
-                            <div className="flex justify-center lg:mt-auto pt-4 lg:pt-8 mt-4 border-t-2 border-cool-gray">
+                            <div className="flex justify-center  lg:mt-auto pt-4 lg:pt-8  border-t-2 border-cool-gray">
                                 
                                 <button
                                     
-                                    className=" mt-2 w-3/5 h-4/5  bg-green text-white font-semibold hover:bg-green  rounded-st uppercase mb-5"
+                                    className=" mt-2 w-4/5 h-3/4  bg-green text-white font-semibold hover:bg-green  rounded-st uppercase mb-5"
                                 >
                                     register
                                 </button>

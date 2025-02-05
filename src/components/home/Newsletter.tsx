@@ -16,8 +16,8 @@ const Newsletter = () => {
             </div>
 
 
-
-            <div className="flex shadow-lg p-2 w-[800px] h-[72px] mx-auto bg-white mt-10 relative ml-40">
+            <div className="bg-input-gray w-3/4 mx-auto mt-7">
+            <div className="flex shadow-lg p-2 w-[800px] h-[72px] mx-auto bg-white relative ml-40 mt-2 mb-2 ">
                 <div className="flex w-full relative z-10">
                     <input
                         type="email"
@@ -32,6 +32,7 @@ const Newsletter = () => {
                     </svg>
 
                 </button>
+            </div>
             </div>
 
 

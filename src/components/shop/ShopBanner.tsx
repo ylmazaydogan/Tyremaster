@@ -26,7 +26,7 @@ const ShopBanner = ({
                     className="object-cover"
                 />
             </div>
-            <div className="relative h-full flex flex-col justify-center text-left ml-10 mt-1.5">
+            <div className="relative h-full flex flex-col justify-center text-left ml-10">
                 {subtitle && (
                     <h3 className="text-white text-base uppercase tracking-wider">
                         {subtitle}

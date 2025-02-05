@@ -1,7 +1,7 @@
 const CartSummary = () => {
     return (
         <div className="flex flex-col">
-            <div className="border border-light-silver-2 p-6">
+            <div className="p-6">
                 <div className="mt-3.5">
                     <div className="flex items-center mb-4">
                         <h2 className="text-4xl font-bold text-black">Cart Total</h2>
@@ -31,10 +31,7 @@ const CartSummary = () => {
                 </div>
             </div>
 
-            {/* Border dışındaki buton */}
-            <button className="w-full bg-green text-white py-4 mt-6 font-semibold hover:bg-green-600 transition-all duration-300 ease-in-out">
-                PROCEED TO PAYMENT
-            </button>
+            
         </div>
     );
 };
