@@ -8,17 +8,12 @@ body {
   font-family: 'Arimo', sans-serif;
 }
 
-/*New Container Class*/
-
-.container {
-  width: 100%;
-  padding-left: 17px;
-  padding-right: 17px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* New Container Class */
 @layer components {
+  .container {
+    @apply w-full px-4 mx-auto;
+  }
+
   .responsive {
     @apply w-[92%] md:w-[75%] xl:w-[83%] mx-auto;
   }
@@ -29,10 +24,13 @@ body {
 
   .login-register {
     @apply w-[90%] md:w-[60%] xl:w-[42%] mx-auto;
-}
+  }
 
-.address-css {
-  @apply w-[87.7%] md:w-[100%] mx-auto;
-}
-   
+  .address-css {
+    @apply w-[87.7%] md:w-[100%] mx-auto;
+  }
+
+  .terms-container {
+    @apply w-[95%] lg:w-[67%] mx-auto;
+  }
 }
