@@ -5,7 +5,7 @@ const SendUsEmail = () => {
     return (
         <form className="grid lg:grid-cols-2 gap-4 lg:gap-5 lg:pr-10">
                         <div className="flex gap-6 items-center col-span-full pl-9">
-                            <span className="text-black font-semibold uppercase flex flex-shrink-0 text-lg lg:text-4xl ">
+                            <span className="text-black font-semibold -mt-2 uppercase flex flex-shrink-0 text-lg lg:text-4xl ">
                                 SEND US AN EMAIL
                             </span>
                             <hr className="border-cool-gray bg-light-silver w-full h-[1px]" />

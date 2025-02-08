@@ -7,7 +7,7 @@ export default function WhyChooseUs() {
                 <Header />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center">
-                    <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pr-10 border-r border-[#E6E6E6]">
+                    <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pr-10 border-r border-cool-gray">
                         <Element icon={<ExtensiveInventoryIcon />} title="EXTENSIVE INVENTORY" description="Vast selection of top-quality tyres, covering a wide range of sizes and types." />
                         <Element icon={<ReliableDeliveryIcon />} title="RELIABLE DELIVERY" description="Count on us for dependable and timely delivery to keep your operations running smoothly." />
                         <Element icon={<ExtensiveInventoryIcon />} title="COMPETITIVE PRICING" description="We offer competitive pricing, ensuring that you get the best value for your investment." />
@@ -33,12 +33,12 @@ export default function WhyChooseUs() {
 
 const Element = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => {
     return (<div className="flex items-center">
-        <div className="bg-white p-4 inline-block rounded-full mr-2.5">
+        <div className="bg-white p-4 inline-block rounded-full mr-2">
             {icon}
         </div>
         <div className="flex-grow text-left">
             <h3 className="text-base font-bold text-black">{title}</h3>
-            <p className="text-base text-medium-gray leading-8 mt-2 ">{description}</p>
+            <p className="text-base text-medium-gray leading-7 mt-2 ">{description}</p>
         </div>
     </div>)
 }

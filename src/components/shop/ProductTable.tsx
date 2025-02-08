@@ -3,7 +3,7 @@ import products from "@/mock-data/products.json"
 
 const ProductTable = () => {
     return (
-        <Table className="min-w-full">
+        <Table className="min-w-full border-collapse">
             <TableHeader>
                 <TableRow className="border-b border-light-silver-2">
                     <TableHead className="text-sm font-bold text-black text-left">BRAND</TableHead>

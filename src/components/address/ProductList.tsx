@@ -4,7 +4,7 @@ import AddressSection from "./AddressSection";
 
 const ProductList = () => {
     return (
-        <div className="w-full md:w-1/2 shadow-md p-4 rounded-st border-y-2 border-x-2 border-r-0 border-light-silver-2">
+        <div className="w-full md:w-1/2 shadow-md p-4 rounded-st border-y border-x border-r-0 border-light-silver-2">
             <AddressSection title="Your Products"/>
         
             <div className="space-y-6">

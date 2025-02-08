@@ -8,6 +8,7 @@ body {
   font-family: 'Arimo', sans-serif;
 }
 
+
 /* New Container Class */
 @layer components {
   .container {
@@ -33,4 +34,6 @@ body {
   .terms-container {
     @apply w-[95%] lg:w-[67%] mx-auto;
   }
+  
+ 
 }

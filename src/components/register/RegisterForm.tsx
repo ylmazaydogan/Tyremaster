@@ -1,7 +1,7 @@
 import InputField from "../Input";
 const RegisterForm = () => {
     return (
-        <form className="flex flex-col mb-5">
+        <form className="flex flex-col mb-16">
                             <InputField
                                 label="Username"
                                 className="text-sm"
@@ -20,7 +20,7 @@ const RegisterForm = () => {
                                 required
                                 className="mt-6 text-sm"
                             />
-                                <div className="absolute inset-y-0 right-4 flex items-center mt-12">
+                                <div className="absolute inset-y-0 right-4 flex items-center mt-14">
                                     <svg
                                         width="21"
                                         height="14"
@@ -39,7 +39,7 @@ const RegisterForm = () => {
                                     </svg>
                                 </div>
                             </div>
-                            <p className="text-sm text-gray text-justify mt-11 mb-2">
+                            <p className="text-sm text-gray text-justify mt-11 mb-10">
                                 Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our {' '}
                                 <a href="/privacy-policy" className="text-green underline">privacy policy</a>.
 
@@ -49,7 +49,7 @@ const RegisterForm = () => {
                                 
                                 <button
                                     
-                                    className=" mt-2 w-4/5 h-3/4  bg-green text-white font-semibold hover:bg-green  rounded-st uppercase mb-5"
+                                    className=" mt-9 w-3/5 h-3/4  bg-green text-white font-semibold hover:bg-green  rounded-st uppercase mb-5"
                                 >
                                     register
                                 </button>

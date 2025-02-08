@@ -6,9 +6,9 @@ import TermItem from "./TermItem";
 
 export default function TermsContent() {
     return (
-        <div className="flex flex-col mt-10 responsive border border-light-silver-2 rounded-st mb-10">
+        <div className="flex flex-col mt-16 responsive border border-light-silver-2 rounded-st mb-10">
             <div className="py-4 terms-container">
-                <p className="text-justify text-base text-gray leading-7">
+                <p className="text-justify text-base text-gray leading-7 mt-7">
                     These Terms and Conditions ("Terms") govern your use of the TyreMaster wholesale website and all transactions conducted through it.
                     By accessing and using our website and placing orders, you agree to be bound by these Terms. Please read them carefully.
                 </p>

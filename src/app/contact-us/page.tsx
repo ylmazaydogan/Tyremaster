@@ -8,7 +8,7 @@ const Contact = () => {
         <main className="flex-grow">
             <div className="">
                 <ContactMap />
-                <div className="grid lg:grid-cols-2 mx-7 lg:divide-x border-cool-gray mt-10 lg:mt-20">
+                <div className="grid lg:grid-cols-2 mx-7 lg:divide-x border-cool-gray mt-10 lg:mt-20 mb-24 ">
                     <SendUsEmail />
                     <WelcomeSection />
                 </div>

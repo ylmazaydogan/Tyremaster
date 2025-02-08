@@ -3,8 +3,9 @@ import SectionHeader from "./SectionHeader";
 
 const LoginSection = () => {
     return (
-        <div className='flex flex-col gap-2 lg:pl-56'>
+        <div className='flex flex-col gap-2 '>
             <SectionHeader title="login" />
+            
             <LoginForm/>
         </div>
     );

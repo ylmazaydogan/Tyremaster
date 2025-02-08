@@ -26,7 +26,7 @@ const AboutTyremaster = () => {
 
                         <div className="flex justify-start mt-10">
                             <a
-                                href="#"
+                                href="/about-us"
                                 className="inline-flex items-center justify-center w-[210px] h-[52px] bg-green text-white text-base transition"
                             >
                                 LEARN MORE
@@ -35,16 +35,14 @@ const AboutTyremaster = () => {
                     </div>
 
                     <div className="flex justify-center md:justify-end">
-                        <div className="bg-dark-silver rounded-st shadow-lg">
+                        <div className="bg-dark-silver backdrop-blur-md rounded-st md:shadow-lg ">
                             <Image
                                 src="/images/tyremasterabout.png"
                                 alt="Tyremaster Office"
-                                width={606}
+                                width={600}
                                 height={404}
                                 className="rounded-st translate-y-10 translate-x-10 mb-4"
-                                objectFit="cover"
-                                
-
+                                objectFit=""
                             />
                         </div>
                     </div>

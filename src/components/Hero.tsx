@@ -3,9 +3,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Hero = () => {
+
+  
   return (
     <section
-      className="bg-cover bg-center bg-no-repeat w-full h-[346px] mt-0.5"
+      className="bg-cover bg-center bg-no-repeat w-full h-[346px] "
       style={{ backgroundImage: "url('/images/tyremaster.jpeg')" }}
     >
       <div className="w-full mx-auto h-full flex flex-col justify-center items-center text-center text-white">
@@ -15,7 +17,7 @@ const Hero = () => {
         <p className="text-base mb-6 ">
           Your premier tyre wholesaler platform, where sourcing your tyre needs for supply is made easy.
         </p>
-        <a href="#" className="px-6 py-3 bg-green text-white rounded-md hover:bg-green-600 transition text-base ">
+        <a href="/shop" className="px-6 py-3 bg-green text-white rounded-md hover:bg-green-600 transition text-base ">
           ORDER NOW
         </a>
       </div>

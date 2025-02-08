@@ -1,12 +1,10 @@
 import React from "react";
-// Import ShadCN table components
-import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination"
-import Sidebar from "@/components/shop/Sidebar"
-import ShopBanner from "@/components/shop/ShopBanner"
-import ProductTable from "@/components/shop/ProductTable"
+import { Pagination, PaginationContent, PaginationItem, PaginationLink } from "@/components/ui/pagination";
+import Sidebar from "@/components/shop/Sidebar";
+import ShopBanner from "@/components/shop/ShopBanner";
+import ProductTable from "@/components/shop/ProductTable";
+
 export default function ShopSidebar() {
-
-
     return (
         <div className="flex flex-col">
             {/* Shop Banner */}
@@ -16,8 +14,10 @@ export default function ShopSidebar() {
                 description="Discover a diverse range of tire variations meticulously crafted to suit your unique needs, all available on our product page."
             />
 
+            
+
             {/* Shop Content */}
-            <div className="flex mt-10">
+            <div className="flex mt-4">
                 {/* Sidebar */}
                 <Sidebar />
 
@@ -27,6 +27,7 @@ export default function ShopSidebar() {
                         <ProductTable />
                     </div>
 
+                    {/* Pagination */}
                     <div className="ml-auto w-fit flex justify-end mt-4">
                         <Pagination>
                             <PaginationContent>
@@ -44,9 +45,8 @@ export default function ShopSidebar() {
                             </PaginationContent>
                         </Pagination>
                     </div>
-
                 </div>
-            </div >
-        </div >
+            </div>
+        </div>
     );
 }

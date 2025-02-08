@@ -24,14 +24,14 @@ const Footer = () => {
             </div>
 
             <div className="bg-light-gray">
-                <div className="py-0.5 mt-4 xl:mt-2 bg-light-gray">
+                <div className="py-1 mt-4 xl:mt-2 bg-light-gray">
                     <div className="flex items-center justify-between w-[92%] xl:w-[83%] mx-auto">
                         <Image
                             src="/images/TrustedSite.jpeg"
                             alt="TyreMaster Logo"
-                            width={178}
+                            width={128}
                             height={70}
-                            className="w-36"
+                            className="mix-blend-darken"
                         />
                         <p className="text-sm text-gray hidden xl:flex">
                             <span className="font-semibold text-black">TYREMASTER</span>
@@ -44,14 +44,14 @@ const Footer = () => {
                                 alt="TyreMaster Logo"
                                 width={115}
                                 height={43}
-                                className="w-36"
+                                className=""
                             />
                             <Image
                                 src="/images/Banktransfer.png"
                                 alt="TyreMaster Logo"
                                 width={94}
                                 height={94}
-                                className="w-36"
+                                className=""
                             />
 
                         </div>

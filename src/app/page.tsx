@@ -15,12 +15,13 @@ export default function Home() {
       <Features />
       <B2BEPlatform />
       <AboutTyremaster />
-      <section className="py-16 bg-white   ">
+      <section className="py-16 bg-white">
         <WhyChooseUs />
         <HowWeWork />
         <Newsletter />
         <Brands />
       </section>
+  
     </div>
   );
 }

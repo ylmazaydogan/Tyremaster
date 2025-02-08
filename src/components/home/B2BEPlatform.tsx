@@ -10,8 +10,8 @@ export default function B2BEPlatform() {
         </p>
 
 
-        <div className="container mx-auto py-12 flex flex-col md:flex-row items-center justify-between relative">
-            <div className="flex items-center space-x-4 response relative">
+        <div className="container mx-auto py-12 flex flex-col md:flex-row items-center justify-between relative ">
+            <div className="flex items-center space-x-4 relative ">
                 <Image
                     src="/images/tyremasterpc.png"
                     alt="iMac showing the platform"
@@ -24,14 +24,14 @@ export default function B2BEPlatform() {
                     alt="Phone showing the platform"
                     width={250}
                     height={450}
-                    className="object-contain absolute left-96 top-80 mix-blend-multiply" // mix blend ekleyip arka planı ayarladım.
+                    className="object-contain absolute left-96 top-80 mix-blend-multiply -z-10 " 
                 />
                   <Image
                     src="/images/imac.png"
                     alt="Phone showing the platform"
                     width={466}
                     height={313}
-                    className="absolute left-2 top-5" // mix blend ekleyip arka planı ayarladım.
+                    className="absolute left-2 top-5"
                 />
 
                 <Image
@@ -39,7 +39,7 @@ export default function B2BEPlatform() {
                     alt="Phone showing the platform"
                     width={254}
                     height={260}
-                    className="absolute -right-36 -bottom-24 " // mix blend ekleyip arka planı ayarladım.
+                    className="absolute -right-36 -bottom-24 -z-10 " 
                 />
               
             </div>
@@ -49,20 +49,19 @@ export default function B2BEPlatform() {
             <div className="md:w-1/2 text-left mt-8 md:mt-0">
                 <p className="text-black mt-6 text-base leading-relaxed mb-6 ">
                     Experience effortless tyre procurement with our easy-to-use B2B platform. Designed for wholesalers, our site simplifies the ordering process, enabling you to efficiently browse, select, and place orders. Enjoy competitive pricing and a seamless transaction experience.
-                    With competitive pricing and a wide selection of tyres, we cater to all your business needs.
+                    With competitive pricing and a wide selection of tyres, we cater to all your business needs.</p>
+                <p className="text-black mt-6 text-base leading-relaxed ">Our streamlined ordering system saves you time, allowing you to focus on what matters most—growing your business. Join us today and experience the convenience of a platform designed specifically for tyre wholesalers. Simplify your procurement process and discover how easy ordering tyres can be!</p>
 
-                    Our streamlined ordering system saves you time, allowing you to focus on what matters most—growing your business. Join us today and experience the convenience of a platform designed specifically for tyre wholesalers. Simplify your procurement process and discover how easy ordering tyres can be!          </p>
-
-                <div className="flex justify-start space-x-4 mt-8">
+                <div className="flex justify-start space-x-4 mt-12">
                     <a
-                        href="#"
+                        href="/register"
                         className="bg-green text-white px-6 py-3  hover:text-white transition"
                     >
                         REGISTER NOW
                     </a>
                     <a
-                        href="#"
-                        className="border border-green text-green px-14 py-3 rounded-lg hover:bg-green-500 hover:text-white transition"
+                        href="/login"
+                        className="border border-green text-green px-14 py-3 rounded-lg  transition"
                     >
                         LOGIN
                     </a>

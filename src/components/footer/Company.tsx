@@ -16,9 +16,9 @@ const CompanyHeader = () => {
 const CompanyLinks = () => {
     return (
         <div className="flex flex-col gap-4 mt-4 text-sm ">
-            <a href="#" className="text-white mt-1.5 ">About Us</a>
-            <a href="#" className="text-white mt-1.5 ">Terms & Conditions</a>
-            <a href="#" className="text-white mt-1.5 ">Privacy Policy</a>
+            <a href="/about-us" className="text-white mt-1.5 ">About Us</a>
+            <a href="/terms-conditions" className="text-white mt-1.5 ">Terms & Conditions</a>
+            <a href="/privacy-policy" className="text-white mt-1.5 ">Privacy Policy</a>
         </div>
     )
 }

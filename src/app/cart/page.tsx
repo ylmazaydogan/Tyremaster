@@ -12,11 +12,12 @@ export default function Cart() {
       />
       
 
-      <div className=" mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 mb-7 mt-4">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12 mt-10">
      
-        <div className="lg:col-span-2 border border-light-silver-2 rounded-st p-6">
-          <h1 className="text-black font-bold uppercase text-4xl mb-4 ">YOUR PRODUCTS</h1>
-          <div className="divide-y divide-light-silver-2">
+        <div className="lg:col-span-2 border border-light-silver-2 rounded-st pt-7 p-20">
+          <h1 className="text-black font-bold uppercase text-4xl pl-10 ">YOUR PRODUCTS</h1>
+          
+          <div className="divide-y divide-light-silver-2 pl-10">
             <ProductCard />
             <ProductCard />
             <ProductCard />
@@ -24,9 +25,15 @@ export default function Cart() {
         </div>
 
        
-        <div className=" border-light-silver-2 bg-white p-6 rounded-st ">
+        <div className=" border-light-silver-2 bg-white px-6 rounded-st  ">
           <CartTotal />
+          <div className="flex justify-end mt-3 mr-14">
+        <button className="bg-green text-white py-5 px-24 rounded-st font-bold text-sm mt-2">
+          CHECKOUT
+        </button>
+      </div>
         </div>
+        
         
       </div>
       

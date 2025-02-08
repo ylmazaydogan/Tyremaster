@@ -1,35 +1,35 @@
 const AccountPage = () => {
     return (
-        <div className="w-full bg-white p-6">
+        <main className="flex-grow ">
+           <div className="border-y md:border-b border-light-silver-2 relative h-fit ">
+                <div className="flex flex-col py-6 lg:py-0 lg:pt-8 lg:pb-11 responsive relative z-10">
+                    <span className="text-sm lg:text-base uppercase text-gray">all your account details</span>
+                    <h2 className="text-2xl lg:text-4xl font-semibold mt-2 uppercase text-black">my account</h2>
+                    <p className="text-sm lg:text-base uppercase text-gray ">access your account to manaage personel information, track orders, and more.</p>
+                </div>
+           </div>
 
-            <div className="mb-4 ml-10 ">
-                <p className="mb-2 text-medium-gray text-sm">ALL YOUR ACCOUNT DETAILS</p>
-                <h2 className="text-black text-4xl font-semibold uppercase text-left">MY ACCOUNT</h2>
-                <p className="text-gray text-base text-left">Access your account to manage personal information, track orders, and more.</p>
-                <hr className="border-t border-light-silver w-full mt-4" />
-            </div>
-
-            <div className="flex flex-col xl:flex-row w-full bg-white">
+            <div className="flex flex-col xl:flex-row w-full bg-white mt-12 mb-8">
                 {/* Sidebar */}
-                <div className="hidden xl:flex flex-col p-6 w-1/6 bg-white border border-light-silver rounded-lg shadow-sm">
-                    <div className="text-black font-semibold uppercase mb-6 text-base">MY ACCOUNT</div>
+                <div className="hidden xl:flex flex-col p-10 w-1/6 bg-white border border-light-silver rounded-lg">
+                    <div className="text-black font-semibold uppercase mb-3 text-base">MY ACCOUNT</div>
                     <hr className="border border-light-silver mb-4"></hr>
                     <div className="w-full h-2 bg-green rounded mb-6"></div>
-                    <div className="flex flex-col space-y-4">
-                        <a href="#" className="flex items-center justify-between py-2 font-semibold text-black hover:text-green text-xs-custom transition">
+                    <div className="flex flex-col space-y-5">
+                        <a href="#" className="flex items-center justify-between  font-semibold text-black hover:text-green text-xs-custom ">
                             MY INFORMATION <span className="text-black">{'>'}</span>
                         </a>
                         <hr className="border border-light-silver"></hr>
-                        <a href="#" className="flex items-center justify-between py-2 font-semibold text-black hover:text-green text-xs-custom transition">
+                        <a href="#" className="flex items-center justify-between  font-semibold text-black hover:text-green text-xs-custom ">
                             MY ORDERS <span className="text-black">{'>'}</span>
                         </a>
                         <hr className="border border-light-silver"></hr>
-                        <a href="#" className="flex items-center justify-between py-2 font-semibold text-black text-xs-custom hover:text-green transition">
+                        <a href="#" className="flex items-center justify-between font-semibold text-black text-xs-custom hover:text-green">
                             CHANGE PASSWORD <span className="text-black">{'>'}</span>
                         </a>
                         <hr className="border border-light-silver"></hr>
                     </div>
-                    <button className="flex items-center justify-center w-full mt-8 bg-black text-white py-3 rounded-md font-semibold text-sm">
+                    <button className="flex items-center justify-center w-full mt-5 bg-black text-white py-3 rounded-md font-semibold text-sm">
                         <span className="mr-2">🔒</span> Logout
                     </button>
                 </div>
@@ -77,7 +77,7 @@ const AccountPage = () => {
                                     />
                                 </div>
 
-                                <button type="submit" className="bg-green text-white font-semibold py-3 px-5 rounded-xl w-1/3">
+                                <button type="submit" className="bg-green text-white font-semibold py-3 px-5 rounded-xl w-1/3 ">
                                     Save
                                 </button>
                             </div>
@@ -85,7 +85,7 @@ const AccountPage = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </main>
     );
 };
 

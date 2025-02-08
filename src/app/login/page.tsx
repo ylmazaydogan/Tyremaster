@@ -5,12 +5,10 @@ import ShopBanner from '@/components/shop/ShopBanner';
 
 const RegisterPage = () => {
     return (
-        <main className='flex-grow login-register-page'>
-
-
-            <div className='grid lg:grid-cols-2 mt-4 lg:divide-x lg:divide-cool-gray mb-8 mx-auto'>
-                <LoginSection />
-                <RegisterSection />
+        <main className='flex-grow'>
+            <div className='grid lg:grid-cols-2 mt-10 lg:mt-16 lg:divide-x divide-light-silver-2 responsive mb-8'>
+                <LoginSection/>
+                <RegisterSection/>
             </div>
         </main>
     );

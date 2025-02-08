@@ -2,6 +2,7 @@ import React from "react";
 import AddressForm from "@/components/address/AddressForm";
 import ProductList from "@/components/address/ProductList";
 import ShopBanner from "@/components/shop/ShopBanner";
+import TermsCheckBox from "@/components/address/TermsCheckBox";
 
 export default function Address() {
   return (
@@ -16,7 +17,9 @@ export default function Address() {
       
         <AddressForm />
         <ProductList />
+        
     </div>
+   
     
     </>
   );
