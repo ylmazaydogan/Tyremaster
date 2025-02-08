@@ -14,7 +14,7 @@ export default function ShopSidebar() {
                 description="Discover a diverse range of tire variations meticulously crafted to suit your unique needs, all available on our product page."
             />
 
-            
+
 
             {/* Shop Content */}
             <div className="flex mt-4">
@@ -23,6 +23,7 @@ export default function ShopSidebar() {
 
                 {/* Main Product Table */}
                 <div className="w-5/6 pl-8 mt-4">
+
                     <div className="border border-light-silver-2">
                         <ProductTable />
                     </div>

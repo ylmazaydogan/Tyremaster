@@ -32,7 +32,7 @@ const FilterByBrand = () => {
                     </button>
                 </div>
 
-                <div className="flex flex-col space-y-2  text-black mt-4 mb-1 pb-2">
+                <div className="flex flex-col space-y-2  text-black mt-4 mb-1 pb-2 max-h-32 overflow-y-scroll">
                     <a href="#" className="text-base font-semibold">All</a>
                     <a href="#" className="text-sm">Brand</a>
                     <a href="#" className="text-sm">Brand</a>
@@ -62,7 +62,7 @@ const FilterByWidth = () => {
                 </button>
             </div>
 
-            <div className="flex flex-col space-y-2 mt-4">
+            <div className="flex flex-col space-y-2 mt-4  max-h-32 overflow-y-scroll">
                 <a href="#" className="text-base text-black font-bold">All</a>
                 <a href="#" className="text-sm text-black">255</a>
                 <a href="#" className="text-sm text-black">265</a>
@@ -92,7 +92,7 @@ const FilterByDiameter = () => {
                 </button>
             </div>
 
-            <div className="flex flex-col space-y-2 text-black mt-4">
+            <div className="flex flex-col space-y-2 text-black mt-4  max-h-32 overflow-y-scroll">
                 <a href="#" className="text-base font-semibold">All</a>
                 <a href="#" className="text-sm ">16</a>
                 <a href="#" className="text-sm ">17</a>
