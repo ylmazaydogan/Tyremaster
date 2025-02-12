@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 const SendUsEmail = () => {
     return (
-        <form className="grid lg:grid-cols-2 gap-4 lg:gap-5 lg:pr-10">
-                        <div className="flex gap-6 items-center col-span-full pl-9">
+        <form className="grid lg:grid-cols-2 gap-5 lg:gap-3 lg:pr-10">
+                        <div className="flex gap-4 items-center col-span-full pl-9">
                             <span className="text-black font-semibold -mt-2 uppercase flex flex-shrink-0 text-lg lg:text-4xl ">
                                 SEND US AN EMAIL
                             </span>

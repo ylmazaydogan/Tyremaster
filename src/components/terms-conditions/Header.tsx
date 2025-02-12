@@ -3,8 +3,8 @@
 export default function Header() {
     return (
         <>
-            <div className="border border-light-silver-2 md:border relative h-fit"></div>
-            
+            <div className="border-b border-light-silver-2"></div>
+
         </>
     );
 }

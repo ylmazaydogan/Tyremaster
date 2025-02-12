@@ -1,7 +1,7 @@
 export default function CartTotal() {
   return (
     
-    <div className=" border-y border-x border-light-silver-2 p-7">
+    <div className=" border-y border-x border-light-silver-2 p-7 pl-">
       <h2 className="text-4xl font-bold text-black mb-3.5">CART TOTAL</h2>
 
       <div className="space-y-6">
@@ -22,7 +22,7 @@ export default function CartTotal() {
           <span className="">€178.34</span>
         </div>
 
-        <div className="flex justify-between font-semibold text-lg border-t pt-4">
+        <div className="flex justify-between font-semibold text-lg border-t border-light-silver-2 pt-4">
           <span>Total</span>
           <span className="font-bold">€178.34</span>
         </div>

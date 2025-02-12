@@ -1,4 +1,5 @@
-[
+{
+  "products": [
     {
         "brand": "Michelin",
         "description": "ATTURO AZ 800 XL",
@@ -98,4 +99,43 @@
         "price": "34.68",
         "orderQuantity": 1
     }
-]
+  ],
+  "faq": [
+    {
+        "question": "What is the minimum order amount?",
+        "answer": "The minimum order amount is $100."
+    },
+    {
+        "question": "Can I cancel my fragrance wholesale order?",
+        "answer": "Yes, you can cancel within 24 hours of placing your order."
+    },
+    {
+        "question": "Can I return my fragrance wholesale order?",
+        "answer": "Returns are accepted within 14 days of delivery."
+    },
+    {
+        "question": "What happens if my fragrance wholesale order is damaged or defective?",
+        "answer": "If your order arrives damaged, please contact our support team within 7 days for a replacement."
+    },
+    {
+        "question": "How can I pay for my fragrance wholesale order?",
+        "answer": "We accept PayPal, Credit/Debit cards, and Bank Transfers."
+    },
+    {
+        "question": "Are the products in fragrance wholesale orders original?",
+        "answer": "Yes, all products are 100% original and sourced from authorized distributors."
+    },
+    {
+        "question": "Can the orders be shipped internationally?",
+        "answer": "Yes, we ship worldwide with DHL, FedEx, and UPS."
+    },
+    {
+        "question": "Who is responsible for customs fees on international orders?",
+        "answer": "Customers are responsible for any customs or import duties that may apply."
+    },
+    {
+        "question": "In how many days can I report damage?",
+        "answer": "Any damage must be reported within 7 days of receiving the order."
+    }
+  ]
+}

@@ -39,9 +39,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #E6E6E6;
+  width: 2px;
+  background-color: #171A1F;
   border-radius: 10px;
 }
+
 
 
 

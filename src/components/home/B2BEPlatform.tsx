@@ -20,11 +20,11 @@ export default function B2BEPlatform() {
                     className="object-contain"
                 />
                 <Image
-                    src="/images/phone.png"
+                    src="/images/iphone-x.png"
                     alt="Phone showing the platform"
                     width={250}
                     height={450}
-                    className="object-contain absolute left-96 top-80 mix-blend-multiply -z-10 " 
+                    className="object-contain absolute left-96 top-80 " 
                 />
                   <Image
                     src="/images/imac.png"
@@ -34,13 +34,7 @@ export default function B2BEPlatform() {
                     className="absolute left-2 top-5"
                 />
 
-                <Image
-                    src="/images/phonereverse.png"
-                    alt="Phone showing the platform"
-                    width={254}
-                    height={260}
-                    className="absolute -right-36 -bottom-24 -z-10 " 
-                />
+               
               
             </div>
             

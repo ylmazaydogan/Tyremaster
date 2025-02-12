@@ -4,8 +4,9 @@ import PaymentMethod from "./PaymentMethod";
 
 const AddressForm = () => {
     return (
-        <div className="w-full md:w-2/4  rounded-st  border-light-silver-2 border-y border-x border-l-0 pl-10 pr-10">
+        <div className="w-full md:w-2/4  rounded-st  border-light-silver-2 border-y border-x border-l-0 pl-10 pr-10 p-10 mb-10">
             <div className="flex items-center mb-6 pb-2 mt-3.5">
+
                 <h2 className="text-4xl font-bold text-black uppercase">Your Addresses</h2>
                 <div className="flex-grow h-px ml-5 bg-light-silver-2"></div>
             </div>

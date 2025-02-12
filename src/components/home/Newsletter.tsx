@@ -16,7 +16,7 @@ const Newsletter = () => {
             </div>
 
 
-            <div className="bg-input-gray w-3/4 mx-auto mt-7">
+            <div className="bg-input-gray w-3/4 h-[110px] mx-auto mt-7">
             <div className="flex shadow-lg  w-[750px] h-[44px] mx-auto bg-white relative ml-40 mt-2 mb-2 ">
                 <div className="flex w-full relative z-10">
                     <input

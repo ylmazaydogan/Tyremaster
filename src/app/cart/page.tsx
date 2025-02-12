@@ -25,7 +25,7 @@ export default function Cart() {
         </div>
 
        
-        <div className=" border-light-silver-2 bg-white px-6 rounded-st  ">
+        <div className=" border-light-silver-2 bg-white pl-4 rounded-st ">
           <CartTotal />
           <div className="flex justify-end mt-3 mr-14">
         <button className="bg-green text-white py-5 px-24 rounded-st font-bold text-sm mt-2">

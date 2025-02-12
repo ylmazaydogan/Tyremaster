@@ -1,7 +1,28 @@
+"use client";
+
 import { FaTimes } from "react-icons/fa";
 import Image from "next/image";
+import { useState } from 'react';
+
 
 export default function ProductCard() {
+  const [quantity, setQuantity] = useState(1);
+
+  const increaseQuantity = () => {
+    setQuantity(prev => prev + 1);
+  };
+
+  const decreaseQuantity = () => {
+    setQuantity(prev => prev > 0 ? prev - 1 : 0);
+  };
+
+  const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = parseInt(e.target.value);
+    if (!isNaN(value) && value >= 0) {
+      setQuantity(value);
+    }
+  };
+
   return (
     <div className=" border-light-silver-2 rounded-st my-1 p-3 text-left">
       {/* Headers */}
@@ -44,16 +65,32 @@ export default function ProductCard() {
         </div>
 
         {/* Quantity */}
-        <div className="w-1/6 flex items-center justify-center mb-6">
-          <button>
-          <svg width="102" height="36" viewBox="0 0 102 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="102" height="36" rx="10" fill="#F7F7F7"/>
-<path d="M49.7898 14.04V12.878H52.4218V23H51.1338V14.04H49.7898Z" fill="#171A1F"/>
-<path d="M27.5425 17.33V18.408H21.9565V17.33H27.5425Z" fill="#171A1F"/>
-<path d="M81.5797 18.422H78.5977V21.446H77.4077V18.422H74.4397V17.344H77.4077V14.306H78.5977V17.344H81.5797V18.422Z" fill="#171A1F"/>
-</svg>
+        <div className="w-1/6 flex flex-col items-center justify-center -mt-8 ml-3">
+          <div className="flex border border-light-silver rounded-st">
+            <button 
+              onClick={decreaseQuantity}
 
-          </button>
+              className="px-3 py-1 bg-light-gray  border-light-silver hover:bg-gray"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              min="0"
+              name="form-0-quantity"
+              id="id_form-0-quantity"
+              value={quantity}
+              onChange={handleQuantityChange}
+              className="quantity w-9  bg-light-gray text-center focus:outline-none [-moz-appearance:_textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+            />
+            <button 
+              onClick={increaseQuantity}
+              className="px-3 py-1 bg-light-gray border-light-silver hover:bg-gray"
+            >
+              +
+            </button>
+          </div>
+         
         </div>
 
         {/* Total */}

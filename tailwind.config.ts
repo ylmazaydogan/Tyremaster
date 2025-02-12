@@ -8,64 +8,76 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {
-
-
-
-
-
-
-			fontSize: {
-				'xs': '.75rem',
-				'sm': '.875rem',
-				'base': '1rem',
-				'lg': '1.125rem',
-				'xl': '1.25rem',
-				'2xl': '1.5rem',
-				'3xl': '1.875rem',
-				'4xl': '2.25rem',
-				'5xl': '3rem',
-				'6xl': '4rem',
-				'xs-custom': '0.8125rem',
-				'15px': '0.9375rem',
-			},
-
-			colors: {
-				'black': '#171A1F',
-				'gray': '#777777',
-				'green': '#1FCE6D',
-				'light-gray': '#F7F7F7',
-				'white ': '#FFFFFF',
-				'cool-gray': '#E6E6E6',
-				'medium-gray': '#A5A5A5',
-				'light-silver': '#E8E8E8',
-				'dark-silver ': '#F4F4F4',
-				'dark-gray': '#242424',
-				'light-silver-2': '#C6C6C6',
-				'input-gray':'#EFEFEF',
-				'red':'#FF0000',
-
-
-			},
-
-			fontFamily: {
-				arimo: ['Arimo', 'sans-serif'],
-			},
-
-			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)',
-				'st': '2px',
-			},
-
-			//Özel boyutlar
-			spacing: {
-				"552": "552px",
-				"148": "148px",
-			},
-		}
-	},
+    	extend: {
+    		fontSize: {
+    			xs: '.75rem',
+    			sm: '.875rem',
+    			base: '1rem',
+    			lg: '1.125rem',
+    			xl: '1.25rem',
+    			'2xl': '1.5rem',
+    			'3xl': '1.875rem',
+    			'4xl': '2.25rem',
+    			'5xl': '3rem',
+    			'6xl': '4rem',
+    			'xs-custom': '0.8125rem',
+    			'15px': '0.9375rem'
+    		},
+    		colors: {
+    			black: '#171A1F',
+    			gray: '#777777',
+    			green: '#1FCE6D',
+    			'light-gray': '#F7F7F7',
+    			white: '#FFFFFF',
+    			'cool-gray': '#E6E6E6',
+    			'medium-gray': '#A5A5A5',
+    			'light-silver': '#E8E8E8',
+    			'dark-silver': '#F4F4F4',
+    			'dark-gray': '#242424',
+    			'light-silver-2': '#C6C6C6',
+    			'input-gray': '#EFEFEF',
+    			red: '#FF0000'
+    		},
+    		fontFamily: {
+    			arimo: [
+    				'Arimo',
+    				'sans-serif'
+    			]
+    		},
+    		borderRadius: {
+    			lg: 'var(--radius)',
+    			md: 'calc(var(--radius) - 2px)',
+    			sm: 'calc(var(--radius) - 4px)',
+    			st: '2px'
+    		},
+    		spacing: {
+    			'552': '552px',
+    			'148': '148px'
+    		},
+    		keyframes: {
+    			'accordion-down': {
+    				from: {
+    					height: '0'
+    				},
+    				to: {
+    					height: 'var(--radix-accordion-content-height)'
+    				}
+    			},
+    			'accordion-up': {
+    				from: {
+    					height: 'var(--radix-accordion-content-height)'
+    				},
+    				to: {
+    					height: '0'
+    				}
+    			}
+    		},
+    		animation: {
+    			'accordion-down': 'accordion-down 0.2s ease-out',
+    			'accordion-up': 'accordion-up 0.2s ease-out'
+    		}
+    	}
+    },
 	plugins: [require("tailwindcss-animate")],
 };
 export default config;

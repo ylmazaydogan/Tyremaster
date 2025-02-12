@@ -35,7 +35,7 @@ const AboutTyremaster = () => {
                     </div>
 
                     <div className="flex justify-center md:justify-end">
-                        <div className="bg-dark-silver backdrop-blur-md rounded-st md:shadow-lg ">
+                        <div className="bg-dark-silver rounded-st ">
                             <Image
                                 src="/images/tyremasterabout.png"
                                 alt="Tyremaster Office"
