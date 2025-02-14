@@ -1,16 +1,15 @@
-
 export default function Newsletter() {
     return (
         <div className="flex flex-col w-full">
-            <p className="font-semibold  text-white text-base uppercase mt-3 ">
+            <p className="font-semibold   text-white text-base uppercase mt-12 ">
                 Subscribe to our Newsletter and receive B2B offers
             </p>
             <span className="text-white text-sm xl:mt-0.5 xl:w-full">
                 There are many variations of tyres that you can find for your specific need.
             </span>
 
-            <form className="flex place-items-center mt-3">
-                <div className="flex w-full max-w-[60%] relative -mr-1">
+            <form className="flex place-items-center mt-3 mr-16">
+                <div className="flex w-full max-w-full relative -mr-1">
                     <input
                         type="email"
                         placeholder="Type your email address"

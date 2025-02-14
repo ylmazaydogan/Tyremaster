@@ -7,7 +7,7 @@ import Newsletter from "./footer/Newsletter";
 
 const Footer = () => {
     return (
-        <div className="bg-black w-full  ">
+        <div className="bg-black w-full">
             <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 w-full mx-auto pb-10">
                 <div className="grid xl:grid-cols-2 xl:gap-2 mx-auto xl:w-full">
                     <TyremasterLogo />
@@ -19,7 +19,9 @@ const Footer = () => {
                         <Company />
                         <Useful />
                     </div>
+                   
                     <Newsletter />
+                    
                 </div>
             </div>
 

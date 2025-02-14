@@ -15,10 +15,10 @@ const UsefulHeader = () => {
 
 const UsefulLinks = () => {
     return (
-        <div className="flex flex-col gap-3 mt-4 text-sm mr-64 ">
-            <a href="/shop" className="text-white ">Tyre Shop</a>
-            <a href="/contact-us" className="text-white ">Contact us</a>
-            <a href="#" className="text-white ">All brands</a>
+        <div className="flex flex-col gap-4 mt-4 text-sm mr-64 ">
+            <a href="/shop" className="text-white mt-1.5 ">Tyre Shop</a>
+            <a href="/contact-us" className="text-white mt-1.5 ">Contact us</a>
+            <a href="#" className="text-white mt-1.5 ">All brands</a>
         </div>
     )
 }

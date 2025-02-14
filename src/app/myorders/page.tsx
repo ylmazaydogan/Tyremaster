@@ -48,9 +48,9 @@ export default function MyAccountPage() {
 
 
       <div className="mx-auto py-10 px-4">
-        <div className="flex space-x-8 -ml-10">
+        <div className="flex space-x-8 -ml-3">
           {/* Sol Menü */}
-          <div className="hidden xl:flex flex-col p-12 w-1/6 bg-white border border-light-silver rounded-st h-fit">
+          <div className="hidden xl:flex flex-col p-12 w-1/5 bg-white border border-light-silver rounded-st h-fit">
             <div className="text-black font-semibold uppercase mb-3 text-base">MY ACCOUNT</div>
 
             <div className="w-full h-2 bg-green rounded mb-6"></div>

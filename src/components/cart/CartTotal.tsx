@@ -1,10 +1,10 @@
 export default function CartTotal() {
   return (
     
-    <div className=" border-y border-x border-light-silver-2 p-7 pl-">
-      <h2 className="text-4xl font-bold text-black mb-3.5">CART TOTAL</h2>
+    <div className=" border-y border-x border-light-silver-2 p-7 ">
+      <h2 className="text-4xl font-bold text-black mb-6">CART TOTAL</h2>
 
-      <div className="space-y-6">
+      <div className="space-y-6 pr-7">
         <div className="flex justify-between text-base">
           <span>Subtotal</span>
           <span className="text-black">€178.34</span>

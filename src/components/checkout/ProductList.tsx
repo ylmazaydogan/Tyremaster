@@ -6,7 +6,7 @@ import Terms from "@/app/terms-conditions/page";
 const ProductList = () => {
     return (
         <div className="flex flex-col w-full md:w-1/2">
-            <div className="shadow-md p-12 rounded-st border-y border-x border-r-0 border-light-silver-2">
+            <div className="p-12 rounded-st border-y border-x border-r-0 border-light-silver-2">
                 <AddressSection title="Your Products"/>
             
                 <div className="space-y-6">
