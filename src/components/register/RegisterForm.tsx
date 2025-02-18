@@ -2,7 +2,10 @@
 
 import { useState } from 'react';
 import InputField from "../Input";
-import { useRegisterForm, useAuth } from "factoryx-commerce";
+import { useRegisterForm, useAuth, Input, Recaptcha } from "factoryx-commerce";
+import { Link } from 'lucide-react';
+import { Controller } from 'react-hook-form';
+import { Checkbox } from '../ui/checkbox';
 
 const RegisterForm = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -11,6 +14,7 @@ const RegisterForm = () => {
     const {
         register,
         handleSubmit,
+        control,
         formState: { errors },
     } = useRegisterForm();
 
@@ -21,30 +25,44 @@ const RegisterForm = () => {
             Password: data.Password,
         });
     };
-
+    console.log(errors)
     return (
         <form 
             className="flex flex-col mb-16" 
             onSubmit={handleSubmit(handleRegister)}
         >
-            <InputField
-                label="Username"
-                className="text-sm"
-                required
-            />
-            <InputField
-                label="Email address"
+            <div className="flex flex-col gap-4">
+                {errors.Email && <p className="text-red">{errors.Email.message}</p>}
+                {errors.Password && <p className="text-red">{errors.Password.message}</p>}
+            </div>
+            <Input
+                {...register("Email")}
                 type="email"
                 required
                 className="mt-6 text-sm"
+                name="Email"
+                
             />
+          
             <div className="relative">
-                <InputField
-                    label="Password"
+                <Input
+                    {...register("Password")}
                     type={showPassword ? "text" : "password"}
                     required
                     className="mt-6 text-sm"
+                    name="Password"
+                    
                 />
+                  <Input
+          {...register("password_repeat")}
+          className="col-span-full"
+          placeholder="Confirm Password*"
+          type="password"
+          name="password_repeat"
+          required
+          disabled={signup.isPending}
+          error={errors.password_repeat}
+        />
                 <div className="absolute inset-y-0 right-4 flex items-center mt-14">
                     <button
                         type="button"
@@ -77,6 +95,36 @@ const RegisterForm = () => {
                     register
                 </button>
             </div>
+            <div className="flex flex-col gap-4 mt-4 self-start">
+          <div className="flex items-center space-x-2">
+            <Controller
+              // @ts-ignore
+              control={control}
+              name="terms"
+              render={({ field }) => (
+                <Checkbox
+                  onCheckedChange={() => field.onChange(!field.value)}
+                  checked={field.value}
+                  id="terms"
+                />
+              )}
+            />
+
+            <label
+              htmlFor="terms"
+              className="text-xs text-black leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              <Link href="/terms-conditions">
+                I agree to the <u>terms and conditions</u>
+              </Link>
+            </label>
+          </div>
+          {errors?.terms?.message && (
+            <span className="text-red-500 text-sm ml-2">
+              {errors.terms.message}
+            </span>
+          )}
+        </div>
         </form>
     );
 };

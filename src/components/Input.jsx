@@ -1,12 +1,12 @@
 import React from 'react';
+import { Input } from './ui/input';
 
 const InputField = ({ 
     label, 
-    type = "text", 
     required = false, 
-    placeholder = "", 
     className = "", 
     icon = null,
+    register,
     ...props 
 }) => {
     return (
@@ -20,10 +20,9 @@ const InputField = ({
          
             <div className="relative">
               
-                <input
-                    type={type}
+                <Input
                     className='border border-cool-gray placeholder:text-gray outline-none rounded-st pl-5 pr-10 text-base placeholder:text-base h-11 w-full'
-                    placeholder={placeholder}
+                    required={required}
                     {...props}
                 />
 
