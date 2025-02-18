@@ -8,20 +8,21 @@ import Newsletter from "./footer/Newsletter";
 const Footer = () => {
     return (
         <div className="bg-black w-full">
-            <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 w-full mx-auto pb-10">
-                <div className="grid xl:grid-cols-2 xl:gap-2 mx-auto xl:w-full">
+            <div className="grid xl:grid-cols-2 gap-8 xl:gap-12 w-[92%] xl:w-[86%] mx-auto pb-10">
+                <div className="grid xl:grid-cols-2 xl:gap-2 xl:w-full">
                     <TyremasterLogo />
-                    <RecentPost />
+                    <div className="-ml-12">
+                        <RecentPost />
+                    </div>
                 </div>
 
-                <div className="flex flex-col gap-10 ml-6">
-                    <div className="flex flex-col xl:flex-row  mx-auto xl:w-full justify-between">
+                <div className="flex flex-col gap-10">
+                    <div className="flex flex-col xl:flex-row xl:w-full justify-between">
                         <Company />
                         <Useful />
                     </div>
                    
                     <Newsletter />
-                    
                 </div>
             </div>
 

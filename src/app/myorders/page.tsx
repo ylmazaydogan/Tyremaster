@@ -47,10 +47,10 @@ export default function MyAccountPage() {
       </div>
 
 
-      <div className="mx-auto py-10 px-4">
-        <div className="flex space-x-8 -ml-3">
-          {/* Sol Menü */}
-          <div className="hidden xl:flex flex-col p-12 w-1/5 bg-white border border-light-silver rounded-st h-fit">
+      <div className=" py-10 px-4 mx-8">
+        <div className="flex space-x-9 ">
+          {/* Left Menu*/}
+          <div className="hidden xl:flex flex-col p-12 w-1/6 bg-white border border-light-silver-2 rounded-st h-fit">
             <div className="text-black font-semibold uppercase mb-3 text-base">MY ACCOUNT</div>
 
             <div className="w-full h-2 bg-green rounded mb-6"></div>
@@ -97,7 +97,8 @@ export default function MyAccountPage() {
             </div>
 
             <button className="flex items-center justify-center w-full mt-5 bg-black text-white py-3 rounded-md font-semibold text-sm">
-              <span className="mr-2">🔒</span> Logout
+              <span></span>
+              <span>LOGOUT</span>
             </button>
           </div>
 
@@ -106,7 +107,7 @@ export default function MyAccountPage() {
             <div className="bg-white border border-light-silver rounded-st p-10 ">
               <div className="flex items-center">
                 <h2 className="text-4xl text-black font-bold uppercase">My Orders</h2>
-                <hr className="flex-grow border-t border-cool-gray" />
+                <hr className="flex-grow border-t border-light-silver-2" />
               </div>
 
 

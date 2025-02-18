@@ -8,7 +8,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-  } from "@/components/ui/accordion";
+} from "@/components/ui/accordion";
 import productsData from "@/mock-data/products.json";
 
 const Contact = () => {
@@ -16,19 +16,19 @@ const Contact = () => {
 
     return (
         <main className="flex-grow">
-            <div className="">
-                <ContactMap />
-                <div className="grid lg:grid-cols-2 mx-7 lg:divide-x border-cool-gray mt-10 lg:mt-20 mb-24">
+            <ContactMap />
+            <div className="w-[92%] xl:w-[86%] mx-auto">
+                <div className="grid lg:grid-cols-2 lg:divide-x border-cool-gray mt-10 lg:mt-20 mb-24">
                     <SendUsEmail />
                     <WelcomeSection />
                 </div>
-                
-                <div className=" border border-light-silver-2 rounded-st mb-14">
-                    <div className="py-4 lg:py-10  terms-container">
+
+                <div className="border border-light-silver-2 rounded-st mb-14 ">
+                    <div id="faq" className="py-4 lg:py-10 terms-container" >
                         <h2 className="text-2xl font-semibold mb-8 ml-5">Frequently Asked Questions</h2>
                         <Accordion type="single" collapsible>
                             {faq.map((item, index) => (
-                                <AccordionItem
+                                <AccordionItem 
                                     key={index}
                                     value={`item-${index}`}
                                     className={`min-h-[60px] my-auto ${

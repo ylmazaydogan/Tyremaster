@@ -14,8 +14,8 @@ export default function ShopSidebar() {
                 description="Discover a diverse range of tire variations meticulously crafted to suit your unique needs, all available on our product page."
             />
                 
-            <div className="ml-10 -mb-9">
-            <span className="text-gray text-sm mb-">53.340 Products found</span>
+            <div className="ml-10 -mb-16  mt-6">
+            <span className="text-gray text-sm">53.340 Products found</span>
             </div>
                 
 
@@ -33,9 +33,9 @@ export default function ShopSidebar() {
 
                     {/* Filters */}
 
-                    <div className="flex items-center gap-4 mb-6">
+                    <div className="flex items-center gap-4 pb-4">
 
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 mt-2">
 
                             <button className="flex items-center gap-1 px-3 py-1 text-xs bg-dark-silver rounded-st w-[142px] h-[36px] justify-center">
                                 <span className="text-green">X</span>
@@ -89,7 +89,7 @@ export default function ShopSidebar() {
 
 
                     {/* Pagination */}
-                    <div className="ml-auto w-fit flex justify-end mt-4">
+                    <div className="ml-auto w-fit flex justify-end mb-10 ">
                         <Pagination>
                             <PaginationContent>
                                 <PaginationItem>

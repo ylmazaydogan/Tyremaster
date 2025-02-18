@@ -3,19 +3,40 @@
 import { useState } from 'react';
 import InputField from "../Input";
 import SubmitButton from "./SubmitButton";
-
+import { useAuth, useLoginForm } from "factoryx-commerce";
+import { useRouter } from 'next/navigation';
 
 const LoginForm = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const router = useRouter();
+    const { signIn } = useAuth();
+    const {
+        register,
+        handleSubmit,
+        formState: { errors }
+    } = useLoginForm();
+
+    const handleLogin = (data: { email: string; password: string; recaptcha: string }) => {
+        signIn?.mutate(data, {
+            onSuccess: () => {
+                console.log('Login successful!');
+                router.push('/'); 
+            },
+            onError: (error) => {
+                console.error('Login failed:', error);
+            }
+        });
+    };
 
     return (
         <div className='flex flex-col pr-6 lg:pr-10'>
-            <form className='flex flex-col lg:min-h-[594px]'>
+            <form className='flex flex-col lg:min-h-[594px]' onSubmit={handleSubmit(handleLogin)}>
                 <div className='gap-1 flex flex-col mt-1'>
                     <InputField
                         label="Username or email address"
                         className="text-sm text-dark-gray"
                         required
+                        {...register("email")}
                     />
                 </div>
                 <div className='mt-1.5 gap-1 flex flex-col relative'>
@@ -24,6 +45,7 @@ const LoginForm = () => {
                         type={showPassword ? "text" : "password"}
                         required
                         className="mt-6 text-sm"
+                        {...register("password")}
                     />
                     <div className="absolute inset-y-0 right-4 flex items-center mt-14">
                         <button 

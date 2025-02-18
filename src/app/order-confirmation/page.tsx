@@ -15,9 +15,9 @@ export default function OrderConfirmation() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left */}
                     <div className="border border-light-silver-2 p-6 space-y-8">
-                        <h2 className="text-4xl font-bold">THANK YOU!</h2>
+                        <h2 className="text-4xl font-bold mx-6">THANK YOU!</h2>
                         
-                        <div className="space-y-6">
+                        <div className="space-y-6 mx-6">
                             <div>
                                 <h3 className="font-bold text-base mb-3">DELIVERY ADDRESS</h3>
                                 <div className="space-y-2 text-base font-normal">
@@ -52,7 +52,7 @@ export default function OrderConfirmation() {
                     </div>
 
                     {/* Right and Cart Summary*/}
-                    <div className="border border-light-silver-2 p-6 ">
+                    <div className="border border-light-silver-2 p-6">
                         <AddressSection title="YOUR PRODUCTS"/>
                     
                         <div className="space-y-6 mt-6 mx-6">

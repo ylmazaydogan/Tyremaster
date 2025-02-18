@@ -46,7 +46,7 @@ const Header = () => {
 
                             </svg>
 
-                            <span className='text-xs text-black Hebrew'>We are available on WhatsApp!</span>
+                            <span className='text-xs text-black'>We are available on WhatsApp!</span>
                         </a>
                     </div>
                     <div className="flex items-center justify-end space-x-2 border-light-gray">
@@ -62,7 +62,7 @@ const Header = () => {
                                 <a href="#newsletter" className="hover:text-gray text-black text-xs ">NEWSLETTER</a>
                             </div>
                             <div className="border-r border-light-silver-2 h-6"></div>
-                            <a href="#" className="hover:text-gray text-black text-xs ">FAQS</a>
+                            <a href="#faq" className="hover:text-gray text-black text-xs ">FAQS</a>
                             <div className="border-r border-light-silver-2 h-6"></div>
                         </div>
                     </div>
@@ -89,8 +89,8 @@ const Header = () => {
 
                     <div className="flex items-center justify-end mt-5 mx-10 mb-1.5">
 
-                        <a href="/login" className="flex items-center space-x-8 text-gray-100">
-                            <span className="flex items-center px-4 py-2 border border-light-silver rounded-md space-x-2">
+                        <a href="/login" className="flex items-center space-x-8">
+                            <span className="flex items-center px-4 py-2 border border-light-silver rounded-md space-x-4">
 
 
 
@@ -118,7 +118,7 @@ const Header = () => {
                         <li>
                             <a
                                 href="#"
-                                className="w-[160px] h-[40px] bg-black text-white rounded-md flex items-center justify-center  text-sm font-semibold  mr-3 "
+                                className="w-[160px] h-[40px] bg-black text-white rounded-st flex items-center justify-center  text-sm font-semibold  mr-3 "
                             >
                                 TYRES CATALOG
                             </a>

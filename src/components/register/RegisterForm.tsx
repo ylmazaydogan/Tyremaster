@@ -2,12 +2,31 @@
 
 import { useState } from 'react';
 import InputField from "../Input";
+import { useRegisterForm, useAuth } from "factoryx-commerce";
 
 const RegisterForm = () => {
     const [showPassword, setShowPassword] = useState(false);
+    const { register: signup } = useAuth();
+    
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useRegisterForm();
+
+    const handleRegister = (data: { Email: string; Password: string }) => {
+        console.log(data);
+        signup.mutate({
+            Email: data.Email,
+            Password: data.Password,
+        });
+    };
 
     return (
-        <form className="flex flex-col mb-16">
+        <form 
+            className="flex flex-col mb-16" 
+            onSubmit={handleSubmit(handleRegister)}
+        >
             <InputField
                 label="Username"
                 className="text-sm"
@@ -52,7 +71,7 @@ const RegisterForm = () => {
             <div className="flex justify-center  lg:mt-auto pt-4 lg:pt-8  border-t-2 border-cool-gray">
 
                 <button
-
+                    type="submit"
                     className=" mt-9 w-3/5 h-3/4  bg-green text-white font-semibold hover:bg-green  rounded-st uppercase mb-5"
                 >
                     register
