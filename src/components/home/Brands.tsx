@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const Brands = () => {
   return (
@@ -7,13 +7,12 @@ const Brands = () => {
         <Image
           src="/images/brandsection.png"
           alt="TyreMaster Logo"
-          layout="fill"
-          objectFit="contain"
-
+          fill
+          className="object-contain"
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Brands;

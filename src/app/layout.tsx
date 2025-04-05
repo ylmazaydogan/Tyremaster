@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InfoBlock from "@/components/InfoBlock";
-import QueryProvider from "@/providers/QueryProvider";
 
 export const metadata: Metadata = {
   title: "TyreMaster",
@@ -18,14 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <QueryProvider>
-          <main>
-            <Header />
-            {children}
-            <InfoBlock />
-            <Footer />
-          </main>
-        </QueryProvider>
+        <main>
+          <Header />
+          {children}
+          <InfoBlock />
+          <Footer />
+        </main>
       </body>
     </html>
   );
