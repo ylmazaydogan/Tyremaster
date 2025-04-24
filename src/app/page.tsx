@@ -6,22 +6,22 @@ import Brands from "@/components/home/Brands";
 import HowWeWork from "@/components/home/HowWeWork";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import B2BEPlatform from "@/components/home/B2BEPlatform";
+import ProductData from "@/components/ProductData";
 
 export default function Home() {
   return (
-
     <div className="text-center">
       <Hero />
       <Features />
       <B2BEPlatform />
       <AboutTyremaster />
+      <ProductData />
       <section className="py-16 bg-white">
         <WhyChooseUs />
         <HowWeWork />
         <Newsletter />
         <Brands />
       </section>
-  
     </div>
   );
 }

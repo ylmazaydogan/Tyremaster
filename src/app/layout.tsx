@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InfoBlock from "@/components/InfoBlock";
+import Providers from "@/components/Providers";
 
 export const metadata: Metadata = {
   title: "TyreMaster",
@@ -17,12 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main>
-          <Header />
-          {children}
-          <InfoBlock />
-          <Footer />
-        </main>
+        <Providers>
+          <main>
+            <Header />
+            {children}
+            <InfoBlock />
+            <Footer />
+          </main>
+        </Providers>
       </body>
     </html>
   );
