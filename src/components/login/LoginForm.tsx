@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react';
-import InputField from "../Input";
+import { Input } from '@/components/ui/input';
 import SubmitButton from "./SubmitButton";
 import { useAuth, useLoginForm } from "factoryx-commerce";
 import { useRouter } from 'next/navigation';
@@ -32,7 +32,7 @@ const LoginForm = () => {
         <div className='flex flex-col pr-6 lg:pr-10'>
             <form className='flex flex-col lg:min-h-[594px]' onSubmit={handleSubmit(handleLogin)}>
                 <div className='gap-1 flex flex-col mt-1'>
-                    <InputField
+                    <Input
                         label="Username or email address"
                         className="text-sm text-dark-gray"
                         required
@@ -40,7 +40,7 @@ const LoginForm = () => {
                     />
                 </div>
                 <div className='mt-1.5 gap-1 flex flex-col relative'>
-                    <InputField
+                    <Input
                         label="Password"
                         type={showPassword ? "text" : "password"}
                         required

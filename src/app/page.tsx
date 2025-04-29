@@ -7,6 +7,15 @@ import HowWeWork from "@/components/home/HowWeWork";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import B2BEPlatform from "@/components/home/B2BEPlatform";
 import ProductData from "@/components/ProductData";
+import MethodsData from "@/components/MethodsData";
+import FilterData from "@/components/FilterData";
+import CheckoutData from "@/components/CheckoutData";
+import { Check } from "lucide-react";
+import BrandsData from "@/components/BrandsData";
+import ProfileData from "@/components/ProfileData";
+
+
+
 
 export default function Home() {
   return (
@@ -16,6 +25,9 @@ export default function Home() {
       <B2BEPlatform />
       <AboutTyremaster />
       <ProductData />
+      <MethodsData/>
+      <FilterData/>
+      <ProfileData/>
       <section className="py-16 bg-white">
         <WhyChooseUs />
         <HowWeWork />

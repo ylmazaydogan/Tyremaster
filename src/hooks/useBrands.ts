@@ -1,3 +1,6 @@
+import { useQuery } from '@tanstack/react-query';
+import { makeApiRequest } from '@/lib/axios';
+
 interface Brand {
   key: string;
   link: string;
@@ -7,8 +10,8 @@ interface Brands {
   [letter: string]: Brand[];
 }
 interface UseBrandsResult {
-  brands: Brands | null;
-  loading: boolean;
+  brands: Brand[];
+  isLoading: boolean;
   error: Error | null;
   toggleLetter: (letter: string) => void;
   isActive: (letter: string) => boolean;
@@ -16,5 +19,24 @@ interface UseBrandsResult {
   getButtonVariant: (letter: string) => 'default' | 'outline';
   selectedLetters: string[];
 }
-export declare const useBrands: () => UseBrandsResult;
+export const useBrands = (): UseBrandsResult => {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['brands'],
+    queryFn: async () => {
+      const response = await makeApiRequest("/brands");
+      return response.data;
+    }
+  });
+
+  return {
+    brands: data?.brands || [],
+    isLoading,
+    error,
+    toggleLetter: (letter: string) => {},
+    isActive: (letter: string) => false,
+    hasBrand: (letter: string) => false,
+    getButtonVariant: (letter: string) => 'default',
+    selectedLetters: []
+  };
+};
 export {};
