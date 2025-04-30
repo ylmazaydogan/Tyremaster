@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InfoBlock from "@/components/InfoBlock";
 import Providers from "@/components/Providers";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "TyreMaster",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <main>
+            <Toaster />
             <Header />
             {children}
             <InfoBlock />
