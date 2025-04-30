@@ -8,7 +8,8 @@ import Brands from "@/components/home/Brands";
 import HowWeWork from "@/components/home/HowWeWork";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import B2BEPlatform from "@/components/home/B2BEPlatform";
-import { useProducts, useCartMutation } from "commaleon-shop-api";
+import { useProducts, useCartMutation, useRegisterForm } from "commaleon-shop-api";
+
 export default function Home() {
   const { data: products, isLoading, error } = useProducts();
   return (
