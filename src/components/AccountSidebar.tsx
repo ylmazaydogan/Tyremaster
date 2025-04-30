@@ -1,19 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useAuth } from "factoryx-commerce";
 import { useRouter } from "next/navigation";
 
 export default function AccountSidebar() {
-  const { signOut } = useAuth();
+  //const { signOut } = useAuth();
   const router = useRouter();
 
   const handleLogout = () => {
-    signOut?.mutate(undefined, {
-      onSuccess: () => {
-        router.push("/login");
-      },
-    });
+    //signOut?.mutate(undefined, {
+    //  onSuccess: () => {
+    //    router.push("/login");
+    //  },
+    //});
   };
 
   return (
